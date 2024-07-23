@@ -266,12 +266,9 @@ export const cv = [
     title: "Front-End Developer",
     subtitle: "TCS",
     date: "Nov / 2021 - PRESENT",
-    description: `Working for an Australia-based Bank project on 4 apppcations
-Assisted in the development of web applications, focusing on front-end technologies.
-Developed user inteface to International Clent WESTPAC Bank  with modern JavaScript frameworks, HTML5, and CSS3.
-Developed documentation to train new team members in company standards.Expert trainer on React.js, HTML5, and CSS3.
-Decreased code conflicts by 51% to the user interface for new product concepts.
-Assisted colleagues to troubleshoot and resolve technical issues.
+    description: `Working for an Australia-based WESTPAC Bank project on 4 apppcations
+Assisted in the development of user inteface web applications, focusing on front-end technologies with modern JavaScript frameworks, HTML5, and CSS3.
+Developed documentation to train new team members in company standards.
 Collaborates with onshore team members and clients to complete tasks within the deadline, resulting in 100% on-time delivery and delivers defect-free projects.`,
     category: "experience",
   },{
@@ -280,7 +277,8 @@ Collaborates with onshore team members and clients to complete tasks within the 
     subtitle: "Self Development",
     date: "2021 - PRESENT",
     description: `Deepened my expertise in MERN stack technologies by mastering MongoDB, Express.js, React.js, and Node.js.
-     Successfully developed over 40 diverse projects and deployed over 20+ diverse projects, ranging from dynamic web applications to complex server-side solutions. Each project enhanced my skills in full-stack development, performance optimization, and responsive design. This extensive experience has equipped me with a robust understanding of modern web development practices and problem-solving capabilities.`,
+     Successfully developed over 40 diverse projects and deployed over 20+ diverse projects, 
+     ranging from dynamic web applications to complex server-side solutions.`,
     category: "experience",
   },
 ];
