@@ -199,7 +199,10 @@
     right: 5px;
   }.services{
     margin-top: 4%;
-  }}
+  }.skills .card{
+    overflow: visible;
+  }
+}
 @media screen and (max-width: 760px) {
   .header {
     padding: 24px 12px;

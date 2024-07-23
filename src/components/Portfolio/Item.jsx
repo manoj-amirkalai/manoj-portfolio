@@ -36,7 +36,7 @@ const item = {
             const { id, img, category, title, description, github, web } =
               projectItems;
             return (
-              <motion.li key={id} className="portfolio__items card card-two" variants={item}>
+              <motion.li key={id} className="portfolio__items card card-two portcard" variants={item}>
                 <div className="portfolio__img-wrapper">
                   <img src={img} alt={title} className="portfolio__img" />
                 </div>
@@ -48,7 +48,7 @@ const item = {
                       {" "}
                       <PiGithubLogoFill />
                     </a>
-                    <a className="webgits" target="_blank" href={web}>
+                    <a className="webgits web" target="_blank" href={web}>
                       {" "}
                       <FaCode />
                     </a>

@@ -48,7 +48,13 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".home__banner", { delay: 500 });
+      }).reveal(".home__banner", { delay: 500 }); ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__profile", { delay: 800 });
 
       ScrollReveal({
         origin: "top",
@@ -209,14 +215,50 @@ function App() {
       }).reveal(".skill8", { delay: 2500 });
 
       //portfolio
-
       ScrollReveal({
         origin: "left",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".portfolio__list", { delay: 750 });
+      }).reveal(".portfolio__img", { delay: 750 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__category", { delay: 1000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".web", { delay: 1250 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".git", { delay: 1500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__title", { delay: 1750 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__description", { delay: 2000 });
+    
+   
 
       //resume
       ScrollReveal({
@@ -431,7 +473,13 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".home__banner", { delay: 500 });
+      }).reveal(".home__banner", { delay: 500 }); ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__profile", { delay: 800 });
 
       ScrollReveal({
         origin: "top",
@@ -545,15 +593,49 @@ function App() {
       opacity: 0,
     }).reveal(".skill8", { delay: 2500 });
 
-      //portfolio
-
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".portfolio__list", { delay: 750 });
+        //portfolio
+        ScrollReveal({
+          origin: "left",
+          distance: "100px",
+          duration: 700,
+          reset: true,
+          opacity: 0,
+        }).reveal(".portfolio__img", { delay: 750 });
+        ScrollReveal({
+          origin: "left",
+          distance: "100px",
+          duration: 700,
+          reset: true,
+          opacity: 0,
+        }).reveal(".portfolio__category", { delay: 1000 });
+        ScrollReveal({
+          origin: "left",
+          distance: "100px",
+          duration: 700,
+          reset: true,
+          opacity: 0,
+        }).reveal(".web", { delay: 1250 });
+        ScrollReveal({
+          origin: "left",
+          distance: "100px",
+          duration: 700,
+          reset: true,
+          opacity: 0,
+        }).reveal(".git", { delay: 1500 });
+        ScrollReveal({
+          origin: "left",
+          distance: "100px",
+          duration: 700,
+          reset: true,
+          opacity: 0,
+        }).reveal(".portfolio__title", { delay: 1750 });
+        ScrollReveal({
+          origin: "left",
+          distance: "100px",
+          duration: 700,
+          reset: true,
+          opacity: 0,
+        }).reveal(".portfolio__description", { delay: 2000 });
     
 
       //resume
@@ -728,6 +810,7 @@ function App() {
       }).reveal(".section__subtitle", { delay: 500 });
 
       // home
+      
       ScrollReveal({
         origin: "right",
         distance: "200px",
@@ -735,6 +818,13 @@ function App() {
         reset: true,
         opacity: 0,
       }).reveal(".home__banner", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__profile", { delay: 800 });
 
       ScrollReveal({
         origin: "top",
@@ -853,13 +943,49 @@ function App() {
 
       //portfolio
 
+    
       ScrollReveal({
         origin: "left",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".portfolio__list", { delay: 750 });
+      }).reveal(".portfolio__img", { delay: 800 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__category", { delay:800  });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".web", { delay: 800 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".git", { delay: 800 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__title", { delay: 800 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__description", { delay: 800 });
 
       //resume
       ScrollReveal({
