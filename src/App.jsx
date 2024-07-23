@@ -134,6 +134,17 @@ useEffect(()=>{
     opacity: 0,
   }).reveal(".link", { delay: 1050 });
 
+  //mobile service
+  
+  ScrollReveal({
+    origin: "left",
+    distance: "100px",
+    duration: 700,
+    reset: true,
+    opacity: 0,
+  }).reveal(".services__container", { delay: 700 },{mobile:true});
+  
+
   //skills
 
   ScrollReveal({
