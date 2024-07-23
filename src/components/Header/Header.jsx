@@ -72,7 +72,7 @@ window.addEventListener('scroll',changeNav)
               {" "}
               <FaLinkedin  />
             </a>
-            <a href="https://api.whatsapp.com/qr/CWYH77IQQSYQK1?autoload=1&app_absent=0" target="_blank"  className="nav__social-link">
+            <a href="https://wa.me/qr/CWYH77IQQSYQK1" target="_blank"  className="nav__social-link">
               {" "}
               <FaWhatsapp />
             </a>

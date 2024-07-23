@@ -68,7 +68,7 @@ const Home = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://api.whatsapp.com/qr/CWYH77IQQSYQK1?autoload=1&app_absent=0"
+              href="https://wa.me/qr/CWYH77IQQSYQK1"
               target="_blank"
               className="home__social-link"
             >
