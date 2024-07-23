@@ -170,14 +170,14 @@ function App() {
         opacity: 0,
       }).reveal(".skill1", { delay: 750 });
       ScrollReveal({
-        origin: "top",
+        origin: "bottom",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
       }).reveal(".skill2", { delay: 1000 });
       ScrollReveal({
-        origin: "top",
+        origin: "bottom",
         distance: "100px",
         duration: 700,
         reset: true,
@@ -197,14 +197,14 @@ function App() {
         reset: true,
       }).reveal(".skill5", { delay: 1750 });
       ScrollReveal({
-        origin: "bottom",
+        origin: "top",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
       }).reveal(".skill6", { delay: 2000 });
       ScrollReveal({
-        origin: "bottom",
+        origin: "top",
         distance: "100px",
         duration: 700,
         reset: true,
@@ -549,7 +549,7 @@ function App() {
       opacity: 0,
     }).reveal(".skill1", { delay: 750 });
     ScrollReveal({
-      origin: "top",
+      origin: "bottom",
       distance: "100px",
       duration: 700,
       reset: true,
@@ -590,7 +590,7 @@ function App() {
       opacity: 0,
     }).reveal(".skill7", { delay: 2250 }); 
     ScrollReveal({
-      origin: "bottom",
+      origin: "right",
       distance: "100px",
       duration: 700,
       reset: true,
@@ -897,7 +897,7 @@ function App() {
         opacity: 0,
       }).reveal(".skill1", { delay: 750 });
       ScrollReveal({
-        origin: "top",
+        origin: "bottom",
         distance: "100px",
         duration: 700,
         reset: true,
@@ -918,7 +918,7 @@ function App() {
         opacity: 0,
       }).reveal(".skill4", { delay: 1500 });
       ScrollReveal({
-        origin: "bottom",
+        origin: "right",
         opacity: 0,
         duration: 700,
         reset: true,
@@ -938,7 +938,7 @@ function App() {
         opacity: 0,
       }).reveal(".skill7", { delay: 2250 }); 
       ScrollReveal({
-        origin: "bottom",
+        origin: "right",
         distance: "100px",
         duration: 700,
         reset: true,
