@@ -11,7 +11,7 @@ const Skills = () => {
     <section className="skills section" id="skills">
       <h2 className="section__title text-cs skilltitle">Professional Skills</h2>
       <p className="section__subtitle skillsubtitle">
-        My<span>Talent</span>
+        My<span>Craft</span>
       </p>
 
       {/* <div className="skills__container container grid">

@@ -24,7 +24,11 @@ function App() {
 
   let deviceWidth = window.innerWidth;
   useEffect(() => {
-    if (deviceWidth > 1000) {
+    if(deviceWidth<1200){
+      
+      alert('For Better experience checkout in Desktop')
+    }
+    if (deviceWidth > 1200) {
       //overall title
       ScrollReveal({
         origin: "left",
@@ -228,35 +232,35 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".portfolio__category", { delay: 1000 });
+      }).reveal(".portfolio__category", { delay: 500 });
       ScrollReveal({
         origin: "left",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".web", { delay: 1250 });
+      }).reveal(".web", { delay: 700 });
       ScrollReveal({
         origin: "left",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".git", { delay: 1500 });
+      }).reveal(".git", { delay: 1000 });
       ScrollReveal({
         origin: "left",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".portfolio__title", { delay: 1750 });
+      }).reveal(".portfolio__title", { delay: 1250 });
       ScrollReveal({
         origin: "left",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".portfolio__description", { delay: 2000 });
+      }).reveal(".portfolio__description", { delay: 1500 });
     
    
 
@@ -384,7 +388,7 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".pricing__label", { delay: 2750 });
+      }).reveal(".pricing__label", { delay: 3000 });
 
       //blog
       ScrollReveal({
@@ -423,7 +427,7 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".blog__itemone", { delay: 2000 });
+      }).reveal(".blog__itemone", { delay: 2250 });
 
       ScrollReveal({
         origin: "left",
@@ -431,7 +435,7 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".blog__itemthree", { delay: 2000 });
+      }).reveal(".blog__itemthree", { delay: 2250 });
 
       //contact
       ScrollReveal({

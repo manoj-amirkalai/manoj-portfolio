@@ -25,11 +25,11 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "serviceID",
-        "templateID",
+        "service_tr19mud",
+        "template_lu7qrs7",
         forms.current,
         {
-          publicKey: "publickey",
+          publicKey: "gfegF7SK4qkdqTwBc",
         }
       )
       .then(
@@ -59,7 +59,7 @@ const Contact = () => {
             </span>
             <div className="contact__card-title">Address</div>
             <div className="contact__card-data">
-              North Tower, Toronto, Canada.
+              Chennai, Tamil nadu, India.
             </div>
           </div>
 

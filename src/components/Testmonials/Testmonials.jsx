@@ -13,9 +13,9 @@ import { Pagination } from "swiper/modules";
 const Testmonials = () => {
   return (
     <section className="testimonial section" id="testimonials">
-      <h2 className="section__title text-cs">What I Do</h2>
+      <h2 className="section__title text-cs">Feedback</h2>
       <p className="section__subtitle">
-        My<span>Customer say... </span>
+        My<span>Associate say... </span>
       </p>
       <Swiper
         // slidesPerView={3}
