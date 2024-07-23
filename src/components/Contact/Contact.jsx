@@ -1,8 +1,8 @@
 import {
-  FaRegAddressBook,
   FaRegEnvelope,
   FaRegUser,
   FaRegMap,
+  FaWhatsapp,
 } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import shapeOne from "../../assets/shape-1.png";
@@ -81,7 +81,7 @@ const Contact = () => {
 
           <div className="contact__card">
             <span className="contact__card-icon">
-              <FaRegAddressBook />{" "}
+            <FaWhatsapp />{" "}
             </span>
             <div className="contact__card-title">Phone</div>
             <div className="contact__card-data">+91-9597388699</div>
