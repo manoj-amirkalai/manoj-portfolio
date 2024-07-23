@@ -142,7 +142,7 @@ useEffect(()=>{
     duration: 700,
     reset: true,
     opacity: 0,
-  }).reveal(".services__container", { delay: 700 },{destop:false});
+  }).reveal(".services__container", { delay: 700 },{mobile:true});
   
 
   //skills
