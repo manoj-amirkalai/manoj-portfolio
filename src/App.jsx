@@ -151,13 +151,62 @@ function App() {
 
       //skills
 
+      
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill1", { delay: 750 });
       ScrollReveal({
         origin: "top",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skills__container", { delay: 1000 });
+      }).reveal(".skill2", { delay: 1000 });
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill3", { delay: 1250 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill4", { delay: 1500 });
+      ScrollReveal({
+        origin: "left",
+        opacity: 0,
+        duration: 700,
+        reset: true,
+      }).reveal(".skill5", { delay: 1750 });
+      ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill6", { delay: 2000 });
+      ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill7", { delay: 2250 }); 
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill8", { delay: 2500 });
 
       //portfolio
 
@@ -437,15 +486,64 @@ function App() {
         opacity: 0,
       }).reveal(".services__container", { delay: 1000 });
 
-      //skills
+     //skills
 
-      ScrollReveal({
-        origin: "top",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".skills__container", { delay: 1000 });
+      
+     ScrollReveal({
+      origin: "left",
+      distance: "100px",
+      duration: 700,
+      reset: true,
+      opacity: 0,
+    }).reveal(".skill1", { delay: 750 });
+    ScrollReveal({
+      origin: "top",
+      distance: "100px",
+      duration: 700,
+      reset: true,
+      opacity: 0,
+    }).reveal(".skill2", { delay: 1000 });
+    ScrollReveal({
+      origin: "right",
+      distance: "100px",
+      duration: 700,
+      reset: true,
+      opacity: 0,
+    }).reveal(".skill3", { delay: 1250 });
+    ScrollReveal({
+      origin: "left",
+      distance: "100px",
+      duration: 700,
+      reset: true,
+      opacity: 0,
+    }).reveal(".skill4", { delay: 1500 });
+    ScrollReveal({
+      origin: "bottom",
+      opacity: 0,
+      duration: 700,
+      reset: true,
+    }).reveal(".skill5", { delay: 1750 });
+    ScrollReveal({
+      origin: "right",
+      distance: "100px",
+      duration: 700,
+      reset: true,
+      opacity: 0,
+    }).reveal(".skill6", { delay: 2000 });
+    ScrollReveal({
+      origin: "left",
+      distance: "100px",
+      duration: 700,
+      reset: true,
+      opacity: 0,
+    }).reveal(".skill7", { delay: 2250 }); 
+    ScrollReveal({
+      origin: "bottom",
+      distance: "100px",
+      duration: 700,
+      reset: true,
+      opacity: 0,
+    }).reveal(".skill8", { delay: 2500 });
 
       //portfolio
 
@@ -696,13 +794,62 @@ function App() {
 
       //skills
 
+      
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill1", { delay: 750 });
       ScrollReveal({
         origin: "top",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skills__container", { delay: 750 });
+      }).reveal(".skill2", { delay: 1000 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill3", { delay: 1250 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill4", { delay: 1500 });
+      ScrollReveal({
+        origin: "bottom",
+        opacity: 0,
+        duration: 700,
+        reset: true,
+      }).reveal(".skill5", { delay: 1750 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill6", { delay: 2000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill7", { delay: 2250 }); 
+      ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill8", { delay: 2500 });
 
       //portfolio
 

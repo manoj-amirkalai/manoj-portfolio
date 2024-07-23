@@ -40,14 +40,30 @@ const Skills = () => {
       </div> */}
       <div className="skills__container container grid">
         <div className="skills__item">
-          <FaHtml5 className="skillicon html" />
-          <FaCss3Alt className="skillicon css" />
-          <IoLogoJavascript  className="skillicon js"/>
-          <FaReact  className="skillicon react"/>
-          <SiExpress  className="skillicon express"/>
-          <FaNodeJs  className="skillicon node"/>
-          <SiMongodb  className="skillicon mongodb"/>
-          <RiNextjsFill  className="skillicon next"/>
+          <span className="skill1">
+            <FaHtml5 className="skillicon html " />
+          </span>
+          <span className="skill2">
+            <FaCss3Alt className="skillicon css " />
+          </span>
+          <span className="skill3">
+            <IoLogoJavascript className="skillicon js " />
+          </span>
+          <span className="skill4">
+            <FaReact className="skillicon react " />
+          </span>
+          <span className="skill5">
+            <SiExpress className="skillicon express " />
+          </span>
+          <span className="skill6">
+            <FaNodeJs className="skillicon node " />
+          </span>
+          <span className="skill7"> 
+            <SiMongodb className="skillicon mongodb " />
+          </span>
+          <span className="skill8">
+            <RiNextjsFill className="skillicon next " />
+          </span>
         </div>
       </div>
       <div className="section__deco deco__left">

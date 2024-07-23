@@ -6,6 +6,7 @@
 .skills__container {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 70px;
+  overflow: visible;
 }
 .skills__item {
   display: grid;
