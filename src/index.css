@@ -197,8 +197,9 @@
   .pricing__label {
     top: 5px;
     right: 5px;
-  }
-}
+  }.services{
+    margin-top: 4%;
+  }}
 @media screen and (max-width: 760px) {
   .header {
     padding: 24px 12px;
@@ -323,7 +324,7 @@
   }
   .home__data-one {
     bottom: 10%;
-    left: -30%;
+    left: -28%;
   }
   .home__profile {
     top: 2%;
@@ -362,8 +363,14 @@
   .card,
   .card-two {
     padding: 24px;
-  }.cardone{
-    margin-right:8% ;
+  }.cardone:nth-child(1){
+    margin-right:13% ;
+    
+}.cardone:nth-child(2){
+  margin-right:6% ;
+  
+}.cardone{
+  max-width: 95%;
 }
   .skills__titles,
   .skills__description {
@@ -386,5 +393,8 @@
     margin-left: 0%;
     margin-top: -7%;
     padding: 10%;
+  }.pricing__label{
+    right: 50px;
+    top: -10px;
   }
 }
