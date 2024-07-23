@@ -166,6 +166,10 @@
   }
   .container {
     overflow-x: hidden;
+  }.skilltitle{
+    margin-top: 20%;
+  }.skillsubtitle{
+    margin-top: 5%;
   }
   .resume__container {
     overflow: visible;
@@ -175,6 +179,8 @@
     gap: 50px;
     margin-left: 25%;
     padding: 10%;
+  }.services{
+   margin-top: -10%;
   }
   .skillicon {
     font-size: 100px;
@@ -187,6 +193,10 @@
     margin-top: 1%;
   }.footer{
     margin-top: -20%;
+  }
+  .pricing__label {
+    top: 5px;
+    right: 5px;
   }
 }
 @media screen and (max-width: 760px) {

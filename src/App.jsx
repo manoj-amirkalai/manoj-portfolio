@@ -22,354 +22,859 @@ function App() {
     restDelta: 0.001,
   });
 
-  
-useEffect(()=>{
-  
-  //overall title
-  ScrollReveal({
-    origin: "left",
-    distance: "200px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".section__title", { delay: 500 });
-  ScrollReveal({
-    origin: "right",
-    distance: "200px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".section__subtitle", { delay: 500 });
+  let deviceWidth = window.innerWidth;
+  useEffect(() => {
+    if (deviceWidth > 1000) {
+      //overall title
+      ScrollReveal({
+        origin: "left",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".section__title", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".section__subtitle", { delay: 500 });
 
-  // home
-  //desktop
-  ScrollReveal({
-    origin: "right",
-    distance: "200px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".home__banner", { delay: 500 },{destop:true});
-  
-  ScrollReveal({
-    origin: "top",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".home__title", { delay: 1000 },{destop:true});
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".animated-text", { delay: 1250 },{destop:true});
-  
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".home__data", { delay: 1500 },{destop:true});
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".home__text", { delay: 1750 },{destop:true});
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".home__socials", { delay: 2000 },{destop:true});
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".home__btns", { delay: 2250 },{destop:true});
- 
-  //services
+      // home
+      ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__banner", { delay: 500 });
 
-  ScrollReveal({
-    origin: "top",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".services__container", { delay: 700 });
-  ScrollReveal({
-    origin: "top",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".services__subtitle", { delay: 950 });
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".services__title", { delay: 1200 });
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__title", { delay: 1000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".animated-text", { delay: 1250 });
 
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".services__description", { delay: 1450 });
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".link", { delay: 1050 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__data", { delay: 1500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__text", { delay: 1750 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__socials", { delay: 2000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__btns", { delay: 2250 });
 
-  //destop service
-  
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".services__container", { delay: 700 },{mobile:true});
-  
+      //services
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".services2", { delay: 100 });
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".services__container", { delay: 700 });
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".services__subtitle", { delay: 950 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".services__title", { delay: 1200 });
 
-  //skills
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".services__description", { delay: 1450 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".link", { delay: 1050 });
 
-  ScrollReveal({
-    origin: "top",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".skills__container", { delay: 1000 });
+      //destop service
 
-  
-  //portfolio
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".services__container", { delay: 700 });
 
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".portfolio__list", { delay: 750 });
-  
+      //skills
 
-  //resume
-  ScrollReveal({
-    origin: "left",
-   distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".education", { delay: 1000 });
-  
-  ScrollReveal({
-    origin: "left",
-   distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".experience", { delay: 1000 });
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skills__container", { delay: 1000 });
 
-  //testimonials
+      //portfolio
 
-  ScrollReveal({
-    origin: "top",
-   distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".testimonial__container", { delay: 1000 });
-  
-  ScrollReveal({
-    origin: "left",
-   distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".testimonial__img", { delay: 1250 });
-  
-  ScrollReveal({
-    origin: "left",
-   distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".testimonial__icon", { delay: 1500 });
-  ScrollReveal({
-    origin: "left",
-   distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".testimonial__description", { delay: 1750 });
-  ScrollReveal({
-    origin: "left",
-   distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".testimonial__name", { delay: 500 });
-  ScrollReveal({
-    origin: "left",
-   distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".testimonial__author", { delay: 500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__list", { delay: 750 });
 
+      //resume
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".education", { delay: 1000 });
 
-  
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".experience", { delay: 1000 });
 
+      //testimonials
 
-  //pricing
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".pricing__itemtwo", { delay: 1000 });
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".testimonial__container", { delay: 1000 });
 
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".testimonial__img", { delay: 1250 });
 
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".pricing__price", { delay: 1250 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".testimonial__icon", { delay: 1500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".testimonial__description", { delay: 1750 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".testimonial__name", { delay: 500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".testimonial__author", { delay: 500 });
 
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".pricing__description", { delay: 1700 });
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".pricing__list", { delay: 2000 });
+      //pricing
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__itemtwo", { delay: 1000 });
 
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".pricing__btn", { delay: 500 },);
-  ScrollReveal({
-    origin: "right",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".pricing__itemone", { delay: 2500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__price", { delay: 1250 });
 
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".pricing__itemthree", { delay: 2500 });
-  ScrollReveal({
-    origin: "top",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".pricing__label", { delay: 2750 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__description", { delay: 1700 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__list", { delay: 2000 });
 
-  //blog
-  ScrollReveal({
-    origin: "top",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".blog__itemtwo", { delay: 1000 });
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".blog__title", { delay: 1250 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__btn", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__itemone", { delay: 2500 });
 
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".blog__description", { delay: 1500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__itemthree", { delay: 2500 });
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__label", { delay: 2750 });
 
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".blog__img", { delay: 1750 });
-  ScrollReveal({
-    origin: "right",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".blog__itemone", { delay: 2000 });
+      //blog
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__itemtwo", { delay: 1000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__title", { delay: 1250 });
 
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".blog__itemthree", { delay: 2000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__description", { delay: 1500 });
 
-  //contact
-  ScrollReveal({
-    origin: "left",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".contact__content", { delay: 1000 });
-  ScrollReveal({
-    origin: "right",
-    distance: "100px",
-    duration: 700,
-    reset: true,
-    opacity: 0,
-  }).reveal(".contact__form", { delay: 1000 });
-  
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__img", { delay: 1750 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__itemone", { delay: 2000 });
 
-},[])
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__itemthree", { delay: 2000 });
+
+      //contact
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".contact__content", { delay: 1000 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".contact__form", { delay: 1000 });
+    }
+    if (deviceWidth < 1200 ) {
+      //overall title
+      ScrollReveal({
+        origin: "left",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".section__title", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".section__subtitle", { delay: 500 });
+
+      // home
+      ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__banner", { delay: 500 });
+
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__title", { delay: 750 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".animated-text", { delay: 1000 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__data", { delay: 1250 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__text", { delay: 1500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__socials", { delay: 1750 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__btns", { delay: 2000 });
+
+      //services
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".services__container", { delay: 1000 });
+
+      //skills
+
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skills__container", { delay: 1000 });
+
+      //portfolio
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__list", { delay: 750 });
+    
+
+      //resume
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".education", { delay: 750 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".experience", { delay: 1000 });
+
+      //testimonials
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".testimonial__container", { delay: 1000 });
+
+      
+
+      //pricing
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__itemtwo", { delay: 1000 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__price", { delay: 1250 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__description", { delay: 1500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__list", { delay: 500 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__btn", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__itemone", { delay: 2000 });
+
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__itemthree", { delay: 2250 });
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__label", { delay: 2750 });
+
+      //blog
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__itemtwo", { delay: 1000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__title", { delay: 1250 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__description", { delay: 1500 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__img", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__itemone", { delay: 2000 });
+
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__itemthree", { delay: 2000 });
+
+      //contact
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".contact__content", { delay: 1000 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".contact__form", { delay: 1000 });
+    }
+    if (deviceWidth < 400) {
+      //overall title
+      ScrollReveal({
+        origin: "left",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".section__title", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".section__subtitle", { delay: 500 });
+
+      // home
+      ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__banner", { delay: 500 });
+
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__title", { delay: 1000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".animated-text", { delay: 1250 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__data", { delay: 1500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__text", { delay: 1750 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__socials", { delay: 500 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".home__btns", { delay: 500 });
+
+      //services
+    
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".services__container", { delay: 700 });
+     
+      
+
+      //skills
+
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skills__container", { delay: 750 });
+
+      //portfolio
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__list", { delay: 750 });
+
+      //resume
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".education", { delay: 750 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".experience", { delay: 1000 });
+
+      //testimonials
+
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".testimonial__container", { delay: 1000 });
+
+    
+      //pricing
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__itemtwo", { delay: 750 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__price", { delay: 1000 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__description", { delay: 1250 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__list", { delay: 1500 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__btn", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__itemone", { delay: 500 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__itemthree", { delay: 500 });
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".pricing__label", { delay: 2250 });
+
+      //blog
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__itemtwo", { delay: 1000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__title", { delay: 1250 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__description", { delay: 1500 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__img", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__itemone", { delay: 500 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".blog__itemthree", { delay: 500 });
+
+      //contact
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".contact__content", { delay: 1000 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".contact__form", { delay: 1000 });
+    }
+  }, []);
   return (
     <main className="container">
       <motion.div className="progress-bar" style={{ scaleX }} />
       <Header />
       <Home />
-      <Services />
       <Skills />
+      <Services />
       <Portfolio />
       <Resume />
       <Testmonials />
