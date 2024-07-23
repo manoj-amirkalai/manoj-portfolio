@@ -49,7 +49,7 @@ useEffect(()=>{
     duration: 700,
     reset: true,
     opacity: 0,
-  }).reveal(".home__banner", { delay: 500 },{mobile:false});
+  }).reveal(".home__banner", { delay: 500 },{destop:true});
   
   ScrollReveal({
     origin: "top",
@@ -57,14 +57,14 @@ useEffect(()=>{
     duration: 700,
     reset: true,
     opacity: 0,
-  }).reveal(".home__title", { delay: 1000 },{mobile:false});
+  }).reveal(".home__title", { delay: 1000 },{destop:true});
   ScrollReveal({
     origin: "left",
     distance: "100px",
     duration: 700,
     reset: true,
     opacity: 0,
-  }).reveal(".animated-text", { delay: 1250 },{mobile:false});
+  }).reveal(".animated-text", { delay: 1250 },{destop:true});
   
   ScrollReveal({
     origin: "left",
@@ -72,28 +72,28 @@ useEffect(()=>{
     duration: 700,
     reset: true,
     opacity: 0,
-  }).reveal(".home__data", { delay: 1500 },{mobile:false});
+  }).reveal(".home__data", { delay: 1500 },{destop:true});
   ScrollReveal({
     origin: "left",
     distance: "100px",
     duration: 700,
     reset: true,
     opacity: 0,
-  }).reveal(".home__text", { delay: 1750 },{mobile:false});
+  }).reveal(".home__text", { delay: 1750 },{destop:true});
   ScrollReveal({
     origin: "left",
     distance: "100px",
     duration: 700,
     reset: true,
     opacity: 0,
-  }).reveal(".home__socials", { delay: 2000 },{mobile:false});
+  }).reveal(".home__socials", { delay: 2000 },{destop:true});
   ScrollReveal({
     origin: "left",
     distance: "100px",
     duration: 700,
     reset: true,
     opacity: 0,
-  }).reveal(".home__btns", { delay: 2250 },{mobile:false});
+  }).reveal(".home__btns", { delay: 2250 },{destop:true});
  
   //services
 
@@ -134,7 +134,7 @@ useEffect(()=>{
     opacity: 0,
   }).reveal(".link", { delay: 1050 });
 
-  //mobile service
+  //destop service
   
   ScrollReveal({
     origin: "left",
@@ -142,7 +142,7 @@ useEffect(()=>{
     duration: 700,
     reset: true,
     opacity: 0,
-  }).reveal(".services__container", { delay: 700 },{mobile:true});
+  }).reveal(".services__container", { delay: 700 },{destop:false});
   
 
   //skills
