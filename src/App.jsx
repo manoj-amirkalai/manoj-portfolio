@@ -1156,7 +1156,7 @@ function App() {
       <Resume />
       <Testmonials />
       <Pricing />
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
       <Footer />
     </main>
