@@ -245,7 +245,7 @@ export const cv = [
 
   {
     id: 2,
-    title: "SSLC",
+    title: "HSC",
     subtitle: "Secondary School - 85%",
     date: "2016 - 2017",
     description: "",
@@ -254,7 +254,7 @@ export const cv = [
 
   {
     id: 3,
-    title: "HSC",
+    title: "SSLC",
     subtitle: "High School - 97%",
     date: "2014 - 2015",
     description: "",
