@@ -71,7 +71,7 @@ export const services = [
   {
     id: 3,
     name: " Full Stack Development ",
-    title: "MERN Stack website",
+    title: "MERN Stack Developer",
     description:
       " Delivering full-stack web applications with the MERN stack, integrating MongoDB for robust databases, Express.js for scalable server-side logic, React.js for dynamic front-end interfaces, and Node.js for efficient back-end operations.",
   },
