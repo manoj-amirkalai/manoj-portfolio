@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat:wght@7006 family=Jost:wght@400;500;7006display-swap");
+:root {
+  --primary-color: rgb(68, 173, 231);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 92%);
+  --bg-color: hsl(0, 0%, 9%);
+  --bg-color-alt: hsl(213, 10%, 21%);
+  --container-color: hsl(219, 30%, 21%);
+  --border-color: hsl(210, 2%, 65%);
+  --first-gradient: linear-gradient(
+    Odeg,
+    var(--bg-color-alt) 0%,
+    var(--bg-color) 100%
+  );
+  --second-gradient: linear-gradient(
+    180deg,
+    var(--bg-color-alt) 0%,
+    var(--bg-color) 100%
+  );
+  --third-gradient: linear-gradient(
+    180deg,
+    var(--bg-color) 0%,
+    var(--bg-color) 100%
+  );
+  --body-font: "Jost", sans-serif;
+  --second-font: "Caveat", cursive;
+  --biggest-font-size: clamp(2.25rem, 1.125rem + 5.1429vw, 5.625rem);
+  --h1-font-size: clamp(1.25rem, 0.75rem + 2.2857vw, 2.75rem);
+  --h2-font-size: 30px;
+  --h3-font-size: 28px;
+  --h4-font-size: 24px;
+  --h5-font-size: 22px;
+  --largest-font-size: 21px;
+  --larger-font-size: 20px;
+  --large-font-size: 18px;
+  --normal-font-size: 16px;
+  --small-font-size: 15px;
+  --smaller-font-size: 14px;
+  --tiny-font-size: 13px;
+  --shadow: 5px 5px rgb(255 255 255/10%);
+  --transition: cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.light-theme {
+  --title-color: #000;
+  --text-color: #262626;
+  --bg-color: rgb(230, 230, 230);
+  --bg-color-alt: #fff;
+  --container-color: #fff;
+  --border-color: #000;
+  --border-color: black;
+  --shadow: 5px 5px rgb(0 0 0 /20%);
+}
+.light-theme .skills__bar {
+  background: rgba(0, 0, 0, 0.1);
+}
+.light-theme .skills__percentage {
+  background: var(--border-color);
+}
+.light-theme .skills__percentage span {
+  background-color: var(--primary-color);
+}
+.light-theme .shape {
+  filter: invert(0);
+  opacity: 1;
+}
+.light-theme .bg__title {
+  color: rgba(0, 0, 0, 0.03);
+}
+.light-theme .webgit a {
+  color: var(--primary-color);
+}
+.light-theme .webgit a:hover {
+  color: rgb(107, 98, 98);
+}
+.light-theme .animated-text {
+  color: rgba(0, 0, 0, 1);
+}
+.light-theme .animated-text span::after {
+  background-color: rgb(230, 230, 230);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+.main {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  padding-inline: 12px !important;
+  margin-inline: auto;
+}
+.text-cs {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+.btn,
+.hero__link {
+  color: var(--title-color);
+  font-size: var(--tiny-font-size);
+  font-weight: 700;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  border: 2px solid var(--border-color);
+  padding-inline: 40px;
+  border-radius: 56px;
+  box-shadow: var(--shadow);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: var(--primary-color);
+  border-radius: inherit;
+  transform: scale(0.3);
+  filter: blur(10px);
+  opacity: 0;
+  transition: all 0.7s var(--transition);
+  z-index: -1;
+}
+.btn:hover::before {
+  transform: scale(1);
+  filter: blur(0);
+  opacity: 1;
+}
+
+.shape {
+  position: absolute;
+  filter: invert(1);
+  opacity: 0.6;
+}
+.section {
+  padding-bottom: 220px;
+  position: relative;
+}
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+.section__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 20px;
+}
+.section__subtitle {
+  color: var(--primary-color);
+  font-size: var(--smaller-font-size);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.section__subtitle span {
+  font-family: var(--second-font);
+  color: var(--text-color);
+  font-size: var(--h3-font-size);
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+.card {
+  background-color: var(--container-color);
+  text-align: center;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+  border: 2px solid var(--border-color);
+
+}
+.card-one {
+  padding: 30px 35px;
+  border-radius: 18px;
+ 
+}
+.card-two {
+  padding: 30px 20px;
+  border-radius: 20px;
+ 
+}
+.link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--title-color);
+  font-weight: 700;
+}
+.link__icon {
+  color: var(--primary-color);
+  margin-left: 20px;
+  transition: all 0.3s var(transition--);
+}
+.link:hover .link__icon {
+  margin-left: 15px;
+}
+.c__shape {
+  right: -24px;
+  bottom: -24px;
+  width: 141px;
+  height: 141px;
+}
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.section__deco {
+  position: absolute;
+  background-color: var(--border-color);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 2px;
+  height: 70%;
+}
+.deco__left {
+  left: -5%;
+}
+.deco__right {
+  right: -5%;
+
+  top: 40%;
+}
+.section__deco::after,
+.section__deco::before {
+  content: "";
+  position: absolute;
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+.section__deco::before {
+  top: 0;
+  transform: translate(-50%, -100%);
+}
+.section__deco::after {
+  bottom: 0;
+  transform: translate(-50%, 100%);
+}
+.section__deco .shape {
+  max-width: 110px;
+  height: 226;
+  bottom: -100px;
+  overflow-x: hidden;
+}
+.deco__left .shape {
+  left: -50px;
+}
+.deco__right .shape {
+  left: -50px;
+}
+.section__bg-wrapper {
+  position: absolute;
+  bottom: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bg__title {
+  font-size: 20vw;
+  font-family: var(--second-font);
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1px;
+  color: rgba(255, 255, 255, 0.02);
+}
+.webgit {
+  display: flex;
+  cursor: pointer;
+}
+.webgit a {
+  color: white;
+}
+.webgits {
+  font-size: var(--h2-font-size);
+  margin-left: 20%;
+}
+.webgits:hover {
+  transform: scale(1.25);
+  color: var(--primary-color);
+}
+.git {
+  margin-left: -20%;
+}
+/* progreebar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--primary-color);
+  transform-origin: 0%;
+  z-index: 500;
+}
