@@ -1,5 +1,4 @@
 import "./Skills.css";
-import { skills } from "./../../Data";
 
 import shapeOne from "../../assets/shape-1.png";
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";

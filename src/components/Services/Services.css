@@ -1,5 +1,5 @@
 .services {
-  background-image: var( --bg-color);
+  background-image: var(--bg-color);
   margin-top: 10%;
 }
 .swiper-wrapper {
@@ -8,6 +8,7 @@
 .services__container {
   text-align: center;
   margin-top: -3%;
+}
 .services__subtitle {
   color: var(--title-color);
   font-size: var(--tiny-font-size);
@@ -25,7 +26,8 @@
   min-height: 175px;
   padding-bottom: 15px;
   margin: 10% 0;
-}.mySwiper{
+}
+.mySwiper {
   padding: 10px;
 }
 .swiper-horizontal > .swiper-pagination-bullets {
@@ -55,16 +57,13 @@
 .swiper-horizontal
   > .swiper-pagination-bullets
   .swiper-pagination-bullet:not(:last-child) {
-    
   margin-right: 20px;
-
-
-}.swiper-horizontal
-> .swiper-pagination-bullets
-.swiper-pagination-bullet-active {
-    width: 13px;
-    background-color: var(--primary-color);
-    height: 13px;
-    top: 2px;
 }
-  
+.swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet-active {
+  width: 13px;
+  background-color: var(--primary-color);
+  height: 13px;
+  top: 2px;
+}
