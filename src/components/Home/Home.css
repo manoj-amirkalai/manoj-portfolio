@@ -204,7 +204,7 @@ z-index: 101;
   content: "";
   position: absolute;
   width: calc(100% + 8px);
-  height: 112%;
+  height: 113%;
   background-color: rgb(23, 23, 23);
   border-left: 2px solid  var(--primary-color);
   right: -8px;
