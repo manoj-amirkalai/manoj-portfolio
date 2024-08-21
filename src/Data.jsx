@@ -1,5 +1,6 @@
 import fitness from "./assets/fitness.png";
 import foodapp from "./assets/foodapp.png";
+import raretube from "./assets/raretube.png";
 import renthome from "./assets/renthome.png";
 import shopper from "./assets/shopper.png";
 import tictactoe from "./assets/tic.png";
@@ -147,6 +148,15 @@ export const projects = [
   },
   {
     id: 3,
+    img: raretube,
+    category: "React.JS",
+    title: "You-Tube",
+    description: `A YouTube clone replicates the core features of the original platform, 
+    allowing users  view videos by categorized. It offers a similar interface and functionality but may cater to niche audiences or specific content types.`,
+    github: "https://github.com/manoj-amirkalai/RareTube",
+    web: "https://raretube.onrender.com/",
+  },  {
+    id: 4,
     img: fitness,
     category: "MERN",
     title: "Fitness App",
@@ -158,7 +168,7 @@ export const projects = [
     web: "https://manoj-fitness-tracker.onrender.com/",
   },
   {
-    id: 4,
+    id: 5,
     img: shopper,
     category: "React.JS",
     title: "Shopping",
@@ -169,7 +179,7 @@ export const projects = [
     web: "https://manojs-e-commerce.onrender.com/",
   },
   {
-    id: 5,
+    id: 6,
     img: flipkart,
     category: "React.JS",
     title: "Flipkart",
@@ -178,7 +188,7 @@ export const projects = [
     web: "https://flipkart-ui-app.onrender.com/",
   },
   {
-    id: 6,
+    id: 7,
     img: amazon,
     category: "React.JS",
     title: "Amazon",
@@ -187,7 +197,7 @@ export const projects = [
     web: "https://uiprime.onrender.com/",
   },
   {
-    id: 7,
+    id: 8,
     img: netflix,
     category: "React.JS",
     title: "Netflix",
@@ -196,7 +206,7 @@ export const projects = [
     web: "https://netflix-ui-app.onrender.com/",
   },
   {
-    id: 8,
+    id: 9,
     img: todo,
     category: "HTML+CSS+JS",
     title: "TODO",
@@ -205,7 +215,7 @@ export const projects = [
     web: "https://manoj-todo-list.onrender.com/",
   },
   {
-    id: 9,
+    id: 10,
     img: postdes,
     category: "MERN",
     title: "Post Description",
@@ -216,7 +226,7 @@ export const projects = [
     web: "https://mern-post-description-app.onrender.com/",
   },
   {
-    id: 10,
+    id: 11,
     img: hulu,
     category: "React.JS",
     title: "Hulu",
@@ -225,7 +235,7 @@ export const projects = [
     web: "https://hulu-app.onrender.com/",
   },
   {
-    id: 11,
+    id: 12,
     img: tictactoe,
     category: "React.JS",
     title: "TicTacToe",
