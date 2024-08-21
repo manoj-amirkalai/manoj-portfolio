@@ -5,6 +5,7 @@ import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
@@ -57,10 +58,13 @@ const Skills = () => {
           <span className="skill6">
             <FaNodeJs className="skillicon node " />
           </span>
-          <span className="skill7"> 
+          <span className="skill7">
             <SiMongodb className="skillicon mongodb " />
-          </span>
+          </span>{" "}
           <span className="skill8">
+            <BiLogoTypescript  className="skillicon ts  " />
+          </span>
+          <span className="skill9">
             <RiNextjsFill className="skillicon next " />
           </span>
         </div>

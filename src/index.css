@@ -1,4 +1,13 @@
-@media screen and (max-width: 1400px) {
+
+@media screen and (min-width: 1000px) {
+  .skills__item{
+    margin-left: 280px;
+  }.next{
+    
+  margin-left: 300%;
+  }
+
+}@media screen and (max-width: 1400px) {
   .section__deco:not(.header__deco) {
     display: none;
   }
