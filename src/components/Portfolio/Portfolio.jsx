@@ -31,7 +31,7 @@ const Portfolio = () => {
       <p className="section__subtitle">
         My<span>works</span>
       </p>
-      {/* <List filterItems={filterItems} navlist={navlist} /> */}
+      <List filterItems={filterItems} navlist={navlist} />
      <Items/>
       <div className="section__deco deco__right">
   <img src={shapeOne} alt="" className="shape" />
