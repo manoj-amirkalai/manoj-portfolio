@@ -127,8 +127,9 @@ export const projects = [
     img: foodapp,
     category: "MERN",
     title: "Food App",
-    description: `Food website to order food.It was inspired by Zomato and swiggy.
-      For payment please use dummy card details.
+    description: `Developed a food booking website with capabilities for adding menu items, 
+    placing orders, and processing payments. Enhanced the user experience with 
+    a streamlined interface for easy menu management and secure transaction handling.
       Card=> 4000003560000008,
       month/year=> 06/29, CVV=> 567.`,
     github: "https://github.com/manoj-amirkalai/react-food-app",
@@ -139,11 +140,8 @@ export const projects = [
     img: renthome,
     category: "MERN",
     title: "Rent Home",
-    description: ` A Website to book home or room for vacation.
-                  For payment please use dummy card details. 
-                  Card=> 4000003560000008
-                  month/year=> 06/29
-                  CVV=> 567`,
+    description: `Developed a comprehensive rent home website with features booking, and listing properties. Integrated secure payment processing and a user-friendly interface to streamline property management.   Card=> 4000003560000008,
+      month/year=> 06/29, CVV=> 567.`,
     github: "https://github.com/manoj-amirkalai/Rent-Home",
     web: "https://manoj-rent-home-frontend.onrender.com/",
   },
@@ -152,8 +150,10 @@ export const projects = [
     img: fitness,
     category: "MERN",
     title: "Fitness App",
-    description: `Fitness website to track daily life excercise by 
-    collecting your excercise details.`,
+    description: `Developed a fitness tracker Website that allows
+     users to monitor workouts, track progress, and set personalized health goals.
+      Integrated real-time analytics 
+    and social sharing features to enhance user engagement and motivation.`,
     github: "https://github.com/manoj-amirkalai/Fitness-Tracker",
     web: "https://manoj-fitness-tracker.onrender.com/",
   },
@@ -162,7 +162,9 @@ export const projects = [
     img: shopper,
     category: "React.JS",
     title: "Shopping",
-    description: `E-commerce website to order clothes.It was inspired by Flipkart.`,
+    description: `Developed a modern, responsive e-commerce UI that streamlined user 
+    interactions and optimized the online shopping experience. 
+    Implemented features such as  product updates, and secure checkout processes.`,
     github: "https://github.com/manoj-amirkalai/e-commerce",
     web: "https://manojs-e-commerce.onrender.com/",
   },
@@ -171,7 +173,7 @@ export const projects = [
     img: flipkart,
     category: "React.JS",
     title: "Flipkart",
-    description: "Flipkart user interface for web browsers.",
+    description: "Developed the user interface for Flipkart's web browser platform, focusing on intuitive navigation and seamless shopping experiences. Implemented  design and dynamic elements to enhance user engagement and accessibility.",
     github: "https://github.com/manoj-amirkalai/flipkartUI",
     web: "https://flipkart-ui-app.onrender.com/",
   },
@@ -180,7 +182,7 @@ export const projects = [
     img: amazon,
     category: "React.JS",
     title: "Amazon",
-    description: "Flipkart landing home page.",
+    description: "Designed and developed the Amazon Prime landing page, focusing on an engaging and intuitive layout. Enhanced user experience with targeted content and streamlined navigation to drive subscriptions and retention.",
     github: "https://github.com/manoj-amirkalai/UIPrime",
     web: "https://uiprime.onrender.com/",
   },
@@ -189,7 +191,7 @@ export const projects = [
     img: netflix,
     category: "React.JS",
     title: "Netflix",
-    description: "Netflix landing home page.",
+    description: "Developed the Netflix landing page, optimizing its design for enhanced user engagement and intuitive navigation. Implemented features to improve content accessibility and drive conversions.",
     github: "https://github.com/manoj-amirkalai/UINetflix",
     web: "https://netflix-ui-app.onrender.com/",
   },
@@ -198,7 +200,7 @@ export const projects = [
     img: todo,
     category: "HTML+CSS+JS",
     title: "TODO",
-    description: "TODO website for daily checklist.",
+    description: "Designed and developed a user-friendly to-do list website that allows users to efficiently manage and track their tasks. Implemented features like Edit , update and delete task ",
     github: "https://github.com/manoj-amirkalai/ToDo-List",
     web: "https://manoj-todo-list.onrender.com/",
   },
@@ -207,8 +209,9 @@ export const projects = [
     img: postdes,
     category: "MERN",
     title: "Post Description",
-    description: `Post Descriptionapp.
-                 By using this website we can create,update and delete posts.`,
+    description: `Created a post description list website that enables users 
+    to easily browse and manage detailed post content. Integrated features for Editing, Remove,
+     and Update  content .`,
     github: "https://github.com/manoj-amirkalai/mernpostdescriptionapp",
     web: "https://mern-post-description-app.onrender.com/",
   },
@@ -217,7 +220,7 @@ export const projects = [
     img: hulu,
     category: "React.JS",
     title: "Hulu",
-    description: "Hulu website to get categorized movies list.",
+    description: "Developed a Hulu-style website, featuring an intuitive interface for browsing movies list. Implemented user-friendly filters and personalized recommendations to enhance the viewing experience.",
     github: "https://github.com/manoj-amirkalai/huluapp",
     web: "https://hulu-app.onrender.com/",
   },
@@ -227,7 +230,7 @@ export const projects = [
     category: "React.JS",
     title: "TicTacToe",
     description:
-      "A refreshing dual player game to spend free time with friends.",
+      "Developed an interactive Tic-Tac-Toe website with a clean, responsive design for seamless gameplay. Incorporated real-time move updates and win detection to provide an engaging user experience",
     github: "https://github.com/manoj-amirkalai/tictactoe",
     web: "https://manoj-tictactoe-game.onrender.com/",
   },
@@ -271,7 +274,8 @@ Assisted in the development of user inteface web applications, focusing on front
 Developed documentation to train new team members in company standards.
 Collaborates with onshore team members and clients to complete tasks within the deadline, resulting in 100% on-time delivery and delivers defect-free projects.`,
     category: "experience",
-  },{
+  },
+  {
     id: 5,
     title: "Web Developer",
     subtitle: "Self Development",

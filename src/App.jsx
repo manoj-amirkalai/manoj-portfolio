@@ -227,6 +227,14 @@ function App() {
     }).reveal(".skill9", { delay: 2750 });
 
       //portfolio
+      
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".portfolio__list", { delay: 750 });
       ScrollReveal({
         origin: "left",
         distance: "100px",
