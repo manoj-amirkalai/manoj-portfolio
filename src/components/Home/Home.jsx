@@ -6,9 +6,8 @@ import { IoIosMail } from "react-icons/io";
 import { FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import CV from "../../assets/Manoj Amirthalingam CV.pdf";
+import CountUp from "react-countup";
 const Home = () => {
- 
-  
   return (
     <section className="home" id="home">
       <div className="home__wrapper">
@@ -30,7 +29,9 @@ const Home = () => {
 
             <p className="home__data home__data-one">
               <span className="text-lg">
-                2.8 &nbsp; <b>+</b>
+                <CountUp start={0} end={2} duration={2} delay={3} />.
+                <CountUp start={0} end={8} duration={2} delay={3} />
+                &nbsp; &nbsp; <b>+</b>
               </span>
               <span className="text-sm text-cs">
                 Years of <span>Experience</span>
@@ -38,7 +39,8 @@ const Home = () => {
             </p>
             <p className="home__data home__data-two">
               <span className="text-lg">
-                35 &nbsp;<b>+</b>
+               
+              <CountUp start={0} end={35} duration={2} delay={3} /> &nbsp;<b>+</b>
               </span>
               <span className="text-sm text-cs">
                 completed <span>projects</span>
@@ -51,7 +53,11 @@ const Home = () => {
           <p className="home__text">
             {/* Experienced Frontend Developer with a passion for creating
           visually stunning and user-friendly websites. */}
-         I am well-versed in HTML, CSS JavaScript, and other cutting-edge libraries and frameworks like React.js and Next.js, which allows me to implement interactive features. Additionally, have experience in Next.js and backend technologies like Node.js, Express.js, and MongoDB.
+            I am well-versed in HTML, CSS JavaScript, and other cutting-edge
+            libraries and frameworks like React.js and Next.js, which allows me
+            to implement interactive features. Additionally, have experience in
+            Next.js and backend technologies like Node.js, Express.js, and
+            MongoDB.
           </p>
 
           <div className="home__socials">
