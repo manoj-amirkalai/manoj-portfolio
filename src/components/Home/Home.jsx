@@ -19,7 +19,7 @@ const Home = () => {
           <div className="home__job">
             <b>
               <p className="animated-text">
-                I 'm a <span></span>
+                I &apos;m a <span></span>
               </p>
             </b>
           </div>
@@ -51,11 +51,7 @@ const Home = () => {
           <p className="home__text">
             {/* Experienced Frontend Developer with a passion for creating
           visually stunning and user-friendly websites. */}
-            I am well-versed in HTML, CSS and JavaScript , and other cutting
-            edge library and frameworks like React.js and Next.js, which allows
-            me to implement interactive features. Additionally,have experience
-            in Next.js and backend technologies like Node.js,Express.js and
-            MongoDB.
+         I am well-versed in HTML, CSS JavaScript, and other cutting-edge libraries and frameworks like React.js and Next.js, which allows me to implement interactive features. Additionally, have experience in Next.js and backend technologies like Node.js, Express.js, and MongoDB.
           </p>
 
           <div className="home__socials">
