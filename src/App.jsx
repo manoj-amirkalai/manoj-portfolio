@@ -234,49 +234,56 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".portfolio__list", { delay: 750 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".portfolio__img", { delay: 750 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".portfolio__category", { delay: 500 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".web", { delay: 700 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".git", { delay: 1000 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".portfolio__title", { delay: 1250 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".portfolio__description", { delay: 1500 });
+      }).reveal(".swiper_portfolio", { delay: 750 });
+      // ScrollReveal({
+      //   origin: "left",
+      //   distance: "100px",
+      //   duration: 700,
+      //   reset: true,
+      //   opacity: 0,
+      // }).reveal(".portfolio__list", { delay: 750 });
+      // ScrollReveal({
+      //   origin: "left",
+      //   distance: "100px",
+      //   duration: 700,
+      //   reset: true,
+      //   opacity: 0,
+      // }).reveal(".portfolio__img", { delay: 750 });
+      // ScrollReveal({
+      //   origin: "left",
+      //   distance: "100px",
+      //   duration: 700,
+      //   reset: true,
+      //   opacity: 0,
+      // }).reveal(".portfolio__category", { delay: 500 });
+      // ScrollReveal({
+      //   origin: "left",
+      //   distance: "100px",
+      //   duration: 700,
+      //   reset: true,
+      //   opacity: 0,
+      // }).reveal(".web", { delay: 700 });
+      // ScrollReveal({
+      //   origin: "left",
+      //   distance: "100px",
+      //   duration: 700,
+      //   reset: true,
+      //   opacity: 0,
+      // }).reveal(".git", { delay: 1000 });
+      // ScrollReveal({
+      //   origin: "left",
+      //   distance: "100px",
+      //   duration: 700,
+      //   reset: true,
+      //   opacity: 0,
+      // }).reveal(".portfolio__title", { delay: 1250 });
+      // ScrollReveal({
+      //   origin: "left",
+      //   distance: "100px",
+      //   duration: 700,
+      //   reset: true,
+      //   opacity: 0,
+      // }).reveal(".portfolio__description", { delay: 1500 });
     
    
 

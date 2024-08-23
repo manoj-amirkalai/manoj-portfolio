@@ -29,9 +29,9 @@ const Portfolio = () => {
       {" "}
       <h2 className="section__title text-cs">Projects</h2>
       <p className="section__subtitle">
-        My<span>works</span>
+        {/* My<span>works</span> */}
       </p>
-      {/* <List filterItems={filterItems} navlist={navlist} /> */}
+      <List filterItems={filterItems} navlist={navlist} />
      <Items/>
       <div className="section__deco deco__right">
         <img src={shapeOne} alt="" className="shape" />
