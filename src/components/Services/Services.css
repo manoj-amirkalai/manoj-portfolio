@@ -1,6 +1,7 @@
 .services {
   background-image: var(--bg-color);
   margin-top: 10%;
+  padding-top: 10%;
 }
 .swiper-wrapper {
   margin-bottom: 52px;

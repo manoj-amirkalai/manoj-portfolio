@@ -267,7 +267,11 @@ img {
   transform: translateY(-50%);
   z-index: 1;
   width: 2px;
-  height: 70%;
+  height: 80%;
+}.project_section{
+  height: 90%;
+  top: 48% !important;
+
 }
 .deco__left {
   left: -5%;
