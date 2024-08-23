@@ -29,8 +29,8 @@ const Home = () => {
 
             <p className="home__data home__data-one">
               <span className="text-lg">
-                <CountUp start={0} end={2} duration={4} delay={2} />.
-                <CountUp start={0} end={8} duration={4} delay={2} />
+                <CountUp start={0} end={2} duration={4} delay={3} />.
+                <CountUp start={0} end={8} duration={4} delay={3} />
                 &nbsp; &nbsp; <b>+</b>
               </span>
               <span className="text-sm text-cs">
@@ -40,7 +40,7 @@ const Home = () => {
             <p className="home__data home__data-two">
               <span className="text-lg">
                
-              <CountUp start={0} end={35} duration={4} delay={2} /> &nbsp;<b>+</b>
+              <CountUp start={0} end={35} duration={4} delay={3} /> &nbsp;<b>+</b>
               </span>
               <span className="text-sm text-cs">
                 completed <span>projects</span>
