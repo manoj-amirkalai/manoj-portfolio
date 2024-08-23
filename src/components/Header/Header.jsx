@@ -45,7 +45,7 @@ window.addEventListener('scroll',changeNav)
         <Link to="/" onClick={scrollTop} className={scroll?"nav__logo text-cs visible":"nav__logo text-cs"}>
           Manoj
         </Link>
-        <div className={menu ? "nav__menu show-menu" : "nav__menu"}>
+        <div className="nav_bar" >
           <div className="nav__data">
             <ul className="nav__list">
               {links.map(({ name, path }, index) => {
