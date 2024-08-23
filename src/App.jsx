@@ -235,55 +235,7 @@ function App() {
         reset: true,
         opacity: 0,
       }).reveal(".swiper_portfolio", { delay: 750 });
-      // ScrollReveal({
-      //   origin: "left",
-      //   distance: "100px",
-      //   duration: 700,
-      //   reset: true,
-      //   opacity: 0,
-      // }).reveal(".portfolio__list", { delay: 750 });
-      // ScrollReveal({
-      //   origin: "left",
-      //   distance: "100px",
-      //   duration: 700,
-      //   reset: true,
-      //   opacity: 0,
-      // }).reveal(".portfolio__img", { delay: 750 });
-      // ScrollReveal({
-      //   origin: "left",
-      //   distance: "100px",
-      //   duration: 700,
-      //   reset: true,
-      //   opacity: 0,
-      // }).reveal(".portfolio__category", { delay: 500 });
-      // ScrollReveal({
-      //   origin: "left",
-      //   distance: "100px",
-      //   duration: 700,
-      //   reset: true,
-      //   opacity: 0,
-      // }).reveal(".web", { delay: 700 });
-      // ScrollReveal({
-      //   origin: "left",
-      //   distance: "100px",
-      //   duration: 700,
-      //   reset: true,
-      //   opacity: 0,
-      // }).reveal(".git", { delay: 1000 });
-      // ScrollReveal({
-      //   origin: "left",
-      //   distance: "100px",
-      //   duration: 700,
-      //   reset: true,
-      //   opacity: 0,
-      // }).reveal(".portfolio__title", { delay: 1250 });
-      // ScrollReveal({
-      //   origin: "left",
-      //   distance: "100px",
-      //   duration: 700,
-      //   reset: true,
-      //   opacity: 0,
-      // }).reveal(".portfolio__description", { delay: 1500 });
+      
     
    
 
@@ -628,48 +580,14 @@ function App() {
     }).reveal(".skill9", { delay: 2750 });
 
         //portfolio
-        ScrollReveal({
-          origin: "left",
-          distance: "100px",
-          duration: 700,
-          reset: true,
-          opacity: 0,
-        }).reveal(".portfolio__img", { delay: 750 });
-        ScrollReveal({
-          origin: "left",
-          distance: "100px",
-          duration: 700,
-          reset: true,
-          opacity: 0,
-        }).reveal(".portfolio__category", { delay: 1000 });
-        ScrollReveal({
-          origin: "left",
-          distance: "100px",
-          duration: 700,
-          reset: true,
-          opacity: 0,
-        }).reveal(".web", { delay: 1250 });
-        ScrollReveal({
-          origin: "left",
-          distance: "100px",
-          duration: 700,
-          reset: true,
-          opacity: 0,
-        }).reveal(".git", { delay: 1500 });
-        ScrollReveal({
-          origin: "left",
-          distance: "100px",
-          duration: 700,
-          reset: true,
-          opacity: 0,
-        }).reveal(".portfolio__title", { delay: 1750 });
-        ScrollReveal({
-          origin: "left",
-          distance: "100px",
-          duration: 700,
-          reset: true,
-          opacity: 0,
-        }).reveal(".portfolio__description", { delay: 2000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".swiper_portfolio", { delay: 750 });
+      
     
 
       //resume
@@ -983,49 +901,14 @@ function App() {
 
       //portfolio
 
-    
       ScrollReveal({
         origin: "left",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".portfolio__img", { delay: 800 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".portfolio__category", { delay:800  });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".web", { delay: 800 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".git", { delay: 800 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".portfolio__title", { delay: 800 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".portfolio__description", { delay: 800 });
+      }).reveal(".swiper_portfolio", { delay: 750 });
+      
 
       //resume
       ScrollReveal({
