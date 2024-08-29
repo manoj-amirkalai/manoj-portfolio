@@ -9,7 +9,7 @@ import SingleLineInput from "./SingleLineInput/SingleLineInput";
 import RadioButton from "./RadioButton/RadioButton";
 import Category from "./Category/Category";
 import axios from "axios";
-import { message } from "antd";
+import { Flex, message, Spin } from "antd";
 import { Button } from "@mui/material";
 
 const CreateForm = ({ setOpen }) => {
@@ -118,19 +118,38 @@ const CreateForm = ({ setOpen }) => {
       message.error(e.message);
     }
   };
+  const contentStyle = {
+    padding: 50,
+    background: "rgba(0, 0, 0, 0.05)",
+    borderRadius: 4,
+  };
+  const content = <div style={contentStyle} />;
   return (
     <div>
       <div className="create_form">
         <div className="create_form_container">
           <div className="create_form_container_head">
             {" "}
-            <p>{formTitle}</p>
+            {formTitle ? <p>{formTitle}</p> : "Loading..."}
           </div>
           <div>
             {!feedbackformlist ? (
               <h3 className="create_form_lable">Add Fields</h3>
             ) : (
               <div>
+                {feedbackformlist.length === 0 && (
+                  <Flex
+                    style={{ marginTop: "40%", marginLeft: "40%" }}
+                    gap="middle"
+                    vertical
+                  >
+                    <Flex gap="middle">
+                      <Spin tip="Loading..." size="large">
+                        {content}
+                      </Spin>
+                    </Flex>
+                  </Flex>
+                )}
                 {feedbackformlist.map((item) => {
                   return (
                     <div key={item._id}>
@@ -216,15 +235,17 @@ const CreateForm = ({ setOpen }) => {
                     </div>
                   );
                 })}
-                <Button
-                  onClick={handleSubmit}
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  style={{marginLeft:"40%",marginBottom:"5%"}}
-                >
-                  Submit
-                </Button>
+                {feedbackformlist.length > 0 && (
+                  <Button
+                    onClick={handleSubmit}
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    style={{ marginLeft: "40%", marginBottom: "5%" }}
+                  >
+                    Submit
+                  </Button>
+                )}
               </div>
             )}
           </div>
