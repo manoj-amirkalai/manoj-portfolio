@@ -9,11 +9,12 @@ height: 33px;
 top: 2492px;
 left: 369px;
 gap: 0px;
-border: 1px solid black;
 opacity: 0px;
 display: flex;
 align-items: center;
 justify-content: center;
+border: 1px solid var(--title-color);
+border-radius: 5px;
 
 }.error_msg{
     color: red;

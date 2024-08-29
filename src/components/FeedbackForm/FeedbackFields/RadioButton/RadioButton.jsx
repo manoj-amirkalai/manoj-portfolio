@@ -21,6 +21,7 @@ require,
           <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
             value={radio}
+            className="radio_container"
             onChange={(e)=>{setRadio(e.target.value)}}
             name="radio-buttons-group"
           >

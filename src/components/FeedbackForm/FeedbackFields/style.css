@@ -6,11 +6,12 @@
   height: 752px;
   margin: -70px 0 0 300px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: rgba(255, 255, 255, 1);
+  background: var( --bg-color);
   border-radius: 10px;
   overflow: scroll;
   overflow-x: hidden;
   font-family: var(--body-font);
+  color: var( --title-color);
 }
 .create_form_container_head {
   position: absolute;z-index: 2;
@@ -23,10 +24,10 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 20px; 
+  color: var( --title-color);
   border-radius: 10px 10px 0 0;
   gap: 5px;
-  background: rgba(85, 120, 244, 1);
-  color: white;
+  background: var(--primary-color);
   font-size: 24px;
   font-weight: 500;
   line-height: 38.4px;

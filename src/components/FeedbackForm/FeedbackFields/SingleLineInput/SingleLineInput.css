@@ -1,5 +1,5 @@
 .single_line_input {
-  width: 458px;
+  width: 440px;
   height: 36px;
   gap: 0px;
   border-radius: 4px;
@@ -10,4 +10,8 @@
   color: black;
   padding-left: 10px;
   margin-bottom: 10px;
+}
+.single_line_input{
+  
+  border: 1px solid var(--title-color);
 }
