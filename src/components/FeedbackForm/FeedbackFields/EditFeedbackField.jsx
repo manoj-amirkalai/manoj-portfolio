@@ -127,11 +127,12 @@ const CreateForm = ({ setOpen }) => {
   return (
     <div>
       <div className="create_form">
+        {" "}
+        <div className="create_form_container_head">
+          {" "}
+          {formTitle ? <p>{formTitle}</p> : "Loading..."}
+        </div>
         <div className="create_form_container">
-          <div className="create_form_container_head">
-            {" "}
-            {formTitle ? <p>{formTitle}</p> : "Loading..."}
-          </div>
           <div>
             {!feedbackformlist ? (
               <h3 className="create_form_lable">Add Fields</h3>

@@ -3,18 +3,18 @@
   position: absolute;
   width: 500px;
   height: 752px;
-  margin: -45px 0 0 300px;
+  margin: -70px 0 0 300px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgba(255, 255, 255, 1);
-  border-radius:0 0  10px 10px ;
+  border-radius: 10px;
   overflow: scroll;
   overflow-x: hidden;
-  padding-top: 20px;
 }
 .create_form_container_head {
-  position: fixed;
-  top: 55px;
-  width: 500px;
+  position: absolute;z-index: 2;
+  top: -68px;
+  left: -227px;
+  width: 501px;
   height: 74px;
   display: flex;
   padding-left: 10px;
