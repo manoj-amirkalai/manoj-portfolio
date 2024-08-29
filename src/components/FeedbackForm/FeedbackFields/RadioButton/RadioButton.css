@@ -9,10 +9,10 @@
 .radio_options {
   margin-left: 10px !important;
 }
- .radio_container{
+.radio_container {
   margin: 20px 0;
- }.css-ezppyz-MuiButtonBase-root-MuiRadio-root,.css-b8e7cm  {
-  
+}
+.MuiRadio-colorPrimary {
   color: var(--title-color) !important;
   border-radius: 50%;
- }
+}
