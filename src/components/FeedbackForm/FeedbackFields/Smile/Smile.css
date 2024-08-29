@@ -12,3 +12,18 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.smile1 {
+  color: red;
+}
+.smile2 {
+  color: orange;
+}
+.smile3 {
+  color:  var(--primary-color);
+}
+.smile4 {
+  color:  greenyellow;
+}
+.smile5 {
+  color:  green;
+}

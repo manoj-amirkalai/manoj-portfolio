@@ -11,6 +11,7 @@ import Category from "./Category/Category";
 import axios from "axios";
 import { Flex, message, Spin } from "antd";
 import { Button } from "@mui/material";
+import { MdOutlineCancel } from "react-icons/md";
 
 const CreateForm = ({ setOpen }) => {
   const [showError, setShowError] = useState(false);
@@ -131,26 +132,27 @@ const CreateForm = ({ setOpen }) => {
         <div className="create_form_container_head">
           {" "}
           {formTitle ? <p>{formTitle}</p> : "Loading..."}
+          <MdOutlineCancel onClick={()=>{
+            setOpen(false)
+          }} />
         </div>
         <div className="create_form_container">
           <div>
             {!feedbackformlist ? (
-              <h3 className="create_form_lable">Add Fields</h3>
+             <Flex
+             style={{ marginTop: "40%", marginLeft: "40%" }}
+             gap="middle"
+             vertical
+           >
+             <Flex gap="middle">
+               <Spin tip="Loading..." size="large">
+                 {content}
+               </Spin>
+             </Flex>
+           </Flex>
             ) : (
               <div>
-                {feedbackformlist.length === 0 && (
-                  <Flex
-                    style={{ marginTop: "40%", marginLeft: "40%" }}
-                    gap="middle"
-                    vertical
-                  >
-                    <Flex gap="middle">
-                      <Spin tip="Loading..." size="large">
-                        {content}
-                      </Spin>
-                    </Flex>
-                  </Flex>
-                )}
+          
                 {feedbackformlist.map((item) => {
                   return (
                     <div key={item._id}>

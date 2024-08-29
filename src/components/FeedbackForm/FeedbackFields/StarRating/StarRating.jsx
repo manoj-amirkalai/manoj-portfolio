@@ -9,31 +9,35 @@ const StarRating = ({ label,star,setStar,require, errormsg,showError }) => {
           onClick={() => {
             setStar(1);
           }}
-          className="star_icon"
+          className={star>=1?"star_icon starrating":"star_icon"}
         />
         <BiSolidStar
           onClick={() => {
             setStar(2);
           }}
-          className="star_icon"
+        
+          className={star>=2?"star_icon starrating":"star_icon"}
         />
         <BiSolidStar
           onClick={() => {
             setStar(3);
           }}
-          className="star_icon"
+        
+          className={star>=3?"star_icon starrating":"star_icon"}
         />
         <BiSolidStar
           onClick={() => {
             setStar(4);
           }}
-          className="star_icon"
+        
+          className={star>=4?"star_icon starrating":"star_icon"}
         />
         <BiSolidStar
           onClick={() => {
             setStar(5);
           }}
-          className="star_icon"
+        
+          className={star>=5?"star_icon starrating":"star_icon"}
         />
       </div>
       {showError && <>

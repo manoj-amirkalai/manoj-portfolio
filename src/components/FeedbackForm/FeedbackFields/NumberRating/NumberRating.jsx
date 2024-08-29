@@ -8,7 +8,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(1);
           }}
-          className="number"
+          className={numberRating>=1?"number selectedrating":"number"}
         >
           1
         </span>
@@ -16,7 +16,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(2);
           }}
-          className="number"
+          className={numberRating>=2?"number selectedrating":"number"}
         >
           2
         </span>
@@ -24,7 +24,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(3);
           }}
-          className="number"
+          className={numberRating>=3?"number selectedrating":"number"}
         >
           3
         </span>
@@ -32,7 +32,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(4);
           }}
-          className="number"
+          className={numberRating>=4?"number selectedrating":"number"}
         >
           4
         </span>
@@ -40,7 +40,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(5);
           }}
-          className="number"
+          className={numberRating>=5?"number selectedrating":"number"}
         >
           5
         </span>
@@ -48,7 +48,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(6);
           }}
-          className="number"
+          className={numberRating>=6?"number selectedrating":"number"}
         >
           6
         </span>
@@ -56,7 +56,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(7);
           }}
-          className="number"
+          className={numberRating>=7?"number selectedrating":"number"}
         >
           7
         </span>
@@ -64,7 +64,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(8);
           }}
-          className="number"
+          className={numberRating>=8?"number selectedrating":"number"}
         >
           8
         </span>
@@ -72,7 +72,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(9);
           }}
-          className="number"
+          className={numberRating>=9?"number selectedrating":"number"}
         >
           9
         </span>
@@ -80,7 +80,7 @@ const NumberRating = ({ label,numberRating,require, errormsg, setNumberRating,sh
           onClick={() => {
             setNumberRating(10);
           }}
-          className="number"
+          className={numberRating>=10?"number selectedrating":"number"}
         >
           10
         </span>

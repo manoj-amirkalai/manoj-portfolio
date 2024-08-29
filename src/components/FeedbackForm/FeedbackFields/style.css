@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat:wght@7006 family=Jost:wght@400;500;7006display-swap");
 
 .create_form_container {
   position: absolute;
@@ -9,6 +10,7 @@
   border-radius: 10px;
   overflow: scroll;
   overflow-x: hidden;
+  font-family: var(--body-font);
 }
 .create_form_container_head {
   position: absolute;z-index: 2;
@@ -19,6 +21,8 @@
   display: flex;
   padding-left: 10px;
   align-items: center;
+  justify-content: space-between;
+  padding-right: 20px; 
   border-radius: 10px 10px 0 0;
   gap: 5px;
   background: rgba(85, 120, 244, 1);
@@ -27,6 +31,7 @@
   font-weight: 500;
   line-height: 38.4px;
   letter-spacing: 0.15000000596046448px;
+  cursor: pointer;
   text-align: left;
 }
 .create_form {

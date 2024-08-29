@@ -13,19 +13,19 @@ const Smile = ({label,errormsg,smile,require,setSmile,showError}) => {
       <div className="star_icon_container">
         <BsEmojiAngry onClick={() => {
             setSmile(1);
-          }} className="emoji_icon" />
+          }} className={smile>=1?"emoji_icon smile1":"emoji_icon"} />
         <BsEmojiFrown onClick={() => {
             setSmile(2);
-          }} className="emoji_icon" />
+          }} className={smile>=2?"emoji_icon smile2":"emoji_icon"}  />
         <BsEmojiExpressionless onClick={() => {
             setSmile(3);
-          }} className="emoji_icon" />
+          }} className={smile>=3?"emoji_icon smile3":"emoji_icon"}  />
         <BsEmojiSmile onClick={() => {
             setSmile(4);
-          }} className="emoji_icon" />
+          }} className={smile>=4?"emoji_icon smile4":"emoji_icon"}  />
         <BsEmojiGrin onClick={() => {
             setSmile(5);
-          }} className="emoji_icon" />
+          }} className={smile>=5?"emoji_icon smile5":"emoji_icon"}  />
       </div>
      
       {showError && <>
