@@ -7,6 +7,7 @@
   margin-left: 5px;
 }
 .radio_options {
+  
   margin-left: 10px !important;
 }
 .radio_container {
@@ -15,4 +16,7 @@
 .MuiRadio-colorPrimary {
   color: var(--title-color) !important;
   border-radius: 50%;
+}
+.css-ezppyz-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+  color: var(--primary-color) !important ;
 }
