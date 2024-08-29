@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 20px; 
-  color: var( --title-color);
+  color: white;
   border-radius: 10px 10px 0 0;
   gap: 5px;
   background: var(--primary-color);

@@ -7,9 +7,12 @@
   margin-left: 5px;
 }
 .radio_options {
-  accent-color: rgb(48, 114, 190);
   margin-left: 10px !important;
 }
  .radio_container{
   margin: 20px 0;
+ }.css-ezppyz-MuiButtonBase-root-MuiRadio-root {
+  
+  color: var(--title-color) !important;
+  border-radius: 50%;
  }
