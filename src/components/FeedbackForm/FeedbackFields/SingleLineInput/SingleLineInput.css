@@ -12,6 +12,6 @@
   margin-bottom: 10px;
 }
 .single_line_input{
-  
+  color: var(--title-color);
   border: 1px solid var(--title-color);
 }

@@ -2,7 +2,7 @@
 import "./Category.css";
 
 const Category = ({
-  label,
+  label,category,
   errormsg,require,
   options,setCategory,showError
 }) => {
@@ -11,7 +11,7 @@ const Category = ({
       <p>{label}</p>
       <div className="category_option">
       {options.map((data,index)=>{
-        return <span onClick={()=>{
+        return <span className={category===data?"selectedrating":""} onClick={()=>{
           setCategory(data);
         }} key={index}>{data}</span>
       })}
