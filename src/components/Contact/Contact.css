@@ -80,6 +80,8 @@
   height: 140px;
   padding-block: 20px;
   resize: none;
+  font-family: var(--body-font);
+  font-size: medium;
 }
 .contact__submit {
   display: flex;
