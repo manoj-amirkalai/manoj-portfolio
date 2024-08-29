@@ -43,7 +43,7 @@
   padding: 10px 15px;
   height: 35px; color: white;
   border-radius: 2px;
-  background-color: gray;
+  background-color: rgba(102, 100, 100, 0.404);
   margin-right: 1px;
   cursor: pointer;
 }

@@ -46,6 +46,8 @@ const CreateForm = ({ setOpen }) => {
     setFormTitle(feedbackforminfo.feedbacktitle);
     setFeedbackformlist(feedbackforminfo.feedbackform);
     setFeedbackforminfoId(feedbackforminfo._id);
+    console.log(feedbackforminfo);
+    
   }, [feedbackforminfo]);
 
   const handleSubmit = async () => {

@@ -1,6 +1,6 @@
 .emoji_icon {
   border-radius: 20px;
-  color: rgb(102, 100, 100);
+  color: rgba(102, 100, 100, 0.404);
   margin-right: 5px;
   cursor: pointer;
   width: 40px;
@@ -19,7 +19,7 @@
   color: orange;
 }
 .smile3 {
-  color:  var(--primary-color);
+  color: yellow;
 }
 .smile4 {
   color:  greenyellow;
