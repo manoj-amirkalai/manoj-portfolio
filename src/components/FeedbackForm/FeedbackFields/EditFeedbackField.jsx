@@ -64,7 +64,19 @@ const CreateForm = ({ setOpen }) => {
       message.error(e.message);
     }
   };
-
+  const submitcount = async () => {
+    
+    try {
+      const response = await axios.get(
+        "https://portfolio-feedback-server.onrender.com/api/getfeedback/"
+      );
+      if (response.status === 200) {
+        return
+      }
+    } catch (e) {
+      message.error(e.message);
+    }
+  };
   const handleSubmit = async () => {
     if (feedbackformlist[0].require) {
       if (!text || text.length < 0) {
@@ -128,6 +140,7 @@ const CreateForm = ({ setOpen }) => {
 
       if (response.status === 201) {
         message.success("Feedback Submitted,Thank You!!!");
+        submitcount()
         setOpen(false);
       } else {
         message.error("Error in submitting feedback");
