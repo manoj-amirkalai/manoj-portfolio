@@ -141,7 +141,7 @@ export const projects = [
   {
     id: 2,
     img: feedbackform,
-    responsive:false,
+    responsive:true,
     category: "Next.JS",
     title: "FeedBackForm Admin Panel",
     description: `Our admin panel offers a streamlined solution for managing feedback forms,
