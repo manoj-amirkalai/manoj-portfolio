@@ -181,3 +181,6 @@
  }
 }
 
+.submit_feedback{
+  background-color: var(--primary-color) !important;
+}

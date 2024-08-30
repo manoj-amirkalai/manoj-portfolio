@@ -274,9 +274,9 @@ const CreateForm = ({ setOpen }) => {
                   <Button
                     onClick={handleSubmit}
                     variant="contained"
-                    color="primary"
                     size="large"
                     style={{ marginLeft: "40%", marginBottom: "5%" }}
+                    className="submit_feedback"
                   >
                     Submit
                   </Button>
