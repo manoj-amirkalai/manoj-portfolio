@@ -6,6 +6,7 @@ import { useState } from "react";
 import FeedbackForm from "../FeedbackForm/FeedbackForm";
 
 const Footer = () => {
+  const [addview, setAddview] = useState(true);
   const [open, setOpen] = useState(false);
   // const [loading, setLoading] = useState(true);
   const showLoading = () => {
@@ -49,7 +50,14 @@ const Footer = () => {
             {" "}
             <IoIosMail />
           </a>{" "}
-          <a style={{cursor:"pointer"}}  onClick={showLoading} className="footer__social-link">
+          <a
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              showLoading();
+              setAddview(!addview);
+            }}
+            className="footer__social-link"
+          >
             {" "}
             <VscFeedback />
           </a>
@@ -67,6 +75,8 @@ const Footer = () => {
           setOpen={setOpen}
           open={open}
           showLoading={showLoading}
+          setAddview={setAddview}
+          addview={addview}
         />
       )}
     </footer>

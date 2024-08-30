@@ -28,6 +28,8 @@ const CreateForm = ({ setOpen }) => {
   const [feedbackformlist, setFeedbackformlist] = useState([]);
 
   const getData = async () => {
+    
+    updateCount();
     try {
       const response = await axios.get(
         "https://portfolio-feedback-server.onrender.com/api/feedbackform/66cec8029f09bd6ae0d6d136"
@@ -46,8 +48,22 @@ const CreateForm = ({ setOpen }) => {
     setFormTitle(feedbackforminfo.feedbacktitle);
     setFeedbackformlist(feedbackforminfo.feedbackform);
     setFeedbackforminfoId(feedbackforminfo._id);
+
     
   }, [feedbackforminfo]);
+
+  const updateCount = async () => {
+    try {
+      const response = await axios.post(
+        "https://portfolio-feedback-server.onrender.com/api/feedbackform/66cec8029f09bd6ae0d6d136"
+      );
+      if (response.status === 200) {
+        return
+      }
+    } catch (e) {
+      message.error(e.message);
+    }
+  };
 
   const handleSubmit = async () => {
     if (feedbackformlist[0].require) {
@@ -133,112 +149,114 @@ const CreateForm = ({ setOpen }) => {
         <div className="create_form_container_head">
           {" "}
           {formTitle ? <p>{formTitle}</p> : "Loading..."}
-          <MdOutlineCancel onClick={()=>{
-            setOpen(false)
-          }} />
+          <MdOutlineCancel
+            onClick={() => {
+              setOpen(false);
+            }}
+          />
         </div>
         <div className="create_form_container">
           <div>
             {!feedbackformlist ? (
-             <Flex
-             style={{ marginTop: "40%", marginLeft: "40%" }}
-             gap="middle"
-             vertical
-           >
-             <Flex gap="middle">
-               <Spin tip="Loading..." size="large">
-                 {content}
-               </Spin>
-             </Flex>
-           </Flex>
+              <Flex
+                style={{ marginTop: "40%", marginLeft: "40%" }}
+                gap="middle"
+                vertical
+              >
+                <Flex gap="middle">
+                  <Spin tip="Loading..." size="large">
+                    {content}
+                  </Spin>
+                </Flex>
+              </Flex>
             ) : (
               <div>
-          
-                {feedbackformlist && feedbackformlist.map((item) => {
-                  return (
-                    <div key={item._id}>
-                      {item.type === "textarea" && (
-                        <TextArea
-                          id={item._id}
-                          label={item.label}
-                          errormsg={item.errormsg}
-                          require={item.require}
-                          setText={setText}
-                          text={text}
-                          showError={showError}
-                        />
-                      )}
-                      {item.type === "numberrating" && (
-                        <NumberRating
-                          id={item._id}
-                          label={item.label}
-                          errormsg={item.errormsg}
-                          require={item.require}
-                          setNumberRating={setNumberRating}
-                          numberRating={numberRating}
-                          showError={showError}
-                        />
-                      )}
-                      {item.type === "starrating" && (
-                        <StarRating
-                          id={item._id}
-                          label={item.label}
-                          errormsg={item.errormsg}
-                          require={item.require}
-                          setStar={setStar}
-                          star={star}
-                          showError={showError}
-                        />
-                      )}{" "}
-                      {item.type === "smile" && (
-                        <Smile
-                          id={item._id}
-                          label={item.label}
-                          errormsg={item.errormsg}
-                          require={item.require}
-                          setSmile={setSmile}
-                          smile={smile}
-                          showError={showError}
-                        />
-                      )}{" "}
-                      {item.type === "singlelineinput" && (
-                        <SingleLineInput
-                          id={item._id}
-                          label={item.label}
-                          errormsg={item.errormsg}
-                          require={item.require}
-                          setSingleline={setSingleline}
-                          singleline={singleline}
-                          showError={showError}
-                        />
-                      )}{" "}
-                      {item.type === "radiobutton" && (
-                        <RadioButton
-                          id={item._id}
-                          label={item.label}
-                          errormsg={item.errormsg}
-                          require={item.require}
-                          options={item.options}
-                          setRadio={setRadio}
-                          radio={radio}
-                          showError={showError}
-                        />
-                      )}{" "}
-                      {item.type === "category" && (
-                        <Category
-                          id={item._id}
-                          label={item.label}
-                          errormsg={item.errormsg}
-                          options={item.options}
-                          require={item.require}
-                          setCategory={setCategory}
-                          category={category}
-                          showError={showError}
-                        />
-                      )}
-                    </div>
-                  );
-                })}
+                {feedbackformlist &&
+                  feedbackformlist.map((item) => {
+                    return (
+                      <div key={item._id}>
+                        {item.type === "textarea" && (
+                          <TextArea
+                            id={item._id}
+                            label={item.label}
+                            errormsg={item.errormsg}
+                            require={item.require}
+                            setText={setText}
+                            text={text}
+                            showError={showError}
+                          />
+                        )}
+                        {item.type === "numberrating" && (
+                          <NumberRating
+                            id={item._id}
+                            label={item.label}
+                            errormsg={item.errormsg}
+                            require={item.require}
+                            setNumberRating={setNumberRating}
+                            numberRating={numberRating}
+                            showError={showError}
+                          />
+                        )}
+                        {item.type === "starrating" && (
+                          <StarRating
+                            id={item._id}
+                            label={item.label}
+                            errormsg={item.errormsg}
+                            require={item.require}
+                            setStar={setStar}
+                            star={star}
+                            showError={showError}
+                          />
+                        )}{" "}
+                        {item.type === "smile" && (
+                          <Smile
+                            id={item._id}
+                            label={item.label}
+                            errormsg={item.errormsg}
+                            require={item.require}
+                            setSmile={setSmile}
+                            smile={smile}
+                            showError={showError}
+                          />
+                        )}{" "}
+                        {item.type === "singlelineinput" && (
+                          <SingleLineInput
+                            id={item._id}
+                            label={item.label}
+                            errormsg={item.errormsg}
+                            require={item.require}
+                            setSingleline={setSingleline}
+                            singleline={singleline}
+                            showError={showError}
+                          />
+                        )}{" "}
+                        {item.type === "radiobutton" && (
+                          <RadioButton
+                            id={item._id}
+                            label={item.label}
+                            errormsg={item.errormsg}
+                            require={item.require}
+                            options={item.options}
+                            setRadio={setRadio}
+                            radio={radio}
+                            showError={showError}
+                          />
+                        )}{" "}
+                        {item.type === "category" && (
+                          <Category
+                            id={item._id}
+                            label={item.label}
+                            errormsg={item.errormsg}
+                            options={item.options}
+                            require={item.require}
+                            setCategory={setCategory}
+                            category={category}
+                            showError={showError}
+                          />
+                        )}
+                      </div>
+                    );
+                  })}
                 {feedbackformlist && feedbackformlist.length > 0 && (
                   <Button
                     onClick={handleSubmit}
