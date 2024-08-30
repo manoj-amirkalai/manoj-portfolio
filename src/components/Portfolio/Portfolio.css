@@ -81,7 +81,6 @@
 }
 .portfolio__title {
   font-size: var(--h4-font-size);
-  margin-top: 10px;
 }
 .portfolio__description {
   max-height: 150px;
@@ -139,4 +138,27 @@
   justify-content: center;
   border-radius: 18px;
   
+}.portfolio_shape{
+  opacity: 0.25;
+}.project_title_responsive{
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  margin-top: 5px;
+}
+.project_responsive{
+  width: 50px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-right: 10px;
+}.project_responsive1{
+  font-size: 19px;
+}.project_responsive2{
+  font-size: 15px;
+  margin-top: 2px;
+}.project_responsive3{
+  font-size: 19px;
+  margin-left: -5px;
 }

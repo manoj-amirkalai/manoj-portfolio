@@ -1,5 +1,6 @@
 import fitness from "./assets/fitness.png";
 import foodapp from "./assets/foodapp.png";
+import feedbackform from "./assets/feedbackform.png";
 import raretube from "./assets/raretube.png";
 import renthome from "./assets/renthome.png";
 import shopper from "./assets/shopper.png";
@@ -57,17 +58,17 @@ export const links = [
 export const services = [
   {
     id: 1,
-    name: "Web Development",
-    title: "Front-End & Backend",
-    description:
-      "Crafting engaging, responsive user interfaces with modern technologies like React  to enhance user experience and performance.And connect with server  to  access data from Database.",
-  },
-  {
-    id: 2,
     name: " FrontEnd  Development ",
     title: " React.js Developer ",
     description:
       "Building dynamic, high-performance, web applications using React.js which is commonly used in single-page applications due to its architecture and features to deliver seamless user experiences with responsive designs and efficient state management.",
+  },
+  {
+    id: 2,
+    name: "Web Development",
+    title: "Front-End & Backend",
+    description:
+      "Crafting engaging, responsive user interfaces with modern technologies like React  to enhance user experience and performance.And connect with server  to  access data from Database.",
   },
   {
     id: 3,
@@ -128,6 +129,7 @@ export const projects = [
     img: foodapp,
     category: "MERN",
     title: "Food App",
+    responsive:true,
     description: `Developed a food booking website with capabilities for adding menu items, 
     placing orders, and processing payments. Enhanced the user experience with 
     a streamlined interface for easy menu management and secure transaction handling.
@@ -138,8 +140,23 @@ export const projects = [
   },
   {
     id: 2,
+    img: feedbackform,
+    responsive:false,
+    category: "Next.JS",
+    title: "FeedBackForm Admin Panel",
+    description: `Our admin panel offers a streamlined solution for managing feedback forms,
+     allowing you to effortlessly create, edit, or delete forms as needed.
+      You can also access and analyze feedback data collected from your linked website directly 
+      within the panel, ensuring a comprehensive view of user input.
+        Seamless experience for both feedbackform  and data review.`,
+    github: "https://github.com/manoj-amirkalai/feedbackform",
+    web: "https://feedbackform-next-js.onrender.com/",
+  },
+  {
+    id: 3,
     img: renthome,
     category: "MERN",
+    responsive:true,
     title: "Rent Home",
     description: `Developed a comprehensive rent home website with features booking, and listing properties. Integrated secure payment processing and a user-friendly interface to streamline property management.   Card=> 4000003560000008,
       month/year=> 06/29, CVV=> 567.`,
@@ -147,17 +164,20 @@ export const projects = [
     web: "https://manoj-rent-home-frontend.onrender.com/",
   },
   {
-    id: 3,
+    id: 4,
     img: raretube,
     category: "React.JS",
+    responsive:true,
     title: "You-Tube",
     description: `A YouTube clone replicates the core features of the original platform, 
     allowing users  view videos by categorized. It offers a similar interface and functionality but may cater to niche audiences or specific content types.`,
     github: "https://github.com/manoj-amirkalai/RareTube",
     web: "https://raretube.onrender.com/",
-  },  {
-    id: 4,
+  },
+  {
+    id: 5,
     img: fitness,
+    responsive:true,
     category: "MERN",
     title: "Fitness App",
     description: `Developed a fitness tracker Website that allows
@@ -168,9 +188,10 @@ export const projects = [
     web: "https://manoj-fitness-tracker.onrender.com/",
   },
   {
-    id: 5,
+    id: 6,
     img: shopper,
     category: "React.JS",
+    responsive:true,
     title: "Shopping",
     description: `Developed a modern, responsive e-commerce UI that streamlined user 
     interactions and optimized the online shopping experience. 
@@ -179,44 +200,53 @@ export const projects = [
     web: "https://manojs-e-commerce.onrender.com/",
   },
   {
-    id: 6,
+    id: 7,
     img: flipkart,
+    responsive:false,
     category: "React.JS",
     title: "Flipkart",
-    description: "Developed the user interface for Flipkart's web browser platform, focusing on intuitive navigation and seamless shopping experiences. Implemented  design and dynamic elements to enhance user engagement and accessibility.",
+    description:
+      "Developed the user interface for Flipkart's web browser platform, focusing on intuitive navigation and seamless shopping experiences. Implemented  design and dynamic elements to enhance user engagement and accessibility.",
     github: "https://github.com/manoj-amirkalai/flipkartUI",
     web: "https://flipkart-ui-app.onrender.com/",
   },
   {
-    id: 7,
+    id: 8,
     img: amazon,
+    responsive:false,
     category: "React.JS",
     title: "Amazon",
-    description: "Designed and developed the Amazon Prime landing page, focusing on an engaging and intuitive layout. Enhanced user experience with targeted content and streamlined navigation to drive subscriptions and retention.",
+    description:
+      "Designed and developed the Amazon Prime landing page, focusing on an engaging and intuitive layout. Enhanced user experience with targeted content and streamlined navigation to drive subscriptions and retention.",
     github: "https://github.com/manoj-amirkalai/UIPrime",
     web: "https://uiprime.onrender.com/",
   },
   {
-    id: 8,
+    id: 9,
+    responsive:false,
     img: netflix,
     category: "React.JS",
     title: "Netflix",
-    description: "Developed the Netflix landing page, optimizing its design for enhanced user engagement and intuitive navigation. Implemented features to improve content accessibility and drive conversions.",
+    description:
+      "Developed the Netflix landing page, optimizing its design for enhanced user engagement and intuitive navigation. Implemented features to improve content accessibility and drive conversions.",
     github: "https://github.com/manoj-amirkalai/UINetflix",
     web: "https://netflix-ui-app.onrender.com/",
   },
   {
-    id: 9,
+    id: 10,
+    responsive:true,
     img: todo,
     category: "HTML+CSS+JS",
     title: "TODO",
-    description: "Designed and developed a user-friendly to-do list website that allows users to efficiently manage and track their tasks. Implemented features like Edit , update and delete task ",
+    description:
+      "Designed and developed a user-friendly to-do list website that allows users to efficiently manage and track their tasks. Implemented features like Edit , update and delete task ",
     github: "https://github.com/manoj-amirkalai/ToDo-List",
     web: "https://manoj-todo-list.onrender.com/",
   },
   {
-    id: 10,
+    id: 11,
     img: postdes,
+    responsive:false,
     category: "MERN",
     title: "Post Description",
     description: `Created a post description list website that enables users 
@@ -226,16 +256,19 @@ export const projects = [
     web: "https://mern-post-description-app.onrender.com/",
   },
   {
-    id: 11,
+    id: 12,
+    responsive:false,
     img: hulu,
     category: "React.JS",
     title: "Hulu",
-    description: "Developed a Hulu-style website, featuring an intuitive interface for browsing movies list. Implemented user-friendly filters and personalized recommendations to enhance the viewing experience.",
+    description:
+      "Developed a Hulu-style website, featuring an intuitive interface for browsing movies list. Implemented user-friendly filters and personalized recommendations to enhance the viewing experience.",
     github: "https://github.com/manoj-amirkalai/huluapp",
     web: "https://hulu-app.onrender.com/",
   },
   {
-    id: 12,
+    id: 13,
+    responsive:true,
     img: tictactoe,
     category: "React.JS",
     title: "TicTacToe",
@@ -244,6 +277,7 @@ export const projects = [
     github: "https://github.com/manoj-amirkalai/tictactoe",
     web: "https://manoj-tictactoe-game.onrender.com/",
   },
+  
 ];
 
 export const cv = [

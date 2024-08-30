@@ -1,4 +1,4 @@
-import { FaCode } from "react-icons/fa6";
+import { FaCode, FaLaptopCode, FaTabletScreenButton } from "react-icons/fa6";
 import { PiGithubLogoFill } from "react-icons/pi";
 import shapeTwo from "./../../assets/shape-2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,9 +7,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
-
 // import required modules
 import { EffectCards } from "swiper/modules";
+import { IoIosPhonePortrait } from "react-icons/io";
 
 const Item = ({ projectItems }) => {
   return (
@@ -20,7 +20,7 @@ const Item = ({ projectItems }) => {
       className="mySwiper swiper_portfolio  "
     >
       {projectItems.map((projectItems) => {
-        const { id, img, category, title, description, github, web } =
+        const { id, img, category, title, description, github, web,responsive } =
           projectItems;
         return (
           <SwiperSlide
@@ -44,10 +44,27 @@ const Item = ({ projectItems }) => {
                 </a>
               </div>
             </span>
-            <h3 className="portfolio__title">{title}</h3>
+        <div className="project_title_responsive">
+        <h3 className="portfolio__title">{title}</h3>
+            {responsive?  <div  className="project_responsive"><span>
+              <FaLaptopCode className="project_responsive1" />
+            </span>
+            <span>
+              <FaTabletScreenButton  className="project_responsive2"/>
+            </span>
+            <span>
+              <IoIosPhonePortrait className="project_responsive3" />
+            </span></div>:   <div className="project_responsive"> <span>
+              <FaLaptopCode className="project_responsive1"/>
+            </span> </div>  }
+        </div>
+           
             <p className="portfolio__description">{description}</p>
-
-            <img src={shapeTwo} alt="" className="shape c__shape" />
+            <img
+              src={shapeTwo}
+              alt=""
+              className="shape c__shape portfolio_shape"
+            />
           </SwiperSlide>
         );
       })}
