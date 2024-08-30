@@ -46,7 +46,6 @@ const CreateForm = ({ setOpen }) => {
     setFormTitle(feedbackforminfo.feedbacktitle);
     setFeedbackformlist(feedbackforminfo.feedbackform);
     setFeedbackforminfoId(feedbackforminfo._id);
-    console.log(feedbackforminfo);
     
   }, [feedbackforminfo]);
 
@@ -155,7 +154,7 @@ const CreateForm = ({ setOpen }) => {
             ) : (
               <div>
           
-                {feedbackformlist.map((item) => {
+                {feedbackformlist && feedbackformlist.map((item) => {
                   return (
                     <div key={item._id}>
                       {item.type === "textarea" && (
@@ -240,7 +239,7 @@ const CreateForm = ({ setOpen }) => {
                     </div>
                   );
                 })}
-                {feedbackformlist.length > 0 && (
+                {feedbackformlist && feedbackformlist.length > 0 && (
                   <Button
                     onClick={handleSubmit}
                     variant="contained"

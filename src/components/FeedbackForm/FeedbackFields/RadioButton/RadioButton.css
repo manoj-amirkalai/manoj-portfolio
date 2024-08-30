@@ -7,7 +7,7 @@
   margin-left: 5px;
 }
 .radio_options {
-  
+  accent-color:var(--primary-color) !important ;
   margin-left: 10px !important;
 }
 .radio_container {
