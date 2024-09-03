@@ -1,4 +1,22 @@
 
+@media screen  and (min-width: 1800px) {
+  .deco__right,.deco__left{
+    display: none;
+  }  .home__title{
+    margin-top: -150px;
+  }.home__socials{
+    margin-top: 100px;
+  }.home__btns{
+    
+    margin-top: 50px;
+  }.home__data-one{
+    margin-left: -50px;
+  }.home__data-two{
+    margin-right:  -50px;
+  }
+  }
+ 
+    
 @media screen and (min-width: 1000px) {
   .skills__item{
     margin-left: 280px;
