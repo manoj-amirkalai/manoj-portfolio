@@ -5,6 +5,7 @@ import raretube from "./assets/raretube.png";
 import renthome from "./assets/renthome.png";
 import shopper from "./assets/shopper.png";
 import tictactoe from "./assets/tic.png";
+import money from "./assets/money.png";
 import flipkart from "./assets/flipkart.jpg";
 import amazon from "./assets/amazon.jfif";
 import netflix from "./assets/netflix.jfif";
@@ -151,6 +152,15 @@ export const projects = [
         Seamless experience for both feedbackform  and data review.`,
     github: "https://github.com/manoj-amirkalai/feedbackform",
     web: "https://feedbackform-next-js.onrender.com/",
+  },  {
+    id: 2,
+    img: money,
+    responsive:false,
+    category: "Next.JS",
+    title: "Money Tracker",
+    description: `Introducing our money tracker app: easily log in to access a comprehensive table for filtering your transaction data. Visualize your spending with interactive bar charts that highlight trends and help you stay on budget!`,
+    github: "https://github.com/manoj-amirkalai/expense-tracker",
+    web: "https://budget-tracker-manoj.onrender.com",
   },
   {
     id: 3,
