@@ -155,7 +155,7 @@ export const projects = [
   },  {
     id: 2,
     img: money,
-    responsive:false,
+    responsive:true,
     category: "Next.JS",
     title: "Money Tracker",
     description: `Introducing our money tracker app: easily log in to access a comprehensive table for filtering your transaction data. Visualize your spending with interactive bar charts that highlight trends and help you stay on budget!`,
