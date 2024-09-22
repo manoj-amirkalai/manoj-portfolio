@@ -32,7 +32,7 @@ function App() {
       message: `For Better experience`,
       description: (
         <Context.Consumer>
-          {() => "Please Checkout in Desktop"}
+          {() => "Please Checkout in Laptop or Desktop"}
         </Context.Consumer>
       ),
       placement,
