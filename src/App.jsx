@@ -12,7 +12,12 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { motion, useScroll, useSpring } from "framer-motion";
 import ScrollReveal from "scrollreveal";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+
+import { notification } from "antd";
+const Context = React.createContext({
+  name: "Default",
+});
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -21,12 +26,23 @@ function App() {
     damping: 30,
     restDelta: 0.001,
   });
+  const [api, contextHolder] = notification.useNotification();
+  const openNotification = (placement) => {
+    api.info({
+      message: `For Better experience`,
+      description: (
+        <Context.Consumer>
+          {() => "Please Checkout in Desktop"}
+        </Context.Consumer>
+      ),
+      placement,
+    });
+  };
 
   let deviceWidth = window.innerWidth;
   useEffect(() => {
-    if(deviceWidth<1200){
-      
-      alert('For Better experience checkout in Desktop')
+    if (deviceWidth < 1200) {
+      openNotification("topRight");
     }
     if (deviceWidth > 1200) {
       //overall title
@@ -52,7 +68,8 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".home__banner", { delay: 500 }); ScrollReveal({
+      }).reveal(".home__banner", { delay: 500 });
+      ScrollReveal({
         origin: "right",
         distance: "200px",
         duration: 700,
@@ -161,7 +178,6 @@ function App() {
 
       //skills
 
-      
       ScrollReveal({
         origin: "left",
         distance: "100px",
@@ -209,7 +225,7 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill7", { delay: 2250 }); 
+      }).reveal(".skill7", { delay: 2250 });
       ScrollReveal({
         origin: "right",
         distance: "100px",
@@ -217,17 +233,17 @@ function App() {
         reset: true,
         opacity: 0,
       }).reveal(".skill8", { delay: 2500 });
-      
-    ScrollReveal({
-      origin: "right",
-      distance: "100px",
-      duration: 700,
-      reset: true,
-      opacity: 0,
-    }).reveal(".skill9", { delay: 2750 });
+
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill9", { delay: 2750 });
 
       //portfolio
-      
+
       ScrollReveal({
         origin: "left",
         distance: "100px",
@@ -235,9 +251,6 @@ function App() {
         reset: true,
         opacity: 0,
       }).reveal(".swiper_portfolio", { delay: 750 });
-      
-    
-   
 
       //resume
       ScrollReveal({
@@ -428,7 +441,7 @@ function App() {
         opacity: 0,
       }).reveal(".contact__form", { delay: 1000 });
     }
-    if (deviceWidth < 1200 ) {
+    if (deviceWidth < 1200) {
       //overall title
       ScrollReveal({
         origin: "left",
@@ -452,7 +465,8 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".home__banner", { delay: 500 }); ScrollReveal({
+      }).reveal(".home__banner", { delay: 500 });
+      ScrollReveal({
         origin: "right",
         distance: "200px",
         duration: 700,
@@ -513,73 +527,72 @@ function App() {
         opacity: 0,
       }).reveal(".services__container", { delay: 1000 });
 
-     //skills
+      //skills
 
-      
-     ScrollReveal({
-      origin: "left",
-      distance: "100px",
-      duration: 700,
-      reset: true,
-      opacity: 0,
-    }).reveal(".skill1", { delay: 750 });
-    ScrollReveal({
-      origin: "bottom",
-      distance: "100px",
-      duration: 700,
-      reset: true,
-      opacity: 0,
-    }).reveal(".skill2", { delay: 1000 });
-    ScrollReveal({
-      origin: "right",
-      distance: "100px",
-      duration: 700,
-      reset: true,
-      opacity: 0,
-    }).reveal(".skill3", { delay: 1250 });
-    ScrollReveal({
-      origin: "left",
-      distance: "100px",
-      duration: 700,
-      reset: true,
-      opacity: 0,
-    }).reveal(".skill4", { delay: 1500 });
-    ScrollReveal({
-      origin: "bottom",
-      opacity: 0,
-      duration: 700,
-      reset: true,
-    }).reveal(".skill5", { delay: 1750 });
-    ScrollReveal({
-      origin: "right",
-      distance: "100px",
-      duration: 700,
-      reset: true,
-      opacity: 0,
-    }).reveal(".skill6", { delay: 2000 });
-    ScrollReveal({
-      origin: "left",
-      distance: "100px",
-      duration: 700,
-      reset: true,
-      opacity: 0,
-    }).reveal(".skill7", { delay: 2250 }); 
-    ScrollReveal({
-      origin: "right",
-      distance: "100px",
-      duration: 700,
-      reset: true,
-      opacity: 0,
-    }).reveal(".skill8", { delay: 2500 });
-    ScrollReveal({
-      origin: "right",
-      distance: "100px",
-      duration: 700,
-      reset: true,
-      opacity: 0,
-    }).reveal(".skill9", { delay: 2750 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill1", { delay: 750 });
+      ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill2", { delay: 1000 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill3", { delay: 1250 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill4", { delay: 1500 });
+      ScrollReveal({
+        origin: "bottom",
+        opacity: 0,
+        duration: 700,
+        reset: true,
+      }).reveal(".skill5", { delay: 1750 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill6", { delay: 2000 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill7", { delay: 2250 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill8", { delay: 2500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill9", { delay: 2750 });
 
-        //portfolio
+      //portfolio
       ScrollReveal({
         origin: "left",
         distance: "100px",
@@ -587,8 +600,6 @@ function App() {
         reset: true,
         opacity: 0,
       }).reveal(".swiper_portfolio", { delay: 750 });
-      
-    
 
       //resume
       ScrollReveal({
@@ -616,8 +627,6 @@ function App() {
         reset: true,
         opacity: 0,
       }).reveal(".testimonial__container", { delay: 1000 });
-
-      
 
       //pricing
       ScrollReveal({
@@ -762,7 +771,7 @@ function App() {
       }).reveal(".section__subtitle", { delay: 500 });
 
       // home
-      
+
       ScrollReveal({
         origin: "right",
         distance: "200px",
@@ -823,7 +832,7 @@ function App() {
       }).reveal(".home__btns", { delay: 500 });
 
       //services
-    
+
       ScrollReveal({
         origin: "top",
         distance: "100px",
@@ -831,12 +840,9 @@ function App() {
         reset: true,
         opacity: 0,
       }).reveal(".services__container", { delay: 700 });
-     
-      
 
       //skills
 
-      
       ScrollReveal({
         origin: "left",
         distance: "100px",
@@ -884,14 +890,15 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill7", { delay: 2250 }); 
+      }).reveal(".skill7", { delay: 2250 });
       ScrollReveal({
         origin: "right",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill8", { delay: 2500 });  ScrollReveal({
+      }).reveal(".skill8", { delay: 2500 });
+      ScrollReveal({
         origin: "bottom",
         distance: "100px",
         duration: 700,
@@ -908,7 +915,6 @@ function App() {
         reset: true,
         opacity: 0,
       }).reveal(".swiper_portfolio", { delay: 750 });
-      
 
       //resume
       ScrollReveal({
@@ -937,7 +943,6 @@ function App() {
         opacity: 0,
       }).reveal(".testimonial__container", { delay: 1000 });
 
-    
       //pricing
       ScrollReveal({
         origin: "left",
@@ -1064,9 +1069,11 @@ function App() {
       }).reveal(".contact__form", { delay: 1000 });
     }
   }, []);
+
   return (
     <main className="container">
       <motion.div className="progress-bar" style={{ scaleX }} />
+      {contextHolder}
       <Header />
       <Home />
       <Skills />
