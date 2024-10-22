@@ -27,9 +27,11 @@ const Contact = () => {
     e.preventDefault();
     if (!form.name || form.name.length === 0) {
       return message.error("Please enter Name to send message");
-    } if (!form.email || form.email.length === 0) {
+    }
+    if (!form.email || form.email.length === 0) {
       return message.error("Please enter E-mail Id to send message");
-    }if(!validateEmail(form.email)){
+    }
+    if (!validateEmail(form.email)) {
       return message.error("Please enter valid Email Id to send message");
     }
     if (!form.subject || form.subject.length === 0) {
@@ -38,10 +40,10 @@ const Contact = () => {
     if (!form.message || form.message.length === 0) {
       return message.error("Please enter Message to send message");
     }
-   
+
     emailjs
       .sendForm("service_tr19mud", "template_lu7qrs7", forms.current, {
-        publicKey: "gfegF7SK4qkdqTwBc",
+        publicKey: "Tz_ZoHiqLnaIK94N4",
       })
       .then(
         () => {
