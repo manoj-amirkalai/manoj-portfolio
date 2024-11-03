@@ -41,8 +41,7 @@ const Contact = () => {
       return message.error("Please enter Message to send message");
     }
 
-    emailjs
-      .sendForm("service_tr19mud", "template_lu7qrs7", forms.current, {
+    emailjs.sendForm("service_tr19mud", "template_lu7qrs7", forms.current, {
         publicKey: "Tz_ZoHiqLnaIK94N4",
       })
       .then(
