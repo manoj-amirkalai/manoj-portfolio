@@ -20,9 +20,8 @@
 @media screen and (min-width: 1000px) {
   .skills__item{
     margin-left: 280px;
-  }.next{
-    
-  margin-left: 300%;
+  }.next,.redux,.saga{
+  margin-left:100%;
   }
 
 }@media screen and (max-width: 1400px) {
@@ -55,6 +54,9 @@
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .skill10,.skill11{
+    margin-left: 75%;
   }
 
   .skills__item {

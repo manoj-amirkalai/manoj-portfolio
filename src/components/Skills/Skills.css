@@ -17,8 +17,8 @@
 }
 .skillicon {
   font-size: 100px;
-  padding: 20px;
-  border-radius: 50%;
+  padding: 18px;
+  border-radius:50%;
   background-color: #ced4da;
   background: var(--container-color);
   box-shadow: 0 8px 32px 0 rgba(51, 51, 60, 0.37);
@@ -40,7 +40,7 @@
   color: rgb(102, 219, 251);
 }
 .express {
-  color: rgb(31, 31, 31);
+  color: black;
 }
 .node {
   color: rgb(108, 163, 97);
@@ -50,6 +50,13 @@
 }
 .next {
   color: rgb(8, 8, 8);
+}
+.redux{
+  
+  color: rgb(118, 74, 188);
+}.saga{
+  color:rgb(167, 187, 167);
+ 
 }
 .skills__titles,
 .skills__description {

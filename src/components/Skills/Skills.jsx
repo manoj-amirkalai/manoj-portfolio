@@ -3,9 +3,10 @@ import "./Skills.css";
 import shapeOne from "../../assets/shape-1.png";
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiExpress, SiMongodb } from "react-icons/si";
+import { SiExpress, SiMongodb, SiReduxsaga } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
+import { TbBrandRedux } from "react-icons/tb";
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
@@ -66,6 +67,12 @@ const Skills = () => {
           </span>
           <span className="skill9">
             <RiNextjsFill className="skillicon next " />
+          </span>
+          <span className="skill10">
+            <TbBrandRedux  className="skillicon redux " />
+          </span>
+          <span className="skill11">
+            <SiReduxsaga  className="skillicon saga " />
           </span>
         </div>
       </div>

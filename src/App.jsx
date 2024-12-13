@@ -235,12 +235,27 @@ function App() {
       }).reveal(".skill8", { delay: 2500 });
 
       ScrollReveal({
-        origin: "right",
+        origin: "left",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
       }).reveal(".skill9", { delay: 2750 });
+
+      ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill10", { delay: 3000 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill11", { delay: 3250 });
 
       //portfolio
 
@@ -537,7 +552,7 @@ function App() {
         opacity: 0,
       }).reveal(".skill1", { delay: 750 });
       ScrollReveal({
-        origin: "bottom",
+        origin: "top",
         distance: "100px",
         duration: 700,
         reset: true,
@@ -556,20 +571,20 @@ function App() {
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill4", { delay: 1500 });
+      }).reveal(".skill4", { delay: 1750 });
       ScrollReveal({
         origin: "bottom",
         opacity: 0,
         duration: 700,
         reset: true,
-      }).reveal(".skill5", { delay: 1750 });
+      }).reveal(".skill5", { delay: 1500 });
       ScrollReveal({
         origin: "right",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill6", { delay: 2000 });
+      }).reveal(".skill6", { delay: 1750 });
       ScrollReveal({
         origin: "left",
         distance: "100px",
@@ -578,19 +593,33 @@ function App() {
         opacity: 0,
       }).reveal(".skill7", { delay: 2250 });
       ScrollReveal({
-        origin: "right",
+        origin: "bottom",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill8", { delay: 2500 });
+      }).reveal(".skill8", { delay: 2000 });
       ScrollReveal({
         origin: "right",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill9", { delay: 2750 });
+      }).reveal(".skill9", { delay: 2250 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill10", { delay: 2500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill11", { delay: 2500 });
 
       //portfolio
       ScrollReveal({
