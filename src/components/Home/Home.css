@@ -100,12 +100,14 @@ z-index: 101;
 
 .home__profile {
   position: absolute;
-  top: 15px;
-  left: 19px;
+  top: 14px;
+  left: 12px;
   height: 670px;
-  border-radius: 500px;
-  object-fit: cover;
+  border-radius: 50%;
 }
+
+
+
 .home__data {
   border: 2px solid var(--border-color);
   background: var(--container-color);

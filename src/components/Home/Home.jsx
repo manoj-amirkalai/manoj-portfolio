@@ -1,5 +1,6 @@
 import "./Home.css";
-import profile from "../../assets/home__profile.jpg";
+//import profile from "../../assets/profile.webp";
+import profile from "../../assets/profile.png";
 import shapeOne from "../../assets/shape-1.png";
 import shapeTwo from "../../assets/shape-2.png";
 import { IoIosMail } from "react-icons/io";
@@ -30,8 +31,8 @@ const Home = () => {
             <p className="home__data home__data-one">
               <span className="text-lg">
                 <CountUp start={0} end={3} duration={4} delay={3} />.
-                <CountUp start={0} end={0} duration={4} delay={3} />
-                &nbsp; &nbsp; <b>+</b>
+                <CountUp start={0} end={17} duration={4} delay={3} />
+                &nbsp; &nbsp; <b>&nbsp;+</b>
               </span>
               <span className="text-sm text-cs">
                 Years of <span>Experience</span>
