@@ -7,7 +7,6 @@
   z-index: 100;
   font-family: var(--second-font);
   color: var(--title-color);
-
 }
 .nav {
   display: flex;
@@ -24,7 +23,7 @@
 .nav__menu {
   position: fixed;
   top: 0;
-  
+
   right: 0;
   width: 0;
   height: 100vh;
@@ -33,14 +32,15 @@
   transition: all 0.7s var(--transition);
   z-index: 10;
   overflow: hidden;
-}.show-menu {
+}
+.show-menu {
   width: 300px;
 }
 body.no-scroll {
   overflow: hidden;
 }
 .nav__data {
-  padding:25% ;
+  padding: 25%;
   margin: auto;
   margin-top: 35%;
   background-color: var(--bg-color-alt);
@@ -59,7 +59,8 @@ body.no-scroll {
   cursor: pointer;
   transition: all 0.3s var(--transition);
   z-index: 100;
-}.active,
+}
+.active,
 .nav__link:hover {
   color: var(--primary-color);
 }
@@ -91,21 +92,22 @@ body.no-scroll {
   align-items: center;
   cursor: pointer;
   z-index: 100;
-}.scroll-header{
+}
+.scroll-header {
   position: fixed;
   width: 100vw;
   background-color: var(--bg-color-alt);
   animation: header_animate 0.8s var(--transition) 0s forwards;
-}.visible{
+}
+.visible {
   visibility: visible;
-
 }
 
 @keyframes header_animate {
-  0%{
+  0% {
     transform: translateY(-100px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
@@ -141,13 +143,11 @@ body.no-scroll {
   bottom: 14px;
 }
 
-.header__deco{
+.header__deco {
   left: 25px;
-
-
-}.header__deco .shape{
+}
+.header__deco .shape {
   top: -100px;
   left: -40px;
   z-index: -1;
-
 }
