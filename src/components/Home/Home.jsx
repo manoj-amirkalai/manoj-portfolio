@@ -1,6 +1,6 @@
 import "./Home.css";
 //import profile from "../../assets/profile.webp";
-import profile from "../../assets/profile1.jpg";
+import profile from "../../assets/profile11.png";
 import shapeOne from "../../assets/shape-1.png";
 import shapeTwo from "../../assets/shape-2.png";
 import { IoIosMail } from "react-icons/io";
@@ -47,7 +47,7 @@ const Home = () => {
                 completed <span>projects</span>
               </span>
             </p>
-            <img src={shapeOne} className="shape shape__1" alt="" />
+            {/* <img src={shapeOne} className="shape shape__1" alt="" /> */}
             <img src={shapeTwo} className="shape shape__2" alt="" />
             <img src={shapeTwo} className="shape shape__3" alt="" />
           </div>
