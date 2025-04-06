@@ -130,7 +130,7 @@ export const projects = [
     img: foodapp,
     category: "MERN",
     title: "Food App",
-    responsive:true,
+    responsive: true,
     description: `Developed a food booking website with capabilities for adding menu items, 
     placing orders, and processing payments. Enhanced the user experience with 
     a streamlined interface for easy menu management and secure transaction handling.
@@ -142,7 +142,7 @@ export const projects = [
   {
     id: 2,
     img: feedbackform,
-    responsive:true,
+    responsive: true,
     category: "Next.JS",
     title: "FeedBackForm Admin Panel",
     description: `Our admin panel offers a streamlined solution for managing feedback forms,
@@ -152,10 +152,11 @@ export const projects = [
         Seamless experience for both feedbackform  and data review.`,
     github: "https://github.com/manoj-amirkalai/feedbackform",
     web: "https://feedbackform-next-js.onrender.com/",
-  },  {
+  },
+  {
     id: 2,
     img: money,
-    responsive:true,
+    responsive: true,
     category: "Next.JS",
     title: "Money Tracker",
     description: `Introducing our money tracker app: easily log in to access a comprehensive table for filtering your transaction data. Visualize your spending with interactive bar charts that highlight trends and help you stay on budget!`,
@@ -166,7 +167,7 @@ export const projects = [
     id: 3,
     img: renthome,
     category: "MERN",
-    responsive:true,
+    responsive: true,
     title: "Rent Home",
     description: `Developed a comprehensive rent home website with features booking, and listing properties. Integrated secure payment processing and a user-friendly interface to streamline property management.   Card=> 4000003560000008,
       month/year=> 06/29, CVV=> 567.`,
@@ -177,7 +178,7 @@ export const projects = [
     id: 4,
     img: raretube,
     category: "React.JS",
-    responsive:true,
+    responsive: true,
     title: "You-Tube",
     description: `A YouTube clone replicates the core features of the original platform, 
     allowing users  view videos by categorized. It offers a similar interface and functionality but may cater to niche audiences or specific content types.`,
@@ -187,7 +188,7 @@ export const projects = [
   {
     id: 5,
     img: fitness,
-    responsive:true,
+    responsive: true,
     category: "MERN",
     title: "Fitness App",
     description: `Developed a fitness tracker Website that allows
@@ -201,7 +202,7 @@ export const projects = [
     id: 6,
     img: shopper,
     category: "React.JS",
-    responsive:true,
+    responsive: true,
     title: "Shopping",
     description: `Developed a modern, responsive e-commerce UI that streamlined user 
     interactions and optimized the online shopping experience. 
@@ -212,7 +213,7 @@ export const projects = [
   {
     id: 7,
     img: flipkart,
-    responsive:false,
+    responsive: false,
     category: "React.JS",
     title: "Flipkart",
     description:
@@ -223,7 +224,7 @@ export const projects = [
   {
     id: 8,
     img: amazon,
-    responsive:false,
+    responsive: false,
     category: "React.JS",
     title: "Amazon",
     description:
@@ -233,7 +234,7 @@ export const projects = [
   },
   {
     id: 9,
-    responsive:false,
+    responsive: false,
     img: netflix,
     category: "React.JS",
     title: "Netflix",
@@ -244,7 +245,7 @@ export const projects = [
   },
   {
     id: 10,
-    responsive:true,
+    responsive: true,
     img: todo,
     category: "HTML+CSS+JS",
     title: "TODO",
@@ -256,7 +257,7 @@ export const projects = [
   {
     id: 11,
     img: postdes,
-    responsive:false,
+    responsive: false,
     category: "MERN",
     title: "Post Description",
     description: `Created a post description list website that enables users 
@@ -267,7 +268,7 @@ export const projects = [
   },
   {
     id: 12,
-    responsive:false,
+    responsive: false,
     img: hulu,
     category: "React.JS",
     title: "Hulu",
@@ -278,7 +279,7 @@ export const projects = [
   },
   {
     id: 13,
-    responsive:true,
+    responsive: true,
     img: tictactoe,
     category: "React.JS",
     title: "TicTacToe",
@@ -287,7 +288,6 @@ export const projects = [
     github: "https://github.com/manoj-amirkalai/tictactoe",
     web: "https://manoj-tictactoe-game.onrender.com/",
   },
-  
 ];
 
 export const cv = [
@@ -318,25 +318,59 @@ export const cv = [
     category: "education",
   },
 
+  //   {
+  //     id: 4,
+  //     title: "Front-End Developer",
+  //     subtitle: "TCS",
+  //     date: "Nov / 2021 - PRESENT",
+  //     description: `Working for an Australia-based WESTPAC Bank project on 4 apppcations
+  // Assisted in the development of user inteface web applications, focusing on front-end technologies with modern JavaScript frameworks, HTML5, and CSS3.
+  // Developed documentation to train new team members in company standards.
+  // Collaborates with onshore team members and clients to complete tasks within the deadline, resulting in 100% on-time delivery and delivers defect-free projects.`,
+  //     category: "experience",
+  //   },
+
   {
     id: 4,
-    title: "Front-End Developer",
-    subtitle: "TCS",
-    date: "Nov / 2021 - PRESENT",
-    description: `Working for an Australia-based WESTPAC Bank project on 4 apppcations
-Assisted in the development of user inteface web applications, focusing on front-end technologies with modern JavaScript frameworks, HTML5, and CSS3.
-Developed documentation to train new team members in company standards.
-Collaborates with onshore team members and clients to complete tasks within the deadline, resulting in 100% on-time delivery and delivers defect-free projects.`,
+    title: "React Developer",
+    subtitle: "Standard Chartered - Singapore",
+    date: "JULY-2023 - PRESENT",
+    // "description": `As a Front-End Developer specializing in React.js, I excel in crafting responsive, high-performance web applications. My expertise lies in delivering seamless
+    //  user experiences and optimizing applications for speed and scalability.\n- Developed reusable UI components and functional conditions, creating a shared library for other developers
+    //  to efficiently build pages and maintain consistency across the application.\n- Developed and maintained high-quality web applications using React.js to ensure top-notch performance and
+    //  responsiveness.\n- Collaborated with cross-functional teams, including designers, backend developers, and product managers, to deliver cohesive and user-centric products.\n-
+    //   Implemented best practices to enhance application performance and scalability, ensuring smooth user experience even under high load conditions.\n- Ensured code quality by writing clean, maintainable,
+    //    and well-documented code, and performing thorough testing to
+    // ensure robust and reliable applications.\n- Troubleshot and resolved issues efficiently, contributing to the overall stability and reliability of applications.`,
+    description: `As a Front-End Developer specializing in React.js, I develop responsive, high-performance web applications optimized for speed and scalability. I create reusable UI components and libraries to maintain consistency across the application, collaborate with cross-functional teams, and ensure high-quality, maintainable code. My role also involves troubleshooting and resolving issues to ensure stability and reliability.`,
     category: "experience",
   },
   {
     id: 5,
+    title: "React Developer",
+    subtitle: "Singapore Airlines-Singapore",
+    date: "OCT-2022 - JULY-2023",
+    description:
+      "As a React Developer at Singapore Airlines, I was responsible for designing and developing responsive UI screens using Lit library in React.js, ensuring a seamless user experience across devices.\n- Integrated RESTful APIs to fetch and display dynamic data, improving application functionality and interactivity.\n- Collaborated with backend teams to ensure smooth data flow and proper handling of API responses.\n- Optimized API calls for performance and error handling, ensuring a robust and efficient frontend.",
+    category: "experience",
+  },
+  {
+    id: 6,
+    title: "React UI Developer",
+    subtitle: "WESTPAC-Australia",
+    date: "NOV 2021 - OCT-2022",
+    description:
+      "As a React UI Developer, I focused on building dynamic, responsive user interfaces using React.js and modern JavaScript.\n- Collaborated with UX/UI designers to translate design mockups into pixel-perfect, interactive components.\n- Ensured code quality and scalability by following best practices, including component reusability and modular architecture.\n- Maintained and updated UI components, ensuring timely delivery of features and bug fixes.",
+    category: "experience",
+  },
+  {
+    id: 7,
     title: "Web Developer",
     subtitle: "Self Development",
     date: "2021 - PRESENT",
     description: `Deepened my expertise in MERN stack technologies by mastering MongoDB, Express.js, React.js, and Node.js.
-     Successfully developed over 40 diverse projects and deployed over 20+ diverse projects, 
-     ranging from dynamic web applications to complex server-side solutions.`,
+   Successfully developed over 40 diverse projects and deployed over 20+ diverse projects, 
+   ranging from dynamic web applications to complex server-side solutions.`,
     category: "experience",
   },
 ];

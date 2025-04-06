@@ -6,7 +6,7 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Resume from "./components/Resume/Resume";
 import Testmonials from "./components/Testmonials/Testmonials";
 import Pricing from "./components/Pricing/Pricing";
-import Blog from "./components/Blog/Blog";
+// import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";

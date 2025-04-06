@@ -1,6 +1,6 @@
-.resume {
- /* background-image: var(--second-gradient); */
-}
+/* .resume {
+ background-image: var(--second-gradient);
+} */
 .resume__container {
   grid-template-columns: repeat(2, 1fr);
   overflow: visible;
@@ -57,10 +57,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--primary-color);
 }
 .resume__title {
   font-family: var(--second-font);
   font-size: var(--h3-font-size);
+  color: var(--primary-color);
 }
 .resume__data {
   color: var(--title-color);
