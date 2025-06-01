@@ -31,7 +31,7 @@ const Home = () => {
             <p className="home__data home__data-one">
               <span className="text-lg">
                 <CountUp start={0} end={3} duration={4} delay={3} />.
-                <CountUp start={0} end={17} duration={4} delay={3} />
+                <CountUp start={0} end={6} duration={4} delay={3} />
                 &nbsp; &nbsp; <b>&nbsp;+</b>
               </span>
               <span className="text-sm text-cs">
@@ -55,7 +55,7 @@ const Home = () => {
             {/* Experienced Frontend Developer with a passion for creating
           visually stunning and user-friendly websites. */}
             I am well-versed in HTML, CSS JavaScript, and other cutting-edge
-            libraries and frameworks like React.js and Next.js, which allows me
+            libraries and frameworks like React.js, Lit and Next.js, which allows me
             to implement interactive features. Additionally, have experience in
             Next.js and backend technologies like Node.js, Express.js, and
             MongoDB.

@@ -379,7 +379,7 @@ export const testimonials = [
   {
     id: 1,
     img: Testimonial1,
-    name: "Rakshana",
+    name: "Krishna Raikar, Vaishnavi",
     author: "Team Member",
     description: `Highly skilled React developer with a strong ability to create efficient, user-friendly interfaces and dynamic applications.
      Consistently produces clean, well-documented code and provides valuable insights during team discussions.`,
@@ -387,7 +387,7 @@ export const testimonials = [
   {
     id: 2,
     img: Testimonial2,
-    name: "Gowtham",
+    name: "M Premnath",
     author: "Team lead",
     description: `Exceptional React developer with a strong grasp of modern front-end technologies and best practices. 
     Delivers high-quality, maintainable code and effectively integrates complex features with seamless user interfaces. 
@@ -396,7 +396,7 @@ export const testimonials = [
   {
     id: 3,
     img: Testimonial3,
-    name: "Siva",
+    name: "V V S Krishna Prasad Challa",
     author: "Team Manager",
     description: `An outstanding React developer with a deep understanding of component-based architecture and state management.
      Consistently delivers high-quality, scalable solutions while maintaining a keen focus on performance and user experience.
