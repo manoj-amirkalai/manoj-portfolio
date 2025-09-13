@@ -8,13 +8,28 @@ import { FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import CV from "../../assets/Manoj Amirthalingam CV.pdf";
 import CountUp from "react-countup";
+import TextPressure from "../React-Bits/Name_Text";
+import CurvedLoop from "../React-Bits/Curve_Text";
 const Home = () => {
   return (
     <section className="home" id="home">
       <div className="home__wrapper">
         <div className="home__container container">
           <h1 className="home__title text-cs">
-            <span>Manoj</span> Amirthalingam
+            <span>
+              <TextPressure
+                text="Manoj    Amirthalingam"
+                flex={true}
+                alpha={false}
+                stroke={false}
+                width={true}
+                weight={true}
+                italic={true}
+                textColor="rgb(68, 173, 231)"
+                strokeColor="#ff0000"
+                minFontSize={5}
+              />
+            </span>
           </h1>
           <div className="home__job">
             <b>
@@ -26,13 +41,20 @@ const Home = () => {
           <div className="home__img-wrapper">
             <div className="home__banner">
               <img src={profile} className="home__profile" alt="Home profile" />
+              {/* <CurvedLoop
+            marqueeText="Be ✦ Creative ✦ With ✦ React ✦ Bits ✦"
+            speed={3}
+            curveAmount={500}
+            direction="right"
+            interactive={true}
+            className="custom-text-style"
+          /> */}
             </div>
-
             <p className="home__data home__data-one">
               <span className="text-lg">
                 <CountUp start={0} end={3} duration={4} delay={3} />.
-                <CountUp start={0} end={6} duration={4} delay={3} />
-                &nbsp; &nbsp; <b>&nbsp;+</b>
+                <CountUp start={0} end={8} duration={4} delay={3} />
+               &nbsp; <b>+</b>&nbsp;
               </span>
               <span className="text-sm text-cs">
                 Years of <span>Experience</span>
@@ -40,8 +62,8 @@ const Home = () => {
             </p>
             <p className="home__data home__data-two">
               <span className="text-lg">
-               
-              <CountUp start={0} end={35} duration={4} delay={3} /> &nbsp;<b>+</b>
+                <CountUp start={0} end={38} duration={4} delay={3} /> &nbsp;
+                <b>+</b>
               </span>
               <span className="text-sm text-cs">
                 completed <span>projects</span>
@@ -55,10 +77,10 @@ const Home = () => {
             {/* Experienced Frontend Developer with a passion for creating
           visually stunning and user-friendly websites. */}
             I am well-versed in HTML, CSS JavaScript, and other cutting-edge
-            libraries and frameworks like React.js, Lit and Next.js, which allows me
-            to implement interactive features. Additionally, have experience in
-            Next.js and backend technologies like Node.js, Express.js, and
-            MongoDB.
+            libraries and frameworks like React.js, Lit and Next.js, which
+            allows me to implement interactive features. Additionally, have
+            experience in Next.js and backend technologies like Node.js,
+            Express.js, and MongoDB.
           </p>
 
           <div className="home__socials">
