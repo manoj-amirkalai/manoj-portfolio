@@ -8,6 +8,7 @@ import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiReactquery } from "react-icons/si";
+import reactquery from "../../assets/reactquery.png";
 import Lit from "../../assets/lit.png";
 const Skills = () => {
   return (
@@ -65,7 +66,7 @@ const Skills = () => {
             <TbBrandRedux className="skillicon redux " />
           </span>
           <span className="skill8">
-            <SiReactquery className="skillicon saga " />
+             <img src={reactquery} className="skillicon saga" />
           </span>
           <span className="skill9">
             <RiNextjsFill className="skillicon next " />
