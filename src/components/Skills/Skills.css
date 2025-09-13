@@ -13,7 +13,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 100px;
   row-gap: 50px;
-  margin-left: 20vw;
+  margin-left: 13vw;
 }
 .skillicon {
   font-size: 100px;
@@ -55,7 +55,7 @@
   
   color: rgb(118, 74, 188);
 }.saga{
-  color:rgb(167, 187, 167);
+  color:#ff4154;
  
 }
 .skills__titles,

@@ -25,11 +25,11 @@
   .skills__item {
     margin-left: 280px;
   }
-  .next,
+  /* .next,
   .redux,
   .saga {
-    margin-left: 100%;
-  }
+    margin-left:0%;
+  } */
 }
 @media screen and (max-width: 1400px) {
   
@@ -74,10 +74,10 @@
   .container {
     max-width: 960px;
   }
-  .skill10,
+  /* .skill10,
   .skill11 {
     margin-left: 75%;
-  }
+  } */
 
   .skills__item {
     display: grid;

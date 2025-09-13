@@ -250,12 +250,19 @@ function App() {
         opacity: 0,
       }).reveal(".skill10", { delay: 3000 });
       ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill11", { delay: 3250 }); 
+       ScrollReveal({
         origin: "right",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill11", { delay: 3250 });
+      }).reveal(".skill12", { delay: 3500 });
 
       //portfolio
 
@@ -606,20 +613,27 @@ function App() {
         reset: true,
         opacity: 0,
       }).reveal(".skill9", { delay: 2250 });
-      ScrollReveal({
-        origin: "left",
+     ScrollReveal({
+        origin: "bottom",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill10", { delay: 2500 });
+      }).reveal(".skill10", { delay: 3000 });
       ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".skill11", { delay: 3250 }); 
+       ScrollReveal({
         origin: "right",
         distance: "100px",
         duration: 700,
         reset: true,
         opacity: 0,
-      }).reveal(".skill11", { delay: 2500 });
+      }).reveal(".skill12", { delay: 3500 });
 
       //portfolio
       ScrollReveal({

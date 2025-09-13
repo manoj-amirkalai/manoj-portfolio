@@ -7,6 +7,8 @@ import { SiExpress, SiMongodb, SiReduxsaga } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
+import { SiReactquery } from "react-icons/si";
+import Lit from "../../assets/lit.png";
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
@@ -51,28 +53,31 @@ const Skills = () => {
             <IoLogoJavascript className="skillicon js " />
           </span>
           <span className="skill4">
-            <FaReact className="skillicon react " />
+            <BiLogoTypescript className="skillicon ts  " />
           </span>
           <span className="skill5">
-            <SiExpress className="skillicon express " />
+            <FaReact className="skillicon react " />
           </span>
           <span className="skill6">
-            <FaNodeJs className="skillicon node " />
+            <img src={Lit} className="skillicon" />
           </span>
           <span className="skill7">
-            <SiMongodb className="skillicon mongodb " />
-          </span>{" "}
+            <TbBrandRedux className="skillicon redux " />
+          </span>
           <span className="skill8">
-            <BiLogoTypescript  className="skillicon ts  " />
+            <SiReactquery className="skillicon saga " />
           </span>
           <span className="skill9">
             <RiNextjsFill className="skillicon next " />
           </span>
           <span className="skill10">
-            <TbBrandRedux  className="skillicon redux " />
-          </span>
+            <SiMongodb className="skillicon mongodb " />
+          </span>{" "}
           <span className="skill11">
-            <SiReduxsaga  className="skillicon saga " />
+            <SiExpress className="skillicon express " />
+          </span>
+          <span className="skill12">
+            <FaNodeJs className="skillicon node " />
           </span>
         </div>
       </div>
