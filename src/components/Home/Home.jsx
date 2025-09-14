@@ -74,18 +74,10 @@ const Home = () => {
             <img src={shapeTwo} className="shape shape__3" alt="" />
           </div>
           <p className="home__text">
-            {/* Experienced Frontend Developer with a passion for creating
-          visually stunning and user-friendly websites. */}
-            {/* I am well-versed in HTML, CSS JavaScript, Typescript and other cutting-edge
-            libraries and frameworks like React.js, Lit and Next.js, which
-            allows me to implement interactive features. Additionally, have
-            experience in Next.js and backend technologies like Node.js,
-            Express.js, and MongoDB. */}
-            I’m a dedicated Software Engineer passionate about creating dynamic and interactive digital experiences.
-I specialize in building responsive, user-centric web applications with React.js, TypeScript, Node.js, and MongoDB.
-With strong attention to detail and a problem-solving mindset, I deliver scalable and maintainable solutions.
-I actively keep up with emerging technologies and industry trends to stay innovative.
-My goal is to build high-quality products that enhance user experience and drive business success.
+            I’m a dedicated Software Engineer passionate about building dynamic, interactive digital experiences.
+            I am well-versed in <b className="boldSkills">HTML, CSS, JavaScript, Typescript</b> and other 
+            libraries and frameworks like <b className="boldSkills">React.js, Lit and Next.js</b> and Additionally, have
+            experience in<b className="boldSkills"> Next.js</b> and <b className="boldSkills"> MERN Stack</b>.
           </p>
 
           <div className="home__socials">

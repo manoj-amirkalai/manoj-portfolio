@@ -7,6 +7,10 @@
 .home__wrapper {
   position: relative;
 }
+.boldSkills{
+  color: var(--primary-color);
+}
+
 .home__wrapper {
   min-height: 100vh;
   display: grid;
