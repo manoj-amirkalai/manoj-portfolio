@@ -332,9 +332,9 @@ export const cv = [
 
   {
     id: 4,
-    title: "React Developer",
+    title: "Front End Developer Lead",
     subtitle: "Standard Chartered - Singapore",
-    date: "JULY-2023 - PRESENT",
+    date: "FEB-2025 - PRESENT",
     // "description": `As a Front-End Developer specializing in React.js, I excel in crafting responsive, high-performance web applications. My expertise lies in delivering seamless
     //  user experiences and optimizing applications for speed and scalability.\n- Developed reusable UI components and functional conditions, creating a shared library for other developers
     //  to efficiently build pages and maintain consistency across the application.\n- Developed and maintained high-quality web applications using React.js to ensure top-notch performance and
@@ -342,16 +342,16 @@ export const cv = [
     //   Implemented best practices to enhance application performance and scalability, ensuring smooth user experience even under high load conditions.\n- Ensured code quality by writing clean, maintainable,
     //    and well-documented code, and performing thorough testing to
     // ensure robust and reliable applications.\n- Troubleshot and resolved issues efficiently, contributing to the overall stability and reliability of applications.`,
-    description: `As a Front-End Developer specializing in React.js, I develop responsive, high-performance web applications optimized for speed and scalability. I create reusable UI components and libraries to maintain consistency across the application, collaborate with cross-functional teams, and ensure high-quality, maintainable code. My role also involves troubleshooting and resolving issues to ensure stability and reliability.`,
+    description: `As a Front-End Developer Lead specializing in React.js, I develop responsive, high-performance web applications optimized for speed and scalability.Maintaining Code Integrity and Deployment Readiness: Regularly reviewing code submitted by other developers, ensuring adherence to standards, merging approved changes into the main branch, and coordinating deployments to the SIT environment for seamless integration testing. I create reusable UI components and libraries to maintain consistency across the application, collaborate with cross-functional teams, and ensure high-quality, maintainable code. My role also involves troubleshooting and resolving issues to ensure stability and reliability.`,
     category: "experience",
   },
   {
     id: 5,
     title: "React Developer",
-    subtitle: "Singapore Airlines-Singapore",
-    date: "OCT-2022 - JULY-2023",
+    subtitle: "Prudential-USA",
+    date: "OCT-2022 - FEB-2025",
     description:
-      "As a React Developer at Singapore Airlines, I was responsible for designing and developing responsive UI screens using Lit library in React.js, ensuring a seamless user experience across devices.\n- Integrated RESTful APIs to fetch and display dynamic data, improving application functionality and interactivity.\n- Collaborated with backend teams to ensure smooth data flow and proper handling of API responses.\n- Optimized API calls for performance and error handling, ensuring a robust and efficient frontend.",
+      "As a React Developer at Prudential, I was responsible for designing and developing responsive UI screens using Lit library in React.js, ensuring a seamless user experience across devices.\n- Integrated RESTful APIs to fetch and display dynamic data, improving application functionality and interactivity.\n- Collaborated with backend teams to ensure smooth data flow and proper handling of API responses.\n- Optimized API calls for performance and error handling, ensuring a robust and efficient frontend.",
     category: "experience",
   },
   {
