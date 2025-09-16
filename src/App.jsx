@@ -15,6 +15,7 @@ import ScrollReveal from "scrollreveal";
 import React, { useEffect } from "react";
 
 import { notification } from "antd";
+import SplashCursor from "./components/React-Bits/Arrow_follower";
 const Context = React.createContext({
   name: "Default",
 });
@@ -1115,6 +1116,7 @@ function App() {
 
   return (
     <main className="container">
+      <SplashCursor />
       <motion.div className="progress-bar" style={{ scaleX }} />
       {contextHolder}
       <Header />
