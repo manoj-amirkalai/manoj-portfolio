@@ -150,6 +150,17 @@ export const projects = [
     github: "https://github.com/manoj-amirkalai/Rent-Home",
     web: "https://manoj-rent-home-frontend.onrender.com/",
   },
+   {
+    id: 10,
+    responsive: true,
+    img: todo,
+    category: "Typescript",
+    title: "TODO",
+    description:
+      "Designed and developed a responsive to-do list web application with an intuitive user interface. Implemented features for adding, updating, and deleting tasks across multiple status categories. Ensured seamless performance and cross-device compatibility for efficient task management.",
+    github: "https://github.com/manoj-amirkalai/advanced-todo-app",
+    web: "https://manoj-advanced-todo-app.onrender.com/",
+  },
   {
     id: 4,
     img: raretube,
@@ -243,17 +254,6 @@ export const projects = [
   //   github: "https://github.com/manoj-amirkalai/UINetflix",
   //   web: "https://netflix-ui-app.onrender.com/",
   // },
-  {
-    id: 10,
-    responsive: true,
-    img: todo,
-    category: "HTML+CSS+JS",
-    title: "TODO",
-    description:
-      "Designed and developed a user-friendly to-do list website that allows users to efficiently manage and track their tasks. Implemented features like Edit , update and delete task ",
-    github: "https://github.com/manoj-amirkalai/ToDo-List",
-    web: "https://manoj-todo-list.onrender.com/",
-  },
   {
     id: 11,
     img: postdes,
