@@ -73,11 +73,11 @@
   font-size: var(--largest-font-size);
 }
 .skills__number {
-  color: var(--title-color);
+  /* color: var(--title-color); */
   font-weight: 700;
 }
 .skills__number span {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 .skills__description {
   margin-bottom: 30px;
@@ -92,12 +92,12 @@
 }
 .skills__percentage {
   display: block;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   position: relative;
 }
 .skills__percentage span {
-  background-color: var(--container-color);
-  border: 2px solid var(--border-color);
+  /* background-color: var(--container-color); */
+  /* border: 2px solid var(--border-color); */
   box-shadow: var(--shadow);
   width: 25px;
   height: 25px;

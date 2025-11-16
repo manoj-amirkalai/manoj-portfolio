@@ -10,6 +10,7 @@ import CV from "../../assets/Manoj Amirthalingam CV.pdf";
 import CountUp from "react-countup";
 import TextPressure from "../React-Bits/Name_Text";
 import CurvedLoop from "../React-Bits/Curve_Text";
+import StarBorder from "../React-Bits/Componenet_Border";
 const Home = () => {
   return (
     <section className="home" id="home">
@@ -41,43 +42,63 @@ const Home = () => {
           <div className="home__img-wrapper">
             <div className="home__banner">
               <img src={profile} className="home__profile" alt="Home profile" />
-              {/* <CurvedLoop
-            marqueeText="Be ✦ Creative ✦ With ✦ React ✦ Bits ✦"
-            speed={3}
-            curveAmount={500}
+              {/* <div style={{position:"absolute",margin:'170px 0px 0px 135px'}}>   
+             <CurvedLoop
+            marqueeText="1234567891234567890123456789123456789"
+            speed={5}
+            curveAmount={600}
             direction="right"
             interactive={true}
             className="custom-text-style"
-          /> */}
+          /></div> */}
             </div>
             <p className="home__data home__data-one">
-              <span className="text-lg">
+              <StarBorder
+                as="button"
+                className=""
+                color="cyan"
+                speed="5s"
+              >
+             <div style={{ display: "flex",justifyContent:"space-between" }}>
+                <span className="text-lg">
                 <CountUp start={0} end={4} duration={4} delay={3} />.
                 <CountUp start={0} end={0} duration={4} delay={3} />
-               &nbsp; <b>+</b>&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>+</b>
               </span>
               <span className="text-sm text-cs">
                 Years of <span>Experience</span>
-              </span>{" "}
-            </p>
+              </span></div>{" "}
+            </StarBorder></p>
             <p className="home__data home__data-two">
-              <span className="text-lg">
-                <CountUp start={0} end={38} duration={4} delay={3} /> &nbsp;
-                <b>+</b>
-              </span>
-              <span className="text-sm text-cs">
-                completed <span>projects</span>
-              </span>
+              <StarBorder
+                as="button"
+                className="custom-class"
+                color="cyan"
+                speed="5s"
+              > <div style={{ display: "flex",justifyContent:"space-between" }}>
+                <span className="text-lg">
+                  <CountUp start={0} end={45} duration={4} delay={3} /> &nbsp;&nbsp;&nbsp;
+                  <b>+</b>
+                </span>
+                <span className="text-sm text-cs" >
+                  completed <span>projects</span>
+                </span>
+              </div>
+              </StarBorder>
             </p>
             {/* <img src={shapeOne} className="shape shape__1" alt="" /> */}
             <img src={shapeTwo} className="shape shape__2" alt="" />
             <img src={shapeTwo} className="shape shape__3" alt="" />
           </div>
           <p className="home__text">
-            I’m a dedicated Software Engineer passionate about building dynamic, interactive digital experiences.
-            I am well-versed in <b className="boldSkills">HTML, CSS, JavaScript, Typescript</b> and other 
-            libraries and frameworks like <b className="boldSkills">React.js, Lit and Next.js</b> and Additionally, have
-            experience in<b className="boldSkills"> Next.js</b> and <b className="boldSkills"> MERN Stack</b>.
+            I’m a dedicated Software Engineer passionate about building dynamic,
+            interactive digital experiences. I am well-versed in{" "}
+            <b className="boldSkills">HTML, CSS, JavaScript, Typescript</b> and
+            other libraries and frameworks like{" "}
+            <b className="boldSkills">React.js, Lit and Next.js</b> and
+            Additionally, have experience in
+            <b className="boldSkills"> Next.js</b> and{" "}
+            <b className="boldSkills"> MERN Stack</b>.
           </p>
 
           <div className="home__socials">
