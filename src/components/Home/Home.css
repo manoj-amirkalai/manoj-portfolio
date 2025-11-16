@@ -113,11 +113,11 @@ z-index: 101;
 
 
 .home__data {
-  /* border: 2px solid var(--border-color); */
-  /* background: var(--container-color); */
-  /* box-shadow: var(--shadow); */
+  border: 2px solid var(--border-color);
+  background: var(--container-color);
+  box-shadow: var(--shadow);
   padding-inline: 20px;
-  width: 280px;
+  width: 250px;
   height: 82px;
   border-radius: 82px;
   display: flex;
