@@ -52,8 +52,8 @@ const Home = () => {
             </div>
             <p className="home__data home__data-one">
               <span className="text-lg">
-                <CountUp start={0} end={3} duration={4} delay={3} />.
-                <CountUp start={0} end={8} duration={4} delay={3} />
+                <CountUp start={0} end={4} duration={4} delay={3} />.
+                <CountUp start={0} end={0} duration={4} delay={3} />
                &nbsp; <b>+</b>&nbsp;
               </span>
               <span className="text-sm text-cs">
