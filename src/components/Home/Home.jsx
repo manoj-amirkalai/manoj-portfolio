@@ -52,8 +52,8 @@ const Home = () => {
             </div>
             <p className="home__data home__data-one">
               <span className="text-lg">
-                <CountUp start={0} end={4} duration={4} delay={3} />.
-                <CountUp start={0} end={0} duration={4} delay={3} />
+                <CountUp start={0} end={new Date().getFullYear() - 2021 - (new Date().getMonth() < 10 ? 1 : 0)} duration={4} delay={3} />.
+                <CountUp start={0} end={new Date().getMonth() >= 10 ? new Date().getMonth() - 10 : new Date().getMonth() + 2} duration={4} delay={3} />
                &nbsp; <b>+</b>&nbsp;
               </span>
               <span className="text-sm text-cs">
