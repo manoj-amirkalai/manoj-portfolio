@@ -380,15 +380,15 @@ export const testimonials = [
     id: 1,
     img: Testimonial1,
     name: "Krishna Raikar, Vaishnavi",
-    author: "Team Member",
+    author: "Colleague",
     description: `Highly skilled React developer with a strong ability to create efficient, user-friendly interfaces and dynamic applications.
      Consistently produces clean, well-documented code and provides valuable insights during team discussions.`,
   },
   {
     id: 2,
     img: Testimonial2,
-    name: "M Premnath",
-    author: "Team lead",
+    name: "VASANTH Ravi",
+    author: "Front-End lead",
     description: `Exceptional React developer with a strong grasp of modern front-end technologies and best practices. 
     Delivers high-quality, maintainable code and effectively integrates complex features with seamless user interfaces. 
      Demonstrates a deep commitment to both technical excellence and team success.`,
@@ -396,8 +396,8 @@ export const testimonials = [
   {
     id: 3,
     img: Testimonial3,
-    name: "V V S Krishna Prasad Challa",
-    author: "Team Manager",
+    name: "Praveen Inbasekaran",
+    author: "Manager",
     description: `An outstanding React developer with a deep understanding of component-based architecture and state management.
      Consistently delivers high-quality, scalable solutions while maintaining a keen focus on performance and user experience.
       Highly collaborative and proactive, contributing effectively to team goals and project success. `,

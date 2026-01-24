@@ -3,14 +3,12 @@ import "./Skills.css";
 import shapeOne from "../../assets/shape-1.png";
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiExpress, SiMongodb, SiReduxsaga } from "react-icons/si";
+import { SiExpress, SiMongodb } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandRedux } from "react-icons/tb";
-import { SiReactquery } from "react-icons/si";
 import reactquery from "../../assets/reactquery.png";
 import Lit from "../../assets/lit.png";
-import ElectricBorder from "../React-Bits/Electric_circle";
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
@@ -45,129 +43,42 @@ const Skills = () => {
       </div> */}
       <div className="skills__container container grid">
         <div className="skills__item">
-          <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill1'
-          >
-            {" "}
-            <span className="skill1">
-              <FaHtml5 className="skillicon html " />
-            </span>
-          </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill2'
-          > <span className="skill2">
+          <span className="skill1">
+            <FaHtml5 className="skillicon html " />
+          </span>
+          <span className="skill2">
             <FaCss3Alt className="skillicon css " />
-          </span>  </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill3'
-          > <span className="skill3">
+          </span>
+          <span className="skill3">
             <IoLogoJavascript className="skillicon js " />
-          </span>  </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill4'
-          > <span className="skill4">
+          </span>
+          <span className="skill4">
             <BiLogoTypescript className="skillicon ts  " />
-          </span>  </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill5'
-          > <span className="skill5">
+          </span>
+          <span className="skill5">
             <FaReact className="skillicon react " />
-          </span>  </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill6'
-          > <span className="skill6">
+          </span>
+          <span className="skill6">
             <img src={Lit} className="skillicon" />
-          </span>  </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill7'
-          > <span className="skill7">
+          </span>
+          <span className="skill7">
             <TbBrandRedux className="skillicon redux " />
-          </span>  </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill8'
-          > <span className="skill8">
-            <img src={reactquery} className="skillicon saga" />
-          </span>  </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill9'
-          > <span className="skill9">
+          </span>
+          <span className="skill8">
+             <img src={reactquery} className="skillicon saga" />
+          </span>
+          <span className="skill9">
             <RiNextjsFill className="skillicon next " />
-          </span>  </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill10'
-          > <span className="skill10">
+          </span>
+          <span className="skill10">
             <SiMongodb className="skillicon mongodb " />
-          </span>  </ElectricBorder>{" "}
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill11'
-          > <span className="skill11">
+          </span>{" "}
+          <span className="skill11">
             <SiExpress className="skillicon express " />
-          </span>  </ElectricBorder>
-           <ElectricBorder
-            color="#7df9ff"
-            speed={1}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 50 }}
-            className='skill12'
-          > <span className="skill12">
+          </span>
+          <span className="skill12">
             <FaNodeJs className="skillicon node " />
-          </span>  </ElectricBorder>
+          </span>
         </div>
       </div>
       <div className="section__deco deco__right">
