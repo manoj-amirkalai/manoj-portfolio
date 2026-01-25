@@ -6,7 +6,7 @@ import shapeTwo from "../../assets/shape-2.png";
 import { IoIosMail } from "react-icons/io";
 import { FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import CV from "../../assets/Manoj Amirthalingam CV.pdf";
+import CV from "../../assets/Manoj Amirthalingam _ Front-End Lead & MERN Stack Developer.pdf";
 import CountUp from "react-countup";
 import TextPressure from "../React-Bits/Name_Text";
 import CurvedLoop from "../React-Bits/Curve_Text";
