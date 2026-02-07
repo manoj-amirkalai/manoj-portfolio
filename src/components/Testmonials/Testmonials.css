@@ -35,5 +35,11 @@
 /* .swiper-pagination-fraction, .swiper-pagination-custom, 
 .swiper-horizontal > .swiper-pagination-bullets, 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-    margin-left: 45%;
+        margin-left: 45%;
 } */
+
+@media (max-width : 1000px){
+    .testimonials:last-child {
+    margin-left: 15px;
+}
+}

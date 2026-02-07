@@ -42,7 +42,7 @@ const Testmonials = () => {
       >
         {testimonials.map(({ img, name, author, description }, index) => {
           return (
-            <SwiperSlide key={index} className="services__item card card-one cardone">
+            <SwiperSlide key={index} className="services__item card card-one cardone testimonials">
               <div className="testimonial__header">
                 <div className="testimonial__icon">
                   <img src={testimonialIcon} alt="" />
