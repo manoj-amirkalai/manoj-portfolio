@@ -13,9 +13,11 @@ import hulu from "./assets/hulu.jfif";
 import postdes from "./assets/postdes.jpg";
 import todo from "./assets/todo.png";
 
-import Testimonial1 from "./assets/testimonial1.jpg";
+import Testimonial1 from "./assets/testimonial4.jpg";
 import Testimonial2 from "./assets/testimonial2.jpg";
 import Testimonial3 from "./assets/testimonial3.jpg";
+import Testimonial4 from "./assets/testimonial5.jpg";
+import Testimonial5 from "./assets/arun.avif";
 
 export const links = [
   {
@@ -150,7 +152,7 @@ export const projects = [
     github: "https://github.com/manoj-amirkalai/Rent-Home",
     web: "https://manoj-rent-home-frontend.onrender.com/",
   },
-   {
+  {
     id: 10,
     responsive: true,
     img: todo,
@@ -377,12 +379,13 @@ export const cv = [
 
 export const testimonials = [
   {
-    id: 1,
-    img: Testimonial1,
-    name: "Krishna Raikar, Vaishnavi",
-    author: "Colleague",
-    description: `Highly skilled React developer with a strong ability to create efficient, user-friendly interfaces and dynamic applications.
-     Consistently produces clean, well-documented code and provides valuable insights during team discussions.`,
+    id: 5,
+    img: Testimonial4,
+    name: "Ashok Subramanian",
+    author: "UI/UX lead",
+    description: `Exceptional front-end developer with a keen eye for design fidelity and usability. 
+      Consistently delivers pixel-perfect implementations of Figma designs with clean, maintainable code. 
+      Highly collaborative and technically proficient, turning design concepts into seamless user experiences.`,
   },
   {
     id: 2,
@@ -394,12 +397,29 @@ export const testimonials = [
      Demonstrates a deep commitment to both technical excellence and team success.`,
   },
   {
-    id: 3,
+    id: 4,
     img: Testimonial3,
     name: "Praveen Inbasekaran",
     author: "Manager",
     description: `An outstanding React developer with a deep understanding of component-based architecture and state management.
      Consistently delivers high-quality, scalable solutions while maintaining a keen focus on performance and user experience.
       Highly collaborative and proactive, contributing effectively to team goals and project success. `,
+  },
+  // {
+  //   id: 1,
+  //   img: Testimonial1,
+  //   name: "Krishna Raikar, Vaishnavi",
+  //   author: "Colleague",
+  //   description: `Highly skilled React developer with a strong ability to create efficient, user-friendly interfaces and dynamic applications.
+  //        Consistently produces clean, well-documented code and provides valuable insights during team discussions.`,
+  // },
+  {
+    id: 6,
+    img: Testimonial5,
+    name: "ArunPrasath C",
+    author: "Backend Lead",
+    description: `An exceptional front-end developer who consistently delivers clean, efficient, and highly maintainable code. 
+They seamlessly integrate frontend interfaces with backend systems, making full-stack collaboration effortless. 
+A highly skilled and reliable teammate, always ensuring a smooth and high-quality product delivery.`,
   },
 ];

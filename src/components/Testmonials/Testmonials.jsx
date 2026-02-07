@@ -50,7 +50,7 @@ const Testmonials = () => {
                 <img src={img} className="testimonial__img" alt="" />
               </div>
               <p className="testimonial__description">{description}</p>
-              <h3 className="testimonial__name">{name}</h3>
+              <h3 className="testimonial__name">{name.toUpperCase()}</h3>
               <p className="testimonial__author">{author}</p>
               <img src={shape2} alt="" className="shape c__shape" />
             </SwiperSlide>
