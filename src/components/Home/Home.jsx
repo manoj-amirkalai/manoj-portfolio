@@ -1,6 +1,6 @@
 import "./Home.css";
 //import profile from "../../assets/profile.webp";
-import profile from "../../assets/profile11.png";
+import profile from "../../assets/pic1.png";
 import shapeOne from "../../assets/shape-1.png";
 import shapeTwo from "../../assets/shape-2.png";
 import { IoIosMail } from "react-icons/io";
@@ -9,7 +9,6 @@ import { FaGithub } from "react-icons/fa";
 import CV from "../../assets/Manoj Amirthalingam _ Front-End Lead & MERN Stack Developer.pdf";
 import CountUp from "react-countup";
 import TextPressure from "../React-Bits/Name_Text";
-import CurvedLoop from "../React-Bits/Curve_Text";
 const Home = () => {
   return (
     <section className="home" id="home">
