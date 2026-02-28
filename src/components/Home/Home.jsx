@@ -1,6 +1,6 @@
 import "./Home.css";
 //import profile from "../../assets/profile.webp";
-import profile from "../../assets/pic1.png";
+import profile from "../../assets/biopic.png";
 import shapeOne from "../../assets/shape-1.png";
 import shapeTwo from "../../assets/shape-2.png";
 import { IoIosMail } from "react-icons/io";
