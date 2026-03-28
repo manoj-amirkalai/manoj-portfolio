@@ -38,8 +38,8 @@ export default function Awards() {
 
         {/* Header */}
         <div className="awards__header">
-          <p className="section__subtitle">What I've Earned</p>
-          <h2 className="section__title">
+          <p className="awards__subtitle">What I've Earned</p>
+          <h2 className="awards__title">
             Awards &amp;{" "}
             <span className="awards__title--accent">Recognitions</span>
           </h2>

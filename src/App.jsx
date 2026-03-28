@@ -43,6 +43,62 @@ function App() {
 
   let deviceWidth = window.innerWidth;
   useEffect(() => {
+     //awards
+      ScrollReveal({
+        origin: "left",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal("#awards .awards__title", { delay: 500 });
+
+      ScrollReveal({
+        origin: "right",
+        distance: "200px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal("#awards .awards__subtitle", { delay: 500 });
+
+      ScrollReveal({
+        origin: "top",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".awards__desc", { delay: 800 });
+
+      ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 700,
+        reset: true,
+        opacity: 0,
+      }).reveal(".awards__filters", { delay: 1100 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 500,
+        reset: true,
+        opacity: 0,
+      }).reveal(".awards__filter-btn", { interval: 150, delay: 1300 });
+
+      ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 600,
+        reset: true,
+        opacity: 0,
+      }).reveal(".awards__grid", { delay: 1500 });
+
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 600,
+        reset: true,
+        opacity: 0,
+      }).reveal(".awards__card", { interval: 120, delay: 1700 });
     if (deviceWidth < 1200) {
       openNotification("topRight");
     }
@@ -293,62 +349,6 @@ function App() {
         opacity: 0,
       }).reveal(".experience", { delay: 1000 });
 
-      //awards
-      ScrollReveal({
-        origin: "left",
-        distance: "200px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal("#awards .section__title", { delay: 500 });
-
-      ScrollReveal({
-        origin: "right",
-        distance: "200px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal("#awards .section__subtitle", { delay: 500 });
-
-      ScrollReveal({
-        origin: "top",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".awards__desc", { delay: 800 });
-
-      ScrollReveal({
-        origin: "bottom",
-        distance: "100px",
-        duration: 700,
-        reset: true,
-        opacity: 0,
-      }).reveal(".awards__filters", { delay: 1100 });
-
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 500,
-        reset: true,
-        opacity: 0,
-      }).reveal(".awards__filter-btn", { interval: 150, delay: 1300 });
-
-      ScrollReveal({
-        origin: "bottom",
-        distance: "100px",
-        duration: 600,
-        reset: true,
-        opacity: 0,
-      }).reveal(".awards__grid", { delay: 1500 });
-
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 600,
-        reset: true,
-        opacity: 0,
-      }).reveal(".awards__card", { interval: 120, delay: 1700 });
 
       //testimonials
 
