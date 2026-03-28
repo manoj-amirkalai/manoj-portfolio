@@ -19,9 +19,14 @@ import Testimonial3 from "./assets/testimonial3.jpg";
 import Testimonial4 from "./assets/testimonial5.jpg";
 import Testimonial5 from "./assets/arun.avif";
 
-import bestemploye from '../src/assets/Awards/emplyeroftheyear.jpg';
-import SpecialInitiative from '../src/assets/Awards/Special_Initiative_Award.pdf';
-import AppreciationPraveen from '../src/assets/Awards/Appreciation_Certificate (1).pdf';
+import bestemploye from "../src/assets/Awards/emplyeroftheyear.jpg";
+import SpecialInitiative from "../src/assets/Awards/Special_Initiative_Award.pdf";
+import contextualMaster from "../src/assets/Awards/Contextual_Master_Award.pdf";
+import AppreciationPraveen from "../src/assets/Awards/Appreciation_Certificate (1).pdf";
+import AppreciationAhkil from "../src/assets/Awards/Appreciation_Certificate (5).pdf";
+import Appreciationjai from "../src/assets/Awards/Appreciation_Certificate (6).pdf";
+import AppreciationJeraldin from "../src/assets/Awards/Appreciation_Certificate.pdf";
+import tcsAiSpark from "../src/assets/Awards/Appreciation_Certificate (2).pdf";
 
 export const links = [
   {
@@ -432,8 +437,6 @@ A highly skilled and reliable teammate, always ensuring a smooth and high-qualit
   },
 ];
 
-
-
 // template for awards data - this should be imported from a separate file or API in a real application
 // export const awardsData = [
 //   {
@@ -548,7 +551,19 @@ export const awardsData = [
       "Recognized for outstanding performance, consistent delivery, and significant contribution to organizational success throughout the year.",
     icon: "🏆",
     tag: "Excellence",
-    image : bestemploye
+    image: bestemploye,
+  },
+  {
+    id: 5, // update id as needed
+    type: "appreciation",
+    title: "TCS AI Spark – Hackathon Appreciation",
+    issuer: "Tata Consultancy Services",
+    year: "2025",
+    description:
+      "Recognized for prompt participation and enthusiasm in the TCS AI Hackathon. Presented with the TCS AI Spark token of appreciation for embarking on the journey of innovation and impact.",
+    icon: "🤖",
+    tag: "AI & Innovation",
+    image: tcsAiSpark,
   },
   {
     id: 2,
@@ -560,9 +575,20 @@ export const awardsData = [
       "Honored for exceptional initiative and impactful contributions towards organizational growth, demonstrating proactive ownership and leadership.",
     icon: "💡",
     tag: "Initiative",
-    image : SpecialInitiative
+    image: SpecialInitiative,
   },
-    
+  {
+  id: 9, // update id as needed
+  type: "award",
+  title: "Contextual Master Award – GEMS",
+  issuer: "Tata Consultancy Services",
+  year: "2024",
+  description:
+    "Awarded the Contextual Master Award under the GEMS recognition program for outstanding contribution to the organisation. Acknowledged as an inspiring role model to colleagues for dedication and commitment.",
+  icon: "💎",
+  tag: "GEMS",
+  image: contextualMaster,
+},
   {
     id: 3,
     type: "appreciation",
@@ -573,7 +599,7 @@ export const awardsData = [
       "Awarded for commitment to delivering high-quality work while consistently demonstrating the core values of Tata Consultancy Services.",
     icon: "🤝",
     tag: "Core Values",
-    image : AppreciationPraveen
+    image: AppreciationPraveen,
   },
   {
     id: 4,
@@ -585,19 +611,7 @@ export const awardsData = [
       "Recognized for dedicated service and generosity in community outreach programs, reflecting a strong commitment to social responsibility.",
     icon: "🌍",
     tag: "CSR",
-    image : '../src/assets/Awards/emplyeroftheyear.jpg'
-  },
-  {
-    id: 5,
-    type: "appreciation",
-    title: "Excellence & Performance Recognition",
-    issuer: "Tata Consultancy Services",
-    year: "2025",
-    description:
-      "Appreciated for maintaining high performance standards, dedication, and inspiring team members through consistent hard work and a results-driven mindset.",
-    icon: "⭐",
-    tag: "Performance",
-    image : '../src/assets/Awards/emplyeroftheyear.jpg'
+    image: AppreciationJeraldin,
   },
   {
     id: 6,
@@ -609,7 +623,7 @@ export const awardsData = [
       "Recognized during the BFSI GEMS campaign for significant commitment and contributions to the North America East delivery team.",
     icon: "🌟",
     tag: "Teamwork",
-    image : '../src/assets/Awards/emplyeroftheyear.jpg'
+    image: AppreciationAhkil,
   },
   {
     id: 7,
@@ -621,6 +635,6 @@ export const awardsData = [
       "Commended for exceptional technical skills and a proactive attitude during critical year-end activities, ensuring seamless operations under pressure.",
     icon: "⚙️",
     tag: "Operations",
-    image : '../src/assets/Awards/emplyeroftheyear.jpg'
+    image: Appreciationjai,
   },
 ];
