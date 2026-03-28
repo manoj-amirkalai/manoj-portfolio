@@ -544,6 +544,7 @@ export const awardsData = [
       "Recognized for outstanding performance, consistent delivery, and significant contribution to organizational success throughout the year.",
     icon: "🏆",
     tag: "Excellence",
+    image : '../src/assets/Awards/emplyeroftheyear.jpg'
   },
   {
     id: 2,
@@ -555,6 +556,7 @@ export const awardsData = [
       "Honored for exceptional initiative and impactful contributions towards organizational growth, demonstrating proactive ownership and leadership.",
     icon: "💡",
     tag: "Initiative",
+    image : '../src/assets/Awards/Special_Initiative_Award.pdf'
   },
     
   {
@@ -567,6 +569,7 @@ export const awardsData = [
       "Awarded for commitment to delivering high-quality work while consistently demonstrating the core values of Tata Consultancy Services.",
     icon: "🤝",
     tag: "Core Values",
+    image : '../src/assets/Awards/emplyeroftheyear.jpg'
   },
   {
     id: 4,
@@ -578,6 +581,7 @@ export const awardsData = [
       "Recognized for dedicated service and generosity in community outreach programs, reflecting a strong commitment to social responsibility.",
     icon: "🌍",
     tag: "CSR",
+    image : '../src/assets/Awards/emplyeroftheyear.jpg'
   },
   {
     id: 5,
@@ -589,6 +593,7 @@ export const awardsData = [
       "Appreciated for maintaining high performance standards, dedication, and inspiring team members through consistent hard work and a results-driven mindset.",
     icon: "⭐",
     tag: "Performance",
+    image : '../src/assets/Awards/emplyeroftheyear.jpg'
   },
   {
     id: 6,
@@ -600,6 +605,7 @@ export const awardsData = [
       "Recognized during the BFSI GEMS campaign for significant commitment and contributions to the North America East delivery team.",
     icon: "🌟",
     tag: "Teamwork",
+    image : '../src/assets/Awards/emplyeroftheyear.jpg'
   },
   {
     id: 7,
@@ -611,5 +617,6 @@ export const awardsData = [
       "Commended for exceptional technical skills and a proactive attitude during critical year-end activities, ensuring seamless operations under pressure.",
     icon: "⚙️",
     tag: "Operations",
+    image : '../src/assets/Awards/emplyeroftheyear.jpg'
   },
 ];
