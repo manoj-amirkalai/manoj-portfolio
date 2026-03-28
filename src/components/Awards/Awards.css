@@ -9,6 +9,7 @@
   padding: 0rem 0 5rem;
   overflow: hidden;
   background: transparent;
+  overflow-y: visible;
 }
 
 .awards__container {
