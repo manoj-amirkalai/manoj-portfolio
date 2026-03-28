@@ -86,18 +86,16 @@ export default function Awards() {
                   <span className="awards__year">{item.year}</span>
                 </div>
 
-                <div className="awards__icon-wrap">
-                  <span className="awards__icon">{item.icon}</span>
-                  <div className="awards__icon-ring" />
-                </div>
+              
 
                 <div className="awards__card-body">
-                  <h3 className="awards__card-title">{item.title}</h3>
+                  <h3 className="awards__card-title">{item.icon} {item.title}</h3>
                   <p className="awards__card-issuer">
                     <span className="awards__issuer-dot" />
                     {item.issuer}
                   </p>
                 </div>
+                
                    <div className="awards__back-footer">
                   <p className="awards__back-issuer">
                     Issued by <strong>{item.issuer}</strong>
@@ -127,11 +125,12 @@ export default function Awards() {
                 <div className="awards__card-glow awards__card-glow--back" />
 
                 <div className="awards__back-top">
-                  <span className="awards__back-icon">{item.icon}</span>
+                  {/* <span className="awards__back-icon">{item.icon} </span> */}
+                <h3 className="awards__back-title">{item.icon} {item.title}</h3>
                   <span className="awards__year">{item.year}</span>
                 </div>
 
-                <h3 className="awards__back-title">{item.title}</h3>
+                {/* <h3 className="awards__back-title">{item.icon} {item.title}</h3> */}
                 <div className="awards__divider" />
 
                 <p className="awards__back-desc">{item.description}</p>
