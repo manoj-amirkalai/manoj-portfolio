@@ -203,13 +203,12 @@
   position: relative;
   width: 62px;
   height: 62px;
-  margin-bottom: 1rem;
   flex-shrink: 0;
 }
 
 .awards__icon {
   font-size: 2rem;
-  line-height: 62px;
+  line-height: 42px;
   display: block;
   text-align: center;
 }

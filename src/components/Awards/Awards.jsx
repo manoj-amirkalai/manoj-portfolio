@@ -98,6 +98,23 @@ export default function Awards() {
                     {item.issuer}
                   </p>
                 </div>
+                   <div className="awards__back-footer">
+                  <p className="awards__back-issuer">
+                    Issued by <strong>{item.issuer}</strong>
+                  </p>
+
+                  {item.image && (
+                    <button
+                      className="awards__view-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedImg({ src: item.image, title: item.title });
+                      }}
+                    >
+                      <span>🖼</span> View Certificate
+                    </button>
+                  )}
+                </div>
 
                 <div className="awards__card-footer">
                   <span className="awards__tag">{item.tag}</span>

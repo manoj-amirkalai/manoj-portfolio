@@ -19,6 +19,10 @@ import Testimonial3 from "./assets/testimonial3.jpg";
 import Testimonial4 from "./assets/testimonial5.jpg";
 import Testimonial5 from "./assets/arun.avif";
 
+import bestemploye from '../src/assets/Awards/emplyeroftheyear.jpg';
+import SpecialInitiative from '../src/assets/Awards/Special_Initiative_Award.pdf';
+import AppreciationPraveen from '../src/assets/Awards/Appreciation_Certificate (1).pdf';
+
 export const links = [
   {
     name: "Home",
@@ -544,7 +548,7 @@ export const awardsData = [
       "Recognized for outstanding performance, consistent delivery, and significant contribution to organizational success throughout the year.",
     icon: "🏆",
     tag: "Excellence",
-    image : '../src/assets/Awards/emplyeroftheyear.jpg'
+    image : bestemploye
   },
   {
     id: 2,
@@ -556,20 +560,20 @@ export const awardsData = [
       "Honored for exceptional initiative and impactful contributions towards organizational growth, demonstrating proactive ownership and leadership.",
     icon: "💡",
     tag: "Initiative",
-    image : '../src/assets/Awards/Special_Initiative_Award.pdf'
+    image : SpecialInitiative
   },
     
   {
     id: 3,
-    type: "award",
-    title: "Appreciation Award",
+    type: "appreciation",
+    title: "Appreciation",
     issuer: "Tata Consultancy Services",
     year: "2026",
     description:
       "Awarded for commitment to delivering high-quality work while consistently demonstrating the core values of Tata Consultancy Services.",
     icon: "🤝",
     tag: "Core Values",
-    image : '../src/assets/Awards/emplyeroftheyear.jpg'
+    image : AppreciationPraveen
   },
   {
     id: 4,
