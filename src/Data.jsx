@@ -37,6 +37,10 @@ export const links = [
     path: "works",
   },
   {
+    name: "Awards",
+    path: "awards",
+  },
+  {
     name: "Resume",
     path: "resume",
   },
@@ -421,5 +425,191 @@ export const testimonials = [
     description: `An exceptional front-end developer who consistently delivers clean, efficient, and highly maintainable code. 
 They seamlessly integrate frontend interfaces with backend systems, making full-stack collaboration effortless. 
 A highly skilled and reliable teammate, always ensuring a smooth and high-quality product delivery.`,
+  },
+];
+
+
+
+// template for awards data - this should be imported from a separate file or API in a real application
+// export const awardsData = [
+//   {
+//     id: 1,
+//     type: "award",
+//     title: "Employee of the Year",
+//     issuer: "TechCorp Solutions",
+//     year: "2023",
+//     description:
+//       "Recognized for outstanding performance, leadership, and consistent delivery of high-impact projects throughout the year.",
+//     icon: "🏆",
+//     tag: "Excellence",
+//   },
+//   {
+//     id: 2,
+//     type: "certificate",
+//     title: "AWS Certified Developer",
+//     issuer: "Amazon Web Services",
+//     year: "2022",
+//     description:
+//       "Validated expertise in developing and maintaining AWS-based applications, including deployment, debugging, and security.",
+//     icon: "☁️",
+//     tag: "Cloud",
+//   },
+//   {
+//     id: 3,
+//     type: "award",
+//     title: "Best Innovation Award",
+//     issuer: "TechCorp Solutions",
+//     year: "2022",
+//     description:
+//       "Awarded for designing and implementing an internal automation tool that reduced manual processing time by 60%.",
+//     icon: "💡",
+//     tag: "Innovation",
+//   },
+//   {
+//     id: 4,
+//     type: "appreciation",
+//     title: "Client Appreciation Letter",
+//     issuer: "GlobalRetail Inc.",
+//     year: "2023",
+//     description:
+//       "Received a formal appreciation letter from the client for exceptional communication, timely delivery, and going above and beyond during a critical product launch.",
+//     icon: "🤝",
+//     tag: "Client Relations",
+//   },
+//   {
+//     id: 5,
+//     type: "certificate",
+//     title: "React Advanced Certification",
+//     issuer: "Meta & Coursera",
+//     year: "2021",
+//     description:
+//       "Completed advanced React curriculum covering hooks, performance optimization, testing, and scalable architecture patterns.",
+//     icon: "⚛️",
+//     tag: "Frontend",
+//   },
+//   {
+//     id: 6,
+//     type: "appreciation",
+//     title: "Team Excellence Recognition",
+//     issuer: "TechCorp Solutions",
+//     year: "2022",
+//     description:
+//       "Appreciated by the engineering manager for mentoring junior developers, conducting knowledge-sharing sessions, and elevating overall team productivity.",
+//     icon: "🌟",
+//     tag: "Mentorship",
+//   },
+//   {
+//     id: 7,
+//     type: "certificate",
+//     title: "Full-Stack Web Development",
+//     issuer: "freeCodeCamp",
+//     year: "2020",
+//     description:
+//       "Earned after completing 1,800+ hours of coding challenges and projects covering JavaScript, APIs, databases, and deployment.",
+//     icon: "🖥️",
+//     tag: "Full-Stack",
+//   },
+//   {
+//     id: 8,
+//     type: "award",
+//     title: "Star Performer – Q3",
+//     issuer: "TechCorp Solutions",
+//     year: "2021",
+//     description:
+//       "Quarterly recognition for exceptional client delivery, cross-team collaboration, and exceeding sprint velocity targets.",
+//     icon: "⭐",
+//     tag: "Performance",
+//   },
+//   {
+//     id: 9,
+//     type: "appreciation",
+//     title: "Going the Extra Mile",
+//     issuer: "TechCorp Solutions",
+//     year: "2021",
+//     description:
+//       "Appreciated by the CTO for voluntarily stepping in during a production outage over the weekend and resolving a critical bug that prevented major revenue loss.",
+//     icon: "🚀",
+//     tag: "Initiative",
+//   },
+// ];
+
+export const awardsData = [
+  {
+    id: 1,
+    type: "award",
+    title: "Best Employee of the Year",
+    issuer: "Tata Consultancy Services",
+    year: "2025–2026",
+    description:
+      "Recognized for outstanding performance, consistent delivery, and significant contribution to organizational success throughout the year.",
+    icon: "🏆",
+    tag: "Excellence",
+  },
+  {
+    id: 2,
+    type: "award",
+    title: "Special Initiative Award",
+    issuer: "Tata Consultancy Services",
+    year: "2026",
+    description:
+      "Honored for exceptional initiative and impactful contributions towards organizational growth, demonstrating proactive ownership and leadership.",
+    icon: "💡",
+    tag: "Initiative",
+  },
+    
+  {
+    id: 3,
+    type: "award",
+    title: "Appreciation Award",
+    issuer: "Tata Consultancy Services",
+    year: "2026",
+    description:
+      "Awarded for commitment to delivering high-quality work while consistently demonstrating the core values of Tata Consultancy Services.",
+    icon: "🤝",
+    tag: "Core Values",
+  },
+  {
+    id: 4,
+    type: "appreciation",
+    title: "Community Impact & CSR Excellence",
+    issuer: "Tata Consultancy Services",
+    year: "2025",
+    description:
+      "Recognized for dedicated service and generosity in community outreach programs, reflecting a strong commitment to social responsibility.",
+    icon: "🌍",
+    tag: "CSR",
+  },
+  {
+    id: 5,
+    type: "appreciation",
+    title: "Excellence & Performance Recognition",
+    issuer: "Tata Consultancy Services",
+    year: "2025",
+    description:
+      "Appreciated for maintaining high performance standards, dedication, and inspiring team members through consistent hard work and a results-driven mindset.",
+    icon: "⭐",
+    tag: "Performance",
+  },
+  {
+    id: 6,
+    type: "appreciation",
+    title: "Team Recognition – BFSI GEMS",
+    issuer: "Tata Consultancy Services",
+    year: "2024",
+    description:
+      "Recognized during the BFSI GEMS campaign for significant commitment and contributions to the North America East delivery team.",
+    icon: "🌟",
+    tag: "Teamwork",
+  },
+  {
+    id: 7,
+    type: "appreciation",
+    title: "Operational Excellence Award",
+    issuer: "Tata Consultancy Services",
+    year: "2023",
+    description:
+      "Commended for exceptional technical skills and a proactive attitude during critical year-end activities, ensuring seamless operations under pressure.",
+    icon: "⚙️",
+    tag: "Operations",
   },
 ];

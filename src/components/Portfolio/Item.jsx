@@ -10,6 +10,7 @@ import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards } from "swiper/modules";
 import { IoIosPhonePortrait } from "react-icons/io";
+import { Tooltip } from "antd";
 
 const Item = ({ projectItems }) => {
   return (
@@ -20,8 +21,16 @@ const Item = ({ projectItems }) => {
       className="mySwiper swiper_portfolio  "
     >
       {projectItems.map((projectItems) => {
-        const { id, img, category, title, description, github, web,responsive } =
-          projectItems;
+        const {
+          id,
+          img,
+          category,
+          title,
+          description,
+          github,
+          web,
+          responsive,
+        } = projectItems;
         return (
           <SwiperSlide
             key={id}
@@ -36,29 +45,41 @@ const Item = ({ projectItems }) => {
                 {" "}
                 <a className="webgits git" target="_blank" href={github}>
                   {" "}
-                  <PiGithubLogoFill />
+                  <Tooltip placement="left" title={"Source Code"}>
+                    <PiGithubLogoFill />
+                  </Tooltip>
                 </a>
                 <a className="webgits web" target="_blank" href={web}>
                   {" "}
-                  <FaCode />
+                  <Tooltip placement="right" title={"Live Website"}>
+                  <FaCode /></Tooltip>
                 </a>
               </div>
             </span>
-        <div className="project_title_responsive">
-        <h3 className="portfolio__title">{title}</h3>
-            {responsive?  <div  className="project_responsive"><span>
-              <FaLaptopCode className="project_responsive1" />
-            </span>
-            <span>
-              <FaTabletScreenButton  className="project_responsive2"/>
-            </span>
-            <span>
-              <IoIosPhonePortrait className="project_responsive3" />
-            </span></div>:   <div className="project_responsive"> <span>
-              <FaLaptopCode className="project_responsive1"/>
-            </span> </div>  }
-        </div>
-           
+            <div className="project_title_responsive">
+              <h3 className="portfolio__title">{title}</h3>
+              {responsive ? (
+                <div className="project_responsive">
+                  <span>
+                    <FaLaptopCode className="project_responsive1" />
+                  </span>
+                  <span>
+                    <FaTabletScreenButton className="project_responsive2" />
+                  </span>
+                  <span>
+                    <IoIosPhonePortrait className="project_responsive3" />
+                  </span>
+                </div>
+              ) : (
+                <div className="project_responsive">
+                  {" "}
+                  <span>
+                    <FaLaptopCode className="project_responsive1" />
+                  </span>{" "}
+                </div>
+              )}
+            </div>
+
             <p className="portfolio__description">{description}</p>
             <img
               src={shapeTwo}
