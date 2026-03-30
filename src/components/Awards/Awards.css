@@ -4,11 +4,13 @@
    ===================================================== */
 
 /* ---------- Section Shell ---------- */
+/* AFTER */
 .awards.section {
   position: relative;
   height: max-content;
   padding: 0rem 5rem 10rem 5rem;
-  overflow: hidden;
+  overflow: hidden;        /* keep this */
+  /* remove overflow-y: visible */
   background: transparent;
   overflow-y: visible;
 }
@@ -16,6 +18,7 @@
 .awards__container {
   position: relative;
   z-index: 1;
+  overflow: hidden;   /* ← ADD THIS */
 }
 
 /* ---------- Section Header ---------- */
@@ -725,4 +728,8 @@
   .awards__modal-pdf {
     height: 55vh;
   }
+}
+.awards.section {
+  overflow: hidden;
+  overflow-y: visible; /* ← this overrides overflow: hidden, causing the scrollbar */
 }
