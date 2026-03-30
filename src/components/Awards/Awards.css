@@ -657,6 +657,14 @@
   }
 }
 
+/* Tablet */
+@media (max-width: 1000px) {
+.awards.section{
+  width: 100%;
+  padding: 0rem 0 10rem 0;
+}
+}
+
 /* Mobile landscape / small tablet */
 @media (max-width: 640px) {
   .awards__card {
