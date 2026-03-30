@@ -6,7 +6,8 @@
 /* ---------- Section Shell ---------- */
 .awards.section {
   position: relative;
-  padding: 0rem 0 5rem;
+  height: max-content;
+  padding: 0rem 5rem 10rem 5rem;
   overflow: hidden;
   background: transparent;
   overflow-y: visible;
