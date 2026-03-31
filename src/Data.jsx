@@ -46,12 +46,12 @@ export const links = [
     path: "works",
   },
   {
-    name: "Awards",
-    path: "awards",
-  },
-  {
     name: "Resume",
     path: "resume",
+  },
+  {
+    name: "Awards",
+    path: "awards",
   },
   {
     name: "Testimonials",
