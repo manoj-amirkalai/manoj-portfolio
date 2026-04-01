@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import "./Awards.css";
 import { awardsData } from "../../Data";
+import { SwiperSlide, Swiper } from "swiper/react";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const filters = ["Awards", "Appreciation"];
 
@@ -35,17 +38,79 @@ export default function Awards() {
   return (
     <section className="awards section" id="awards">
       <div className="awards__container container">
-
         {/* Header */}
         <div className="awards__header">
-          <p className="awards__subtitle">What I've Earned</p>
+          <p className="awards__subtitle">{"What I've Earned"}</p>
           <h2 className="awards__title">
             Awards &amp;{" "}
             <span className="awards__title--accent">Recognitions</span>
           </h2>
         </div>
+        {/* ══════════ Image Modal ══════════ */}
 
-        {/* Filter Tabs */}
+        {selectedImg && (
+          <div
+            className="awards__modal"
+            onClick={() => setSelectedImg(null)}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Certificate preview"
+          >
+            <div
+              className="awards__modal-content"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Modal Header */}
+              <div className="awards__modal-header">
+                <p className="awards__modal-title">{selectedImg.title}</p>
+                <button
+                  className="awards__modal-close"
+                  onClick={() => setSelectedImg(null)}
+                  aria-label="Close modal"
+                >
+                  ✕
+                </button>
+              </div>
+
+              {/* Image or PDF Viewport */}
+              <div className="awards__modal-img-wrap">
+                {selectedImg.src.toLowerCase().endsWith(".pdf") ? (
+                  <iframe
+                    src={selectedImg.src}
+                    title={selectedImg.title}
+                    className="awards__modal-pdf"
+                  />
+                ) : (
+                  <img
+                    src={selectedImg.src}
+                    alt={selectedImg.title}
+                    className="awards__modal-img"
+                  />
+                )}
+              </div>
+
+              {/* Modal Footer */}
+              <div className="awards__modal-footer">
+                <a
+                  href={selectedImg.src}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="awards__modal-download"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  ⬇ Download
+                </a>
+                <button
+                  className="awards__modal-dismiss"
+                  onClick={() => setSelectedImg(null)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
         <div className="awards__filters">
           {filters.map((f) => (
             <button
@@ -60,171 +125,144 @@ export default function Awards() {
             </button>
           ))}
         </div>
+        {/* Filter Tabs */}
+        <Swiper
+          // slidesPerView={3}
+          // spaceBetween={10}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            540: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+          modules={[Pagination]}
+          className="mySwiper testimonial__container container"
+        >
+          {filtered.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div
+                  key={item.id}
+                  className={`awards__card ${flipped === item.id ? "flipped" : ""}`}
+                  onClick={() =>
+                    setFlipped(flipped === item.id ? null : item.id)
+                  }
+                >
+                  {/* ── Front Face ── */}
+                  <div className="awards__card-front">
+                    <div className="awards__card-glow" />
+
+                    <div className="awards__card-top">
+                      <span
+                        className={`awards__badge ${
+                          item.type === "award"
+                            ? "awards__badge--award"
+                            : "awards__badge--appreciation"
+                        }`}
+                      >
+                        {item.type === "award" ? "🏅 Award" : "🤝 Appreciation"}
+                      </span>
+                      <span className="awards__year">{item.year}</span>
+                    </div>
+
+                    <div className="awards__card-body">
+                      <h3 className="awards__card-title">
+                        {item.icon} {item.title}
+                      </h3>
+                      <p className="awards__card-issuer">
+                        <span className="awards__issuer-dot" />
+                        {item.issuer}
+                      </p>
+                    </div>
+
+                    <div className="awards__back-footer">
+                      <p className="awards__back-issuer">
+                        Issued by <strong>{item.issuer}</strong>
+                      </p>
+
+                      {item.image && (
+                        <button
+                          className="awards__view-btn"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedImg({
+                              src: item.image,
+                              title: item.title,
+                            });
+                          }}
+                        >
+                          <span>🖼</span> View Certificate
+                        </button>
+                      )}
+                    </div>
+
+                    <div className="awards__card-footer">
+                      <span className="awards__tag">{item.tag}</span>
+                      <span className="awards__flip-hint">Details →</span>
+                    </div>
+                  </div>
+
+                  {/* ── Back Face ── */}
+                  <div className="awards__card-back">
+                    <div className="awards__card-glow awards__card-glow--back" />
+
+                    <div className="awards__back-top">
+                      {/* <span className="awards__back-icon">{item.icon} </span> */}
+                      <h3 className="awards__back-title">
+                        {item.icon} {item.title}
+                      </h3>
+                      <span className="awards__year">{item.year}</span>
+                    </div>
+
+                    {/* <h3 className="awards__back-title">{item.icon} {item.title}</h3> */}
+                    <div className="awards__divider" />
+
+                    <p className="awards__back-desc">{item.description}</p>
+
+                    <div className="awards__back-footer">
+                      <p className="awards__back-issuer">
+                        Issued by <strong>{item.issuer}</strong>
+                      </p>
+
+                      {item.image && (
+                        <button
+                          className="awards__view-btn"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedImg({
+                              src: item.image,
+                              title: item.title,
+                            });
+                          }}
+                        >
+                          <span>🖼</span> View Certificate
+                        </button>
+                      )}
+                    </div>
+
+                    <span className="awards__flip-hint--back">
+                      ← Tap to go back
+                    </span>
+                  </div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
 
         {/* Cards Grid — flex-wrap centres last odd card automatically */}
-        <div className="awards__grid">
-          {filtered.map((item) => (
-            <div
-              key={item.id}
-              className={`awards__card ${flipped === item.id ? "flipped" : ""}`}
-              onClick={() => setFlipped(flipped === item.id ? null : item.id)}
-            >
-              {/* ── Front Face ── */}
-              <div className="awards__card-front">
-                <div className="awards__card-glow" />
-
-                <div className="awards__card-top">
-                  <span
-                    className={`awards__badge ${
-                      item.type === "award"
-                        ? "awards__badge--award"
-                        : "awards__badge--appreciation"
-                    }`}
-                  >
-                    {item.type === "award" ? "🏅 Award" : "🤝 Appreciation"}
-                  </span>
-                  <span className="awards__year">{item.year}</span>
-                </div>
-
-              
-
-                <div className="awards__card-body">
-                  <h3 className="awards__card-title">{item.icon} {item.title}</h3>
-                  <p className="awards__card-issuer">
-                    <span className="awards__issuer-dot" />
-                    {item.issuer}
-                  </p>
-                </div>
-                
-                   <div className="awards__back-footer">
-                  <p className="awards__back-issuer">
-                    Issued by <strong>{item.issuer}</strong>
-                  </p>
-
-                  {item.image && (
-                    <button
-                      className="awards__view-btn"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelectedImg({ src: item.image, title: item.title });
-                      }}
-                    >
-                      <span>🖼</span> View Certificate
-                    </button>
-                  )}
-                </div>
-
-                <div className="awards__card-footer">
-                  <span className="awards__tag">{item.tag}</span>
-                  <span className="awards__flip-hint">Details →</span>
-                </div>
-              </div>
-
-              {/* ── Back Face ── */}
-              <div className="awards__card-back">
-                <div className="awards__card-glow awards__card-glow--back" />
-
-                <div className="awards__back-top">
-                  {/* <span className="awards__back-icon">{item.icon} </span> */}
-                <h3 className="awards__back-title">{item.icon} {item.title}</h3>
-                  <span className="awards__year">{item.year}</span>
-                </div>
-
-                {/* <h3 className="awards__back-title">{item.icon} {item.title}</h3> */}
-                <div className="awards__divider" />
-
-                <p className="awards__back-desc">{item.description}</p>
-
-                <div className="awards__back-footer">
-                  <p className="awards__back-issuer">
-                    Issued by <strong>{item.issuer}</strong>
-                  </p>
-
-                  {item.image && (
-                    <button
-                      className="awards__view-btn"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelectedImg({ src: item.image, title: item.title });
-                      }}
-                    >
-                      <span>🖼</span> View Certificate
-                    </button>
-                  )}
-                </div>
-
-                <span className="awards__flip-hint--back">← Tap to go back</span>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
-
-      {/* ══════════ Image Modal ══════════ */}
-    
-    {selectedImg && (
-  <div
-    className="awards__modal"
-    onClick={() => setSelectedImg(null)}
-    role="dialog"
-    aria-modal="true"
-    aria-label="Certificate preview"
-  >
-    <div
-      className="awards__modal-content"
-      onClick={(e) => e.stopPropagation()}
-    >
-      {/* Modal Header */}
-      <div className="awards__modal-header">
-        <p className="awards__modal-title">{selectedImg.title}</p>
-        <button
-          className="awards__modal-close"
-          onClick={() => setSelectedImg(null)}
-          aria-label="Close modal"
-        >
-          ✕
-        </button>
-      </div>
-
-      {/* Image or PDF Viewport */}
-      <div className="awards__modal-img-wrap">
-        {selectedImg.src.toLowerCase().endsWith(".pdf") ? (
-          <iframe
-            src={selectedImg.src}
-            title={selectedImg.title}
-            className="awards__modal-pdf"
-          />
-        ) : (
-          <img
-            src={selectedImg.src}
-            alt={selectedImg.title}
-            className="awards__modal-img"
-          />
-        )}
-      </div>
-
-      {/* Modal Footer */}
-      <div className="awards__modal-footer">
-        <a
-          href={selectedImg.src}
-          download
-          target="_blank"
-          rel="noopener noreferrer"
-          className="awards__modal-download"
-          onClick={(e) => e.stopPropagation()}
-        >
-          ⬇ Download
-        </a>
-        <button
-          className="awards__modal-dismiss"
-          onClick={() => setSelectedImg(null)}
-        >
-          Close
-        </button>
-      </div>
-    </div>
-  </div>
-)}
 
       <div className="section__bg-wrapper">
         <span className="bg__title">Awards</span>
