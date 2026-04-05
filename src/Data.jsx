@@ -158,16 +158,14 @@ export const projects = [
   {
     id: 2,
     img: jobapplication,
-    responsive: true,
+    responsive: false,
     category: "Next.JS",
-    title: "FeedBackForm Admin Panel",
-    description: `Our admin panel offers a streamlined solution for managing feedback forms,
-     allowing you to effortlessly create, edit, or delete forms as needed.
-      You can also access and analyze feedback data collected from your linked website directly 
-      within the panel, ensuring a comprehensive view of user input.
-        Seamless experience for both feedbackform  and data review.`,
-    github: "https://github.com/manoj-amirkalai/feedbackform",
-    web: "https://feedbackform-next-js.onrender.com/",
+    title: "Job Application tracker",
+    description: `MERN-Stack => Our job application tracker website offers a comprehensive solution for managing your job search process.
+      With features to add, edit, and delete job applications, you can easily keep track of your progress. Also drag and drop functionality to organize your applications by status, making it simple to visualize your job search journey. 
+      `,
+    github: "https://github.com/manoj-amirkalai/job-application-tracker",
+    web: "https://application-tracker-site.onrender.com/",
   },
   {
     id: 3,
@@ -175,11 +173,10 @@ export const projects = [
     responsive: true,
     category: "Next.JS",
     title: "FeedBackForm Admin Panel",
-    description: `Our admin panel offers a streamlined solution for managing feedback forms,
+    description: `MERN-Stack => Our admin panel offers a streamlined solution for managing feedback forms,
      allowing you to effortlessly create, edit, or delete forms as needed.
       You can also access and analyze feedback data collected from your linked website directly 
-      within the panel, ensuring a comprehensive view of user input.
-        Seamless experience for both feedbackform  and data review.`,
+      within the panel, ensuring a comprehensive view of user input.`,
     github: "https://github.com/manoj-amirkalai/feedbackform",
     web: "https://feedbackform-next-js.onrender.com/",
   },
@@ -223,7 +220,7 @@ export const projects = [
     responsive: true,
     category: "Next.JS",
     title: "Money Tracker",
-    description: `Introducing our money tracker app: easily log in to access a comprehensive table for filtering your transaction data. Visualize your spending with interactive bar charts that highlight trends and help you stay on budget!`,
+    description: `MERN-Stack => Introducing our money tracker app: easily log in to access a comprehensive table for filtering your transaction data. Visualize your spending with interactive bar charts that highlight trends and help you stay on budget!`,
     github: "https://github.com/manoj-amirkalai/expense-tracker",
     web: "https://budget-tracker-manoj.onrender.com",
   },
