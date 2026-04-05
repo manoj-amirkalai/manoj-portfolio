@@ -12,6 +12,7 @@ import netflix from "./assets/netflix.jfif";
 import hulu from "./assets/hulu.jfif";
 import postdes from "./assets/postdes.jpg";
 import todo from "./assets/todo.png";
+import jobapplication from "./assets/hero2.webp";
 
 import Testimonial1 from "./assets/testimonial4.jpg";
 import Testimonial2 from "./assets/testimonial2.jpg";
@@ -155,40 +156,21 @@ export const projects = [
     web: "https://manoj-food-app-frontend.onrender.com/",
   },
   {
-    id: 3,
-    img: renthome,
-    category: "MERN",
-    responsive: true,
-    title: "Rent Home",
-    description: `Developed a comprehensive rent home website with features booking, and listing properties. Integrated secure payment processing and a user-friendly interface to streamline property management.   Card=> 4000003560000008,
-      month/year=> 06/29, CVV=> 567.`,
-    github: "https://github.com/manoj-amirkalai/Rent-Home",
-    web: "https://manoj-rent-home-frontend.onrender.com/",
-  },
-  {
-    id: 10,
-    responsive: true,
-    img: todo,
-    category: "Typescript",
-    title: "TODO",
-    description:
-      "Designed and developed a responsive to-do list web application with an intuitive user interface. Implemented features for adding, updating, and deleting tasks across multiple status categories. Ensured seamless performance and cross-device compatibility for efficient task management.",
-    github: "https://github.com/manoj-amirkalai/advanced-todo-app",
-    web: "https://manoj-advanced-todo-app.onrender.com/",
-  },
-  {
-    id: 4,
-    img: raretube,
-    category: "React.JS",
-    responsive: true,
-    title: "You-Tube",
-    description: `A YouTube clone replicates the core features of the original platform, 
-    allowing users  view videos by categorized. It offers a similar interface and functionality but may cater to niche audiences or specific content types.`,
-    github: "https://github.com/manoj-amirkalai/RareTube",
-    web: "https://raretube.onrender.com/",
-  },
-  {
     id: 2,
+    img: jobapplication,
+    responsive: true,
+    category: "Next.JS",
+    title: "FeedBackForm Admin Panel",
+    description: `Our admin panel offers a streamlined solution for managing feedback forms,
+     allowing you to effortlessly create, edit, or delete forms as needed.
+      You can also access and analyze feedback data collected from your linked website directly 
+      within the panel, ensuring a comprehensive view of user input.
+        Seamless experience for both feedbackform  and data review.`,
+    github: "https://github.com/manoj-amirkalai/feedbackform",
+    web: "https://feedbackform-next-js.onrender.com/",
+  },
+  {
+    id: 3,
     img: feedbackform,
     responsive: true,
     category: "Next.JS",
@@ -202,7 +184,41 @@ export const projects = [
     web: "https://feedbackform-next-js.onrender.com/",
   },
   {
-    id: 2,
+    id: 4,
+    img: renthome,
+    category: "MERN",
+    responsive: true,
+    title: "Rent Home",
+    description: `Developed a comprehensive rent home website with features booking, and listing properties. Integrated secure payment processing and a user-friendly interface to streamline property management.   Card=> 4000003560000008,
+      month/year=> 06/29, CVV=> 567.`,
+    github: "https://github.com/manoj-amirkalai/Rent-Home",
+    web: "https://manoj-rent-home-frontend.onrender.com/",
+  },
+  {
+    id: 5,
+    responsive: true,
+    img: todo,
+    category: "Typescript",
+    title: "TODO",
+    description:
+      "Designed and developed a responsive to-do list web application with an intuitive user interface. Implemented features for adding, updating, and deleting tasks across multiple status categories. Ensured seamless performance and cross-device compatibility for efficient task management.",
+    github: "https://github.com/manoj-amirkalai/advanced-todo-app",
+    web: "https://manoj-advanced-todo-app.onrender.com/",
+  },
+  {
+    id: 6,
+    img: raretube,
+    category: "React.JS",
+    responsive: true,
+    title: "You-Tube",
+    description: `A YouTube clone replicates the core features of the original platform, 
+    allowing users  view videos by categorized. It offers a similar interface and functionality but may cater to niche audiences or specific content types.`,
+    github: "https://github.com/manoj-amirkalai/RareTube",
+    web: "https://raretube.onrender.com/",
+  },
+
+  {
+    id: 7,
     img: money,
     responsive: true,
     category: "Next.JS",
@@ -212,7 +228,7 @@ export const projects = [
     web: "https://budget-tracker-manoj.onrender.com",
   },
   {
-    id: 5,
+    id: 8,
     img: fitness,
     responsive: true,
     category: "MERN",
@@ -225,7 +241,7 @@ export const projects = [
     web: "https://manoj-fitness-tracker.onrender.com/",
   },
   {
-    id: 6,
+    id: 9,
     img: shopper,
     category: "React.JS",
     responsive: true,
@@ -237,7 +253,7 @@ export const projects = [
     web: "https://manojs-e-commerce.onrender.com/",
   },
   {
-    id: 7,
+    id: 10,
     img: flipkart,
     responsive: false,
     category: "React.JS",
@@ -248,7 +264,7 @@ export const projects = [
     web: "https://flipkart-ui-app.onrender.com/",
   },
   {
-    id: 8,
+    id: 11,
     img: amazon,
     responsive: false,
     category: "React.JS",
@@ -259,7 +275,7 @@ export const projects = [
     web: "https://uiprime.onrender.com/",
   },
   // {
-  //   id: 9,
+  //   id: 12,
   //   responsive: false,
   //   img: netflix,
   //   category: "React.JS",
@@ -270,7 +286,7 @@ export const projects = [
   //   web: "https://netflix-ui-app.onrender.com/",
   // },
   {
-    id: 11,
+    id: 13,
     img: postdes,
     responsive: false,
     category: "MERN",
@@ -282,7 +298,7 @@ export const projects = [
     web: "https://mern-post-description-app.onrender.com/",
   },
   {
-    id: 12,
+    id: 14,
     responsive: false,
     img: hulu,
     category: "React.JS",
@@ -293,7 +309,7 @@ export const projects = [
     web: "https://hulu-app.onrender.com/",
   },
   {
-    id: 13,
+    id: 15,
     responsive: true,
     img: tictactoe,
     category: "React.JS",
@@ -578,17 +594,17 @@ export const awardsData = [
     image: SpecialInitiative,
   },
   {
-  id: 9, // update id as needed
-  type: "award",
-  title: "Contextual Master Award – GEMS",
-  issuer: "Tata Consultancy Services",
-  year: "2024",
-  description:
-    "Awarded the Contextual Master Award under the GEMS recognition program for outstanding contribution to the organisation. Acknowledged as an inspiring role model to colleagues for dedication and commitment.",
-  icon: "💎",
-  tag: "GEMS",
-  image: contextualMaster,
-},
+    id: 9, // update id as needed
+    type: "award",
+    title: "Contextual Master Award – GEMS",
+    issuer: "Tata Consultancy Services",
+    year: "2024",
+    description:
+      "Awarded the Contextual Master Award under the GEMS recognition program for outstanding contribution to the organisation. Acknowledged as an inspiring role model to colleagues for dedication and commitment.",
+    icon: "💎",
+    tag: "GEMS",
+    image: contextualMaster,
+  },
   {
     id: 3,
     type: "appreciation",
